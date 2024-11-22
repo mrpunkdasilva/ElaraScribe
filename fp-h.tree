@@ -6,13 +6,28 @@
                  name="Flash Pomo - Home"
                  start-page="starter.md">
 
-    <toc-element topic="starter.md"/>
-    <toc-element topic="Projeto.md"/>
-    <toc-element topic="Análise-de-Mercado.md"/>
-    <toc-element topic="Engenharia-de-Requisitos.md"/>
-    <toc-element topic="Modelagem-Inicial.md">
-        <toc-element topic="Diagrama-de-Classes.md"/>
-        <toc-element topic="Diagrama-de-Casos-de-Uso.md"/>
+    <toc-element topic="Sumario.md"/>
+    <toc-element topic="starter.md">
     </toc-element>
-    <toc-element topic="Modelagem-De-Dados.md"/>
+    <toc-element topic="Desenvolvimento.md">
+        <toc-element topic="Projeto.md"/>
+        <toc-element topic="Mercado.md">
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Engenharia-de-Software.md">
+        <toc-element topic="Engenharia-de-Requisitos.md"/>
+        <toc-element topic="Arquitetura-de-Informação.md">
+            <toc-element topic="Wireframe-ou-Prótotipo.md"/>
+            <toc-element topic="Modelagem-De-Dados.md"/>
+            <toc-element topic="Modelagem-Inicial.md">
+                <toc-element topic="Diagrama-de-Classes.md"/>
+                <toc-element topic="Diagrama-de-Casos-de-Uso.md"/>
+            </toc-element>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Tecnologias-Utilizadas.md"/>
+    <toc-element topic="Manual-do-Usuário.md"/>
+    <toc-element topic="Mapa-do-Site.md"/>
+    <toc-element topic="Conclusão.md"/>
+    <toc-element topic="Referencias-Bibliográficas.md"/>
 </instance-profile>

@@ -1,6 +1,8 @@
-# Análise de Mercado
+# Mercado
 
-## Público Alvo
+## Análise de Mercado
+
+### Público Alvo
 O aplicativo tem como público-alvo estudantes de ensino médio ao nível universitário, abrangendo:
 
 | Perfil | Descrição |
@@ -13,7 +15,7 @@ Esse público-alvo foi selecionado com base na necessidade de ferramentas que co
 
 ---
 
-## Análise da Concorrência
+### Análise da Concorrência
 
 Ao analisar o mercado, foram identificados alguns aplicativos e plataformas que oferecem funcionalidades semelhantes ao aplicativo proposto, embora de forma fragmentada. Alguns dos principais concorrentes são:
 
@@ -27,7 +29,7 @@ Essa análise da concorrência permite identificar as principais lacunas no merc
 
 ---
 
-## Tendências:
+### Tendências:
 - **Crescente demanda por ferramentas de gerenciamento de tempo e organização de estudo**: Estudantes e profissionais do meio acadêmico buscam cada vez mais soluções integradas que os ajudem a gerenciar seu tempo de estudo e aprendizado de forma eficiente.
 - **Adoção da técnica Pomodoro no ambiente acadêmico**: A técnica Pomodoro vem ganhando popularidade entre estudantes e pesquisadores, que a utilizam para aumentar sua produtividade durante os momentos de estudo e trabalho.
 - **Necessidade de compartilhamento e colaboração no aprendizado**: Existe uma demanda crescente por plataformas que permitam a troca de conhecimento e a colaboração entre estudantes e profissionais do meio acadêmico.
@@ -51,7 +53,7 @@ Usando alguns termos para pesquisa no Google Trends vemos que há uma busca ativ
 
 ---
 
-### Oportunidades:
+#### Oportunidades:
 - **Integração de ferramentas de gerenciamento de tempo e organização de conteúdo**: O mercado carece de soluções que combinem de forma eficiente e fluida a técnica Pomodoro e a utilização de flashcards, atendendo às necessidades dos estudantes.
 - **Criação de um ecossistema de compartilhamento de conhecimento**: O desenvolvimento de um mercado interno de flashcards, onde os usuários possam comprar, vender e trocar materiais de estudo, representa uma oportunidade significativa para fomentar a colaboração e a troca de conhecimento no meio acadêmico.
 - **Diferenciação por meio da integração de funcionalidades**: A maioria das soluções atuais se concentra em apenas uma das necessidades (gerenciamento de tempo ou organização de flashcards), deixando uma lacuna a ser preenchida por um aplicativo que integre essas funcionalidades de forma completa.
