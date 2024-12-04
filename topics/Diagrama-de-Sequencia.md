@@ -1,4 +1,4 @@
-# Diagrama de Sequencia
+# Diagrama de Sequência
 
 ## Diagrama de Sequencia : UC-01
 
