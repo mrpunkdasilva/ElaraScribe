@@ -9,5 +9,4 @@
 ![MER.png](../images/MODELAGEM_DE_DADOS/MER.png)
 
 ## Modelo Físico
-```sql
-```
+
