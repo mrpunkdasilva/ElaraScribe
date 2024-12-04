@@ -20,7 +20,7 @@
             <toc-element topic="Wireframe-ou-Prótotipo.md"/>
             <toc-element topic="Modelagem-De-Dados.md"/>
             <toc-element topic="Modelagem-Inicial.md">
-                <toc-element topic="Diagrama-de-Classes.md"/>
+                <toc-element topic="Diagrama-de-Sequencia.md"/>
                 <toc-element topic="Diagrama-de-Casos-de-Uso.md"/>
             </toc-element>
         </toc-element>
