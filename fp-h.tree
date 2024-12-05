@@ -15,6 +15,7 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Engenharia-de-Software.md">
+        <toc-element topic="Casos-de-Uso.md"/>
         <toc-element topic="Engenharia-de-Requisitos.md"/>
         <toc-element topic="Arquitetura-de-Informação.md">
             <toc-element topic="Wireframe-ou-Prótotipo.md"/>
