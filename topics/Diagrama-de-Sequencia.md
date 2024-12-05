@@ -1,6 +1,7 @@
-# Diagrama de Sequência
 
-## Diagrama de Sequencia : UC-01
+# Diagramas de Sequência
+
+## Diagrama de Sequencia
 
 ##### Criação da conta
 
