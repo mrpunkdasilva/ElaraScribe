@@ -9,6 +9,7 @@
     <toc-element topic="Sumario.md"/>
     <toc-element topic="starter.md">
     </toc-element>
+    <toc-element topic="Resumo-Executivo.md"/>
     <toc-element topic="Desenvolvimento.md">
         <toc-element topic="Projeto.md"/>
         <toc-element topic="Mercado.md">
