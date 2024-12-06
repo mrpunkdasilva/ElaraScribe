@@ -29,8 +29,19 @@ Na página de Dashboard o usuário precisará criar primeiramente o ensemble que
 3. Pressione no ensemble e crie os flashcards, o título e descrição, depois é só salvar
    ![](../images/Sistema/addFlashcard.png)
 
-## Criar Box
+## Criar Box e Vender
+Para vender uma box, primeiro o usuário precisa, criá-la.
+1. No menu, o usuário entrará na página Box Sell.
+![](../images/prototipo/DESKTOP - USER - BOX SHELL.png)
+2. Nela precisará selecionar o botão de adicionar um "+" ao lado do botão de pesquisa. Em seguida deverá criar a box com os flashcards já existentes e, os quais podem pertencer a vários ensembles, e logo após selecionar o preço.
+![](../images/prototipo/DESKTOP - USER - CREATING BOX SHELL.png)
 
-## Comprar e Vender
+## Comprar Box
+Para comprar uma box, o usuário deverá entrar na página Box Buy, e pesquisar pela box que ele deseja. 
+1. O usuário selecionará o botão presente do valor da box, e em seguida confirmará a compra.
+![](../images/prototipo/INTERFACE BOX BUY.png)
 
 ## Usar Pomodoro
+Para o usuário usar o pomodoro, ele deverá primeiro estar no Dashboard.
+1. O usuário poderá escolher no pomodoro as funções Pomodoro, de 25min, short break de 5min, e long break de 15min. também poderá usar as funções de start para começar, pause para pausar e restart para recomeçar. 
+![](../images/Sistema/dashboard1.png)
