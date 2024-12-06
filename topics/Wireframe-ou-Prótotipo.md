@@ -1,55 +1,37 @@
-# Wireframe ou Prótotipo
+# Wireframe
 
-![cadastro email](../images/prototipo/CADASTRO - 1 - EMAIL.png)
-**página de cadastro do email**
+![CADASTRO - 1 - USERNAME.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20USERNAME.svg)
+![CADASTRO - 1 - EMAIL.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20EMAIL.svg)
+![CADASTRO - 1 - PASSWORD.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20PASSWORD.svg)
+![CADASTRO - 1 - SIGN UP.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20SIGN%20UP.svg)
 
-![cadastro username](../images/prototipo/CADASTRO - 1 - USERNAME.png)
-**página de cadastro do username**
-![cadastro password](../images/prototipo/CADASTRO - 1 - PASSWORD.png)
-**página de cadastro do password**
-![cadastrar](../images/prototipo/CADASTRO - 1 - SIGN UP.png)
-**página de finalização do cadastro**
+---
 
+![CADASTRO - 1 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20MOBILE.svg)
+![CADASTRO - 2 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%202%20-%20MOBILE.svg)
+![CADASTRO - 3 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%203%20-%20MOBILE.svg)
 
+---
 
-![acessar email](../images/prototipo/LOGIN - 1 - DESKTOP.png)
-**página de login para informar email**
-![acessar password](../images/prototipo/LOGIN - 1 - SECURITY.png)
-**página de login**
+![LOGIN - 1 - DESKTOP.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20DESKTOP.svg)
+![LOGIN - 1 - SECURITY.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20SECURITY.svg)
 
+---
 
+![LOGIN - 2 - MOBILE.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%202%20-%20MOBILE.svg)
+![LOGIN - 3 - MOBILE.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%203%20-%20MOBILE.svg)
 
-![perfil user](../images/prototipo/DESKTOP - USER - USER PROFILE.png)
-**página de perfil do usuário**
+---
 
+![INTERFACE - USER - DASHBOARD.svg](../images/WIREFRAMES/INTERFACE%20-%20USER%20-%20DASHBOARD.svg)
+![DESKTOP - USER - BOX SHELL.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20BOX%20SHELL.svg)
+![DESKTOP - USER - CONTACT US.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CONTACT%20US.svg)
+![DESKTOP - USER - CREATING BOX SHELL.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CREATING%20BOX%20SHELL.svg)
+![DESKTOP - USER - HELP.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20HELP.svg)
+![DESKTOP - USER - USER PROFILE.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20USER%20PROFILE.svg)
 
-![dashboard inicial](../images/prototipo/INTERFACE - USER - DASHBOARD.png)
-**página de dashboard principal do usuário**
-![dashboard flashcard](../images/prototipo/INTERFACE - USER - DASHBOARD-1.png)
-**página de dashboard principal do usuário para adicionar flashcards a um ensemble**
-![dashboard story](../images/prototipo/INTERFACE STORY.png)
-**página de dashboard principal do usuário para ver histórico de uso do pomodoro e flashcard**
+---
 
-
-![favorites](../images/prototipo/INTERFACE FAVORITE  ENSEMBLES.png)
-**página de ensembles favoritos do usuário**
-
-
-![box buy](../images/prototipo/INTERFACE BOX BUY.png)
-**página de compra de box que contém flashcards**
-
-
-![box sell](../images/prototipo/DESKTOP - USER - BOX SHELL.png)
-**página de vendas de box do usuário**
-![create box sell](../images/prototipo/DESKTOP - USER - CREATING BOX SHELL.png)
-**página de criação de box de vendas do usuário**
-
-
-![help](../images/prototipo/DESKTOP - USER - HELP.png)
-**página de ajuda para o usuário**
-
-
-![contact us](../images/prototipo/DESKTOP - USER - CONTACT US.png)
-**página de contato para o usuário**
-
-
+![INTERFACE BOX BUY.svg](../images/WIREFRAMES/INTERFACE%20BOX%20BUY.svg)
+![INTERFACE FAVORITE  ENSEMBLES.svg](../images/WIREFRAMES/INTERFACE%20FAVORITE%20%20ENSEMBLES.svg)
+![INTERFACE STORY.svg](../images/WIREFRAMES/INTERFACE%20STORY.svg)

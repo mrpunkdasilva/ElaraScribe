@@ -1,15 +1,16 @@
 # Projeto
-Este projeto visa desenvolver um aplicativo voltado para o meio acadêmico, combinando as estratégias de estudo Pomodoro e Flashcards em uma única plataforma. O objetivo é criar uma solução completa que permita aos usuários gerenciar seu tempo de estudo de forma eficiente e organizar seus materiais de aprendizado de maneira efetiva.
 
-Uma das principais funcionalidades do aplicativo será a integração da técnica Pomodoro. Essa técnica de gerenciamento de tempo ajudará os usuários a manterem sua concentração e produtividade durante os momentos de estudo. Além disso, o aplicativo contará com ferramentas de criação e edição de flashcards, uma estratégia amplamente utilizada por estudantes para memorização e revisão de conteúdo.
+## Objetivo
 
-Outra funcionalidade chave será o mercado interno, onde os usuários poderão negociar seus flashcards usando uma moeda própria da plataforma. Essa integração de um ambiente de compra e venda de material de estudo criará um ecossistema dinâmico de aprendizado, incentivando a troca de conhecimento e a colaboração entre os usuários.
+- Este projeto visa desenvolver um aplicativo voltado para o meio acadêmico, combinando as estratégias de estudo Pomodoro e Flashcards em uma única plataforma. O objetivo é criar uma solução completa que permita aos usuários gerenciar seu tempo de estudo de forma eficiente e organizar seus materiais de aprendizado de maneira efetiva.
 
-Ao combinar estratégias de estudo comprovadas, gerenciamento de tempo e um mercado interno, o aplicativo se posicionará como uma solução inovadora e completa para as necessidades do meio acadêmico. Espera-se que essa integração de ferramentas melhore o desempenho e o engajamento dos estudantes, além de fomentar a colaboração e o compartilhamento de conhecimento entre os usuários.
+- Uma das principais funcionalidades do aplicativo será a integração da técnica Pomodoro. Essa técnica de gerenciamento de tempo ajudará os usuários a manterem sua concentração e produtividade durante os momentos de estudo. Além disso, o aplicativo contará com ferramentas de criação e edição de flashcards, uma estratégia amplamente utilizada por estudantes para memorização e revisão de conteúdo.
 
-O desenvolvimento deste aplicativo visa atender às demandas do público acadêmico, oferecendo uma plataforma que integre eficientemente as principais estratégias de estudo e aprendizado.
+- Outra funcionalidade chave será o mercado interno, onde os usuários poderão negociar seus flashcards usando uma moeda própria da plataforma. Essa integração de um ambiente de compra e venda de material de estudo criará um ecossistema dinâmico de aprendizado, incentivando a troca de conhecimento e a colaboração entre os usuários.
 
----
+- Ao combinar estratégias de estudo comprovadas, gerenciamento de tempo e um mercado interno, o aplicativo se posicionará como uma solução inovadora e completa para as necessidades do meio acadêmico. Espera-se que essa integração de ferramentas melhore o desempenho e o engajamento dos estudantes, além de fomentar a colaboração e o compartilhamento de conhecimento entre os usuários.
+
+- O desenvolvimento deste aplicativo visa atender às demandas do público acadêmico, oferecendo uma plataforma que integre eficientemente as principais estratégias de estudo e aprendizado.
 
 ## Objetivo Geral
 
