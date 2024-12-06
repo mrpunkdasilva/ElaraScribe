@@ -6,6 +6,7 @@
                  name="Flash Pomo - Home"
                  start-page="starter.md">
 
+    <toc-element topic="Capa.md"/>
     <toc-element topic="Sumario.md"/>
     <toc-element topic="starter.md">
     </toc-element>
