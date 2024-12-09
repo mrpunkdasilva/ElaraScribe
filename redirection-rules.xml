@@ -10,4 +10,57 @@
         <description><![CDATA[Created after removal of "<Análise-de-Mercado.md>" from Flash Pomo - Home]]></description>
         <accepts>Análise-de-Mercado.html</accepts>
     </rule>
+    <rule id="377eb300">
+        <description>Created after removal of "Relatório de Desenvolvimento de Software" from Flash Pomo - Home
+        </description>
+        <accepts>Capa.html</accepts>
+    </rule>
+    <rule id="6bba92cf">
+        <description>Created after removal of "Sumario" from Flash Pomo - Home</description>
+        <accepts>Sumario.html</accepts>
+    </rule>
+    <rule id="18125b64">
+        <description><![CDATA[Created after removal of "<Projeto.md>" from Flash Pomo - Home]]></description>
+        <accepts>Projeto.html</accepts>
+    </rule>
+    <rule id="23feaf5">
+        <description>Created after removal of "Mercado" from Flash Pomo - Home</description>
+        <accepts>Mercado.html</accepts>
+    </rule>
+    <rule id="f85deed">
+        <description>Created after removal of "Diagrama de Casos de Uso" from Flash Pomo - Home</description>
+        <accepts>Diagrama-de-Casos-de-Uso.html</accepts>
+    </rule>
+    <rule id="66d17486">
+        <description><![CDATA[Created after removal of "<Casos-de-Uso.md>" from Flash Pomo - Home]]></description>
+        <accepts>Casos-de-Uso.html</accepts>
+    </rule>
+    <rule id="10a0b3ad">
+        <description>
+            <![CDATA[Created after removal of "<Diagrama-de-Sequencia.md>" from Flash Pomo - Home]]></description>
+        <accepts>Diagrama-de-Sequencia.html</accepts>
+    </rule>
+    <rule id="4beb9152">
+        <description>
+            <![CDATA[Created after removal of "<Wireframe-ou-Prótotipo.md>" from Flash Pomo - Home]]></description>
+        <accepts>Wireframe-ou-Prótotipo.html</accepts>
+    </rule>
+    <rule id="4481882f">
+        <description><![CDATA[Created after removal of "<Modelagem-De-Dados.md>" from Flash Pomo - Home]]></description>
+        <accepts>Modelagem-De-Dados.html</accepts>
+    </rule>
+    <rule id="61066303">
+        <description><![CDATA[Created after removal of "<UML.md>" from Flash Pomo - Home]]></description>
+        <accepts>UML.html</accepts>
+    </rule>
+    <rule id="413210c4">
+        <description>
+            <![CDATA[Created after removal of "<Arquitetura-de-Informação.md>" from Flash Pomo - Home]]></description>
+        <accepts>Arquitetura-de-Informação.html</accepts>
+    </rule>
+    <rule id="40bd8812">
+        <description>
+            <![CDATA[Created after removal of "<Engenharia-de-Requisitos.md>" from Flash Pomo - Home]]></description>
+        <accepts>Engenharia-de-Requisitos.html</accepts>
+    </rule>
 </rules>

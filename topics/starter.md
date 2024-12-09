@@ -10,7 +10,7 @@ negociar seus flashcards usando uma moeda própria da aplicação. Essa integra�
 proporciona um ambiente de aprendizado dinâmico e interativo, favorecendo o desenvolvimento
 acadêmico e a troca de conhecimento entre os usuários.
 
-## Objetivos
+## Objetivo do Relatório
 O objetivo deste relatório é documentar a criação, o desenvolvimento e o funcionamento de
 um software voltado para o contexto acadêmico, abrangendo suas etapas de concepção,
 implementação, modelagem e sua aplicabilidade no ambiente de estudos.

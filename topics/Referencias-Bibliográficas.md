@@ -1,5 +1,16 @@
 # Referencias Bibliográficas
 
+Start typing here...
+
+- OMG. (2017). OMG Unified Modeling Language (OMG UML), Version 2.5.1. Object Management Group. [https://www.omg.org/spec/UML/2.5.1/](https://www.omg.org/spec/UML/2.5.1/)
+- IEEE. (2011). IEEE Recommended Practice for Architectural Description of Software-Intensive Systems (IEEE Std 1471-2000).
+- Kruchten, P. (2004). The Rational Unified Process: An Introduction (3rd ed.). Addison-Wesley Professional.
+- Krug, S. (2014). Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability (3rd ed.). New Riders.
+- McConnell, S. (1996). Rapid Development: Taming Wild Software Schedules. Microsoft Press.
+- Rozanski, N., & Woods, E. (2011). Software Systems Architecture: Working with Stakeholders Using Viewpoints and Perspectives (2nd ed.). Addison-Wesley Professional.
+- Rosenfeld, L., & Morville, P. (2015). Information Architecture for the World Wide Web (4th ed.). O'Reilly Media.
+- Pressman, R. S. (2010). Software Engineering: A Practitioner's Approach (7th ed.). McGraw-Hill.
+- Asana. (2024). Business Requirements Document Template: 7 Components. Recuperado de [https://asana.com/resources/business-requirements-document-template](https://asana.com/resources/business-requirements-document-template)
 - Mozilla Developer Network. [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) e [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
 - Spring Team. [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/).
 - W3schools Java. [Java Tutorial](https://www.w3schools.com/java/)
