@@ -63,4 +63,132 @@
             <![CDATA[Created after removal of "<Engenharia-de-Requisitos.md>" from Flash Pomo - Home]]></description>
         <accepts>Engenharia-de-Requisitos.html</accepts>
     </rule>
+    <rule id="32b22f2c">
+        <description>Created after removal of "Schemas" from Flash Pomo - Home</description>
+        <accepts>Schemas.html</accepts>
+    </rule>
+    <rule id="7c10f9cd">
+        <description>Created after removal of "Ensemble" from Flash Pomo - Home</description>
+        <accepts>Ensemble.html</accepts>
+    </rule>
+    <rule id="5c9e673b">
+        <description>Created after removal of "User" from Flash Pomo - Home</description>
+        <accepts>User.html</accepts>
+    </rule>
+    <rule id="22393173">
+        <description>Created after removal of "GET ensemble/" from Flash Pomo - Home</description>
+        <accepts>GET_ensemble.html</accepts>
+    </rule>
+    <rule id="1bddf051">
+        <description>Created after removal of "API Reference" from Flash Pomo - Home</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="11e78cc2">
+        <description>Created after removal of "Schemas" from Flash Pomo - Home</description>
+        <accepts>Schemas2.html</accepts>
+    </rule>
+    <rule id="5aa2e1ca">
+        <description>Created after removal of "PurchaseRequestDTO" from Flash Pomo - Home</description>
+        <accepts>PurchaseRequestDTO.html</accepts>
+    </rule>
+    <rule id="1d5debd8">
+        <description>Created after removal of "PomodoroStoryRequestDTO" from Flash Pomo - Home</description>
+        <accepts>PomodoroStoryRequestDTO.html</accepts>
+    </rule>
+    <rule id="66290c2f">
+        <description>Created after removal of "FavoriteRequestDTO" from Flash Pomo - Home</description>
+        <accepts>FavoriteRequestDTO.html</accepts>
+    </rule>
+    <rule id="5045eb9e">
+        <description>Created after removal of "BoxRequestDTO" from Flash Pomo - Home</description>
+        <accepts>BoxRequestDTO.html</accepts>
+    </rule>
+    <rule id="511bb9be">
+        <description>Created after removal of "GetByIdResponse" from Flash Pomo - Home</description>
+        <accepts>GetByIdResponse.html</accepts>
+    </rule>
+    <rule id="517568d3">
+        <description>Created after removal of "ResponseCommonDTO" from Flash Pomo - Home</description>
+        <accepts>ResponseCommonDTO.html</accepts>
+    </rule>
+    <rule id="bb335d8">
+        <description>Created after removal of "ResponseUserEditDTO" from Flash Pomo - Home</description>
+        <accepts>ResponseUserEditDTO.html</accepts>
+    </rule>
+    <rule id="39f55910">
+        <description>Created after removal of "UserEditRequestDTO" from Flash Pomo - Home</description>
+        <accepts>UserEditRequestDTO.html</accepts>
+    </rule>
+    <rule id="63273f0e">
+        <description>Created after removal of "Flashcard" from Flash Pomo - Home</description>
+        <accepts>Flashcard.html</accepts>
+    </rule>
+    <rule id="569ac808">
+        <description>Created after removal of "FlashcardRequestDTO" from Flash Pomo - Home</description>
+        <accepts>FlashcardRequestDTO.html</accepts>
+    </rule>
+    <rule id="7e37be21">
+        <description>Created after removal of "FlashcardRequestEditDTO" from Flash Pomo - Home</description>
+        <accepts>FlashcardRequestEditDTO.html</accepts>
+    </rule>
+    <rule id="7e9740e3">
+        <description>Created after removal of "Ensemble" from Flash Pomo - Home</description>
+        <accepts>Ensemble2.html</accepts>
+    </rule>
+    <rule id="4445bb11">
+        <description>Created after removal of "User" from Flash Pomo - Home</description>
+        <accepts>User2.html</accepts>
+    </rule>
+    <rule id="1950baa4">
+        <description>Created after removal of "EnsembleRequestDTO" from Flash Pomo - Home</description>
+        <accepts>EnsembleRequestDTO.html</accepts>
+    </rule>
+    <rule id="3b69d52">
+        <description>Created after removal of "RegisterRequestDTO" from Flash Pomo - Home</description>
+        <accepts>RegisterRequestDTO.html</accepts>
+    </rule>
+    <rule id="a499678">
+        <description>Created after removal of "ResponseEntity" from Flash Pomo - Home</description>
+        <accepts>ResponseEntity.html</accepts>
+    </rule>
+    <rule id="599f348a">
+        <description>Created after removal of "HttpHeaders" from Flash Pomo - Home</description>
+        <accepts>HttpHeaders.html</accepts>
+    </rule>
+    <rule id="b55f8f6">
+        <description>Created after removal of "LoginRequestDTO" from Flash Pomo - Home</description>
+        <accepts>LoginRequestDTO.html</accepts>
+    </rule>
+    <rule id="7ecad888">
+        <description>Created after removal of "API Reference" from Flash Pomo - Home</description>
+        <accepts>API_Reference2.html</accepts>
+    </rule>
+    <rule id="af80b4">
+        <description>Created after removal of "ResponseUserEditDTO" from Flash Pomo - Home</description>
+        <accepts>ResponseUserEditDTO2.html</accepts>
+    </rule>
+    <rule id="5bb36a18">
+        <description>Created after removal of "UserEditRequestDTO" from Flash Pomo - Home</description>
+        <accepts>UserEditRequestDTO2.html</accepts>
+    </rule>
+    <rule id="1b40687d">
+        <description>Created after removal of "FlashcardRequestDTO" from Flash Pomo - Home</description>
+        <accepts>FlashcardRequestDTO2.html</accepts>
+    </rule>
+    <rule id="1eb9fd2e">
+        <description>Created after removal of "FlashcardRequestEditDTO" from Flash Pomo - Home</description>
+        <accepts>FlashcardRequestEditDTO2.html</accepts>
+    </rule>
+    <rule id="6f43956e">
+        <description>Created after removal of "EnsembleRequestDTO" from Flash Pomo - Home</description>
+        <accepts>EnsembleRequestDTO2.html</accepts>
+    </rule>
+    <rule id="71a05c61">
+        <description>Created after removal of "LoginRequestDTO" from Flash Pomo - Home</description>
+        <accepts>LoginRequestDTO2.html</accepts>
+    </rule>
+    <rule id="2c05ac36">
+        <description>Created after removal of "HttpHeaders" from Flash Pomo - Home</description>
+        <accepts>HttpHeaders2.html</accepts>
+    </rule>
 </rules>

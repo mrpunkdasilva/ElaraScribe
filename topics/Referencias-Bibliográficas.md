@@ -1,7 +1,5 @@
 # Referencias Bibliográficas
 
-Start typing here...
-
 - OMG. (2017). OMG Unified Modeling Language (OMG UML), Version 2.5.1. Object Management Group. [https://www.omg.org/spec/UML/2.5.1/](https://www.omg.org/spec/UML/2.5.1/)
 - Asana. (2024). Business Requirements Document Template: 7 Components. Recuperado de [https://asana.com/resources/business-requirements-document-template](https://asana.com/resources/business-requirements-document-template)
 - Mozilla Developer Network. [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) e [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).

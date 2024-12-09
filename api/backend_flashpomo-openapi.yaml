@@ -1,0 +1,900 @@
+openapi: "3.1.0"
+info:
+  title: "Flash Pomo API"
+  description: "Flash Pomo API"
+  version: "1.0.0"
+servers:
+  - url: "https://backend_flashpomo"
+paths:
+  /auth/login:
+    post:
+      summary: "POST auth/login"
+      operationId: "login"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /auth/register:
+    post:
+      summary: "POST auth/register"
+      operationId: "register"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /ensemble/{ensembleId}:
+    put:
+      summary: "PUT ensemble/{ensembleId}"
+      operationId: "updateEnsemble"
+      parameters:
+        - name: "ensembleId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EnsembleRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    delete:
+      summary: "DELETE ensemble/{ensembleId}"
+      operationId: "deleteEnsemble"
+      parameters:
+        - name: "ensembleId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET ensemble/{ensembleId}"
+      operationId: "getEnsembleById"
+      parameters:
+        - name: "ensembleId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /ensemble/:
+    post:
+      summary: "POST ensemble/"
+      operationId: "createEnsemble"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EnsembleRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET ensemble/"
+      operationId: "getAllEnsembles"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Ensemble"
+  /flashcard/{flashcardId}:
+    put:
+      summary: "PUT flashcard/{flashcardId}"
+      operationId: "updateFlashcard"
+      parameters:
+        - name: "flashcardId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FlashcardRequestEditDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    delete:
+      summary: "DELETE flashcard/{flashcardId}"
+      operationId: "deleteFlashcard"
+      parameters:
+        - name: "flashcardId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET flashcard/{flashcardId}"
+      operationId: "getFlashcardById"
+      parameters:
+        - name: "flashcardId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /flashcard/:
+    post:
+      summary: "POST flashcard/"
+      operationId: "createFlashcard"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FlashcardRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET flashcard/"
+      operationId: "getAllFlashcards"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Flashcard"
+  /flashcard/ensemble/{ensemble}:
+    get:
+      summary: "GET flashcard/ensemble/{ensemble}"
+      operationId: "getEnsembleById"
+      parameters:
+        - name: "ensemble"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int32"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Flashcard"
+  /user/{userId}:
+    put:
+      summary: "PUT user/{userId}"
+      operationId: "editUser"
+      parameters:
+        - name: "userId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserEditRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseUserEditDTO"
+    delete:
+      summary: "DELETE user/{userId}"
+      operationId: "deleteUser"
+      parameters:
+        - name: "userId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseCommonDTO"
+    get:
+      summary: "GET user/{userId}"
+      operationId: "getById"
+      parameters:
+        - name: "userId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/GetByIdResponse"
+  /user:
+    get:
+      summary: "GET user"
+      operationId: "getUser"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/User"
+  /box/{favoriteId}:
+    put:
+      summary: "PUT box/{favoriteId}"
+      operationId: "updateBox"
+      parameters:
+        - name: "favoriteId"
+          in: "path"
+          required: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BoxRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    delete:
+      summary: "DELETE box/{favoriteId}"
+      operationId: "deleteBox"
+      parameters:
+        - name: "favoriteId"
+          in: "path"
+          required: false
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /box/:
+    post:
+      summary: "POST box/"
+      operationId: "createBox"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BoxRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET box/"
+      operationId: "getAllBoxes"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /box/{boxId}:
+    get:
+      summary: "GET box/{boxId}"
+      operationId: "getBoxById"
+      parameters:
+        - name: "boxId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /favorite/{favoriteId}:
+    put:
+      summary: "PUT favorite/{favoriteId}"
+      operationId: "updateFavorite"
+      parameters:
+        - name: "favoriteId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FavoriteRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    delete:
+      summary: "DELETE favorite/{favoriteId}"
+      operationId: "deleteFavorite"
+      parameters:
+        - name: "favoriteId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET favorite/{favoriteId}"
+      operationId: "getFavoriteById"
+      parameters:
+        - name: "favoriteId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /favorite/:
+    post:
+      summary: "POST favorite/"
+      operationId: "createFavorite"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FavoriteRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET favorite/"
+      operationId: "getAllFavorites"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /pomodoro-story/{pomodoroStoryId}:
+    put:
+      summary: "PUT pomodoro-story/{pomodoroStoryId}"
+      operationId: "updatePomodoroStory"
+      parameters:
+        - name: "pomodoroStoryId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PomodoroStoryRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    post:
+      summary: "POST pomodoro-story/{pomodoroStoryId}"
+      operationId: "createPomodoroStory"
+      parameters:
+        - name: "pomodoroStoryId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PomodoroStoryRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET pomodoro-story/{pomodoroStoryId}"
+      operationId: "getPomodoroStoryById"
+      parameters:
+        - name: "pomodoroStoryId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /pomodoro-story/:
+    get:
+      summary: "GET pomodoro-story/"
+      operationId: "getAllPomodoroStories"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /purchase/{purchaseId}:
+    put:
+      summary: "PUT purchase/{purchaseId}"
+      operationId: "updatePurchase"
+      parameters:
+        - name: "purchaseId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PurchaseRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    post:
+      summary: "POST purchase/{purchaseId}"
+      operationId: "createPurchase"
+      parameters:
+        - name: "purchaseId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PurchaseRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    delete:
+      summary: "DELETE purchase/{purchaseId}"
+      operationId: "deletePurchase"
+      parameters:
+        - name: "purchaseId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "GET purchase/{purchaseId}"
+      operationId: "getPurchaseById"
+      parameters:
+        - name: "purchaseId"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /purchase/:
+    get:
+      summary: "GET purchase/"
+      operationId: "getAllPurchases"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+components:
+  schemas:
+    LoginRequestDTO:
+      type: "object"
+      properties:
+        email:
+          type: "string"
+        password:
+          type: "string"
+    HttpHeaders:
+      type: "object"
+      properties: { }
+    ResponseEntity:
+      type: "object"
+      properties:
+        headers:
+          $ref: "#/components/schemas/HttpHeaders"
+      required:
+        - "headers"
+    RegisterRequestDTO:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        email:
+          type: "string"
+        password:
+          type: "string"
+        avatar:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        createdAt:
+          type: "string"
+        status:
+          type: "boolean"
+        role:
+          type: "string"
+    EnsembleRequestDTO:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        description:
+          type: "string"
+        userId:
+          type: "integer"
+          format: "int32"
+    User:
+      type: "object"
+      properties:
+        userId:
+          type: "integer"
+          format: "int32"
+        name:
+          type: "string"
+        password:
+          type: "string"
+        email:
+          type: "string"
+        role:
+          type: "string"
+        avatar:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        createdAt:
+          type: "string"
+        updatedAt:
+          type: "string"
+        status:
+          type: "boolean"
+    Ensemble:
+      type: "object"
+      properties:
+        id:
+          type: "integer"
+          format: "int32"
+        name:
+          type: "string"
+        description:
+          type: "string"
+        cover:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        user:
+          $ref: "#/components/schemas/User"
+        status:
+          type: "boolean"
+    FlashcardRequestEditDTO:
+      type: "object"
+      properties:
+        title:
+          type: "string"
+        content:
+          type: "string"
+        createdAt:
+          type: "string"
+        updatedAt:
+          type: "string"
+        ensembleId:
+          type: "integer"
+          format: "int32"
+        status:
+          type: "boolean"
+    FlashcardRequestDTO:
+      type: "object"
+      properties:
+        title:
+          type: "string"
+        content:
+          type: "string"
+        createdAt:
+          type: "string"
+        updatedAt:
+          type: "string"
+        ensembleId:
+          type: "integer"
+          format: "int32"
+    Flashcard:
+      type: "object"
+      properties:
+        flashcardId:
+          type: "integer"
+          format: "int32"
+        title:
+          type: "string"
+        content:
+          type: "string"
+        createdAt:
+          type: "string"
+        updatedAt:
+          type: "string"
+        ensemble:
+          $ref: "#/components/schemas/Ensemble"
+        status:
+          type: "boolean"
+    UserEditRequestDTO:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        email:
+          type: "string"
+        avatar:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        password:
+          type: "string"
+        role:
+          type: "string"
+        updatedAt:
+          type: "string"
+    ResponseUserEditDTO:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        email:
+          type: "string"
+        password:
+          type: "string"
+        avatar:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        role:
+          type: "string"
+    ResponseCommonDTO:
+      type: "object"
+      properties:
+        message:
+          type: "string"
+    GetByIdResponse:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        email:
+          type: "string"
+    BoxRequestDTO:
+      type: "object"
+      properties:
+        boxId:
+          type: "integer"
+          format: "int64"
+        price:
+          type: "integer"
+          format: "int32"
+        title:
+          type: "string"
+        cover:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        description:
+          type: "string"
+        status:
+          type: "boolean"
+        userId:
+          type: "integer"
+          format: "int32"
+    FavoriteRequestDTO:
+      type: "object"
+      properties:
+        farvoriteId:
+          type: "integer"
+          format: "int64"
+        favoritationDateTimestamp:
+          type: "string"
+        status:
+          type: "boolean"
+        userId:
+          type: "integer"
+          format: "int32"
+    PomodoroStoryRequestDTO:
+      type: "object"
+      properties:
+        pomodoroStoryId:
+          type: "integer"
+          format: "int64"
+        startDateTimestamp:
+          type: "string"
+        EndDateTimestamp:
+          type: "string"
+        userId:
+          type: "integer"
+          format: "int32"
+    PurchaseRequestDTO:
+      type: "object"
+      properties:
+        purchaseId:
+          type: "integer"
+          format: "int64"
+        email:
+          type: "string"
+        rule:
+          type: "string"
+        avatar:
+          type: "array"
+          items:
+            type: "string"
+            format: "byte"
+        purschaseDate:
+          type: "string"
+        status:
+          type: "string"
+        amount:
+          type: "integer"
+          format: "int32"
+        userId:
+          type: "integer"
+          format: "int32"
