@@ -101,11 +101,11 @@ O schema `ResponseUserEditDTO` é usado para representar a resposta após a atua
 
 ## Auth Schemas
 
+<api-schema openapi-path="../../api/backend_flashpomo-openapi.yaml" name="RegisterRequestDTO"/>
 O schema `RegisterRequestDTO` é utilizado para representar os dados necessários para o registro de um novo usuário.
 
-<api-schema openapi-path="../../api/backend_flashpomo-openapi.yaml" name="RegisterRequestDTO"/>
 <br/>
 
-O schema `LoginRequestDTO` é utilizado para representar os dados necessários para o login de um usuário.
-
 <api-schema openapi-path="../../api/backend_flashpomo-openapi.yaml" name="LoginRequestDTO"/>
+
+O schema `LoginRequestDTO` é utilizado para representar os dados necessários para o login de um usuário.

@@ -47,10 +47,11 @@ A arquitetura de informação (AI) para a documentação de software do nosso pr
 Essa estrutura de arquitetura de informação ajudará a garantir que a documentação do nosso projeto de software seja compreensível, acessível e eficaz para os desenvolvedores e outras partes interessadas.
 
 <br/>
+<br/>
 
 ### Wireframe
 
-> Link para o Figma do projeto: [Wireframe](https://www.figma.com/design/keAudUZHHInEkyf2bfl5ef/Flash-Pomo?node-id=0-1&t=EVf3oq7Mg9h7qvvg-1)
+> Link para o Figma do projeto: https://www.figma.com/design/keAudUZHHInEkyf2bfl5ef/Flash-Pomo?node-id=0-1&t=EVf3oq7Mg9h7qvvg-1
 
 
 <!-- Wireframes para a interface de cadastro -->
@@ -407,10 +408,14 @@ De acordo com a especificação da OMG, "a UML é uma linguagem de modelagem vis
 | **Pós-condições**     | Dados do usuário atualizados ou nova conta criada com sucesso.                                         |
 | **Fluxo de Exceção**  | 1. Se o e-mail já estiver em uso, o sistema exibe uma mensagem indicando erro e solicita a correção.<br/>2. Se informações obrigatórias não forem preenchidas, o sistema exibe uma mensagem indicando os campos pendentes.<br/>3. O sistema não executa a ação até que todos os erros sejam corrigidos. |
 
-![Gerenciar_Usuário](UC01.png)
+<br/>
+
+```mermaid
+```
 Imagem Caso de Uso UC01
 
 ---
+<br/>
 <br/>
 
 #### **UC02 - Autenticar Usuário**
@@ -430,6 +435,7 @@ Imagem Caso de Uso UC02
 
 ---
 <br/>
+<br/>
 
 #### **UC03 - Deslogar Usuário**
 
@@ -446,6 +452,7 @@ Imagem Caso de Uso UC03
 
 ---
 <br/>
+<br/>
 
 #### **UC04 - Gerenciamento de Pomodoro**
 
@@ -460,6 +467,7 @@ Imagem Caso de Uso UC03
 Imagem Caso de Uso UC04
 
 ---
+<br/>
 <br/>
 
 #### **UC05 - Gerenciar Relatório de Pomodoros**
@@ -477,6 +485,7 @@ Imagem Caso de Uso UC04
 Imagem Caso de Uso UC05
 
 ---
+<br/>
 <br/>
 
 #### **UC06 - Gerenciar Flashcards**
@@ -497,6 +506,7 @@ Imagem Caso de Uso UC06
 
 ---
 <br/>
+<br/>
 
 #### **UC07 - Gerenciar Histórico dos Flashcards**
 
@@ -514,6 +524,7 @@ Imagem Caso de Uso UC06
 Imagem Caso de Uso UC07
 
 ---
+<br/>
 <br/>
 
 
@@ -533,6 +544,7 @@ Imagem Caso de Uso UC08
 
 ---
 <br/>
+<br/>
 
 #### **UC09 - Gerenciar Conjuntos de Flashcards**
 
@@ -551,6 +563,7 @@ Imagem Caso de Uso UC09
 
 ---
 <br/>
+<br/>
 
 
 #### **UC10 - Comprar Flashcards**
@@ -567,6 +580,7 @@ Imagem Caso de Uso UC09
 Imagem Caso de Uso UC10
 
 ---
+<br/>
 <br/>
 
 
@@ -587,6 +601,7 @@ Imagem Caso de Uso UC11
 ---
 
 <br/>
+<br/>
 
 #### **UC12 - Vender Flashcards**
 
@@ -601,6 +616,7 @@ Imagem Caso de Uso UC11
 ![](UC12.png)
 Imagem Caso de Uso UC12
 
+<br/>
 <br/>
 
 ---
@@ -717,109 +733,761 @@ classDiagram
 
 ### Diagramas de Sequência
 
+<br/>
+
 #### Diagrama de Sequencia UC-01
 
 #### Criação da conta
 
-![Fluxo de Criação de Conta](UC-01 FluxoCriar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario as  Usuario
+    participant FrontEnd as FrontEnd
+    participant BackEnd as BackEnd
+    participant Database as Database
+
+    Usuario->>FrontEnd: Seleciona a opção "Criar conta"
+    FrontEnd->>Usuario: Exibe tela de cadastro
+    Usuario->>FrontEnd: Preenche as informações (nome, email, senha)
+    Usuario->>FrontEnd: Confirma a senha
+    Usuario->>FrontEnd: Aceita os termos de uso
+    FrontEnd->>BackEnd: Envia dados de cadastro
+    BackEnd->>Database: Valida se e-mail já está em uso
+    Database-->>BackEnd: Retorna resultado da validação
+    BackEnd->>FrontEnd: Valida os dados inseridos
+    alt Fluxo de Exceção - E-mail já em uso
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro e solicita correção
+    else Fluxo de Exceção - Informações obrigatórias não preenchidas
+        BackEnd->>FrontEnd: Envia mensagem de campos pendentes
+        FrontEnd->>Usuario: Exibe mensagem indicando os campos pendentes
+        FrontEnd->>BackEnd: Não envia dados até que os erros sejam corrigidos
+    else Fluxo Principal
+        Database->>BackEnd: Cria nova conta de usuário
+        BackEnd->>FrontEnd: Envia confirmação de conta criada
+        FrontEnd->>Usuario: Exibe mensagem de sucesso
+    end
+```
+
+<br/>
 
 #### Edição da conta
-![Fluxo de Edição de Conta](UC-01 FluxoEditar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd 
+    participant Database
+
+    Usuario->>FrontEnd: Seleciona a opção "Conta"
+    FrontEnd->>BackEnd: Solicita informações da conta
+    BackEnd->>Database: Busca dados da conta do usuário
+    Database-->>BackEnd: Retorna informações da conta
+    BackEnd->>FrontEnd: Envia informações da conta
+    FrontEnd->>Usuario: Mostra as informações da conta
+
+    Usuario->>FrontEnd: Seleciona a opção "Editar conta"
+    Usuario->>FrontEnd: Altera as informações permitidas (nome)
+    FrontEnd->>BackEnd: Envia dados atualizados da conta
+    BackEnd->>Database: Atualiza as informações da conta
+    alt Fluxo de Exceção - Informações inválidas
+        Database-->>BackEnd: Retorna erro de atualização
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro e solicita correção
+    else Fluxo Principal
+        Database-->>BackEnd: Confirma atualização
+        BackEnd->>FrontEnd: Envia confirmação de atualização
+        FrontEnd->>Usuario: Exibe mensagem de sucesso
+    end
+```
+
+<br/>
 
 #### Exclusão da conta
-![Fluxo de Exclusão de Conta](UC-01 FluxoExcluir.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant Database
+
+    Usuario->>FrontEnd: Seleciona a opção "Excluir conta"
+    FrontEnd->>Usuario: Exibe confirmação de exclusão
+    Usuario->>FrontEnd: Confirma a exclusão
+    FrontEnd->>BackEnd: Envia solicitação de exclusão de conta
+    BackEnd->>Database: Deleta a conta do usuário
+    alt Fluxo de Exceção - Falha na exclusão
+        Database-->>BackEnd: Retorna erro de exclusão
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro
+    else Fluxo Principal
+        Database-->>BackEnd: Confirma exclusão
+        BackEnd->>FrontEnd: Envia confirmação de exclusão
+        FrontEnd->>Usuario: Exibe mensagem de conta excluída
+    end
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-02
 
-###### Entrada no Sistema
-![Fluxo de Entrar do Sistema](UC-02 FluxoEntrar.png)
+#### Entrada no Sistema
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Acessa a página de login
+    FrontEnd->>Usuario: Exibe a página de login
+    Usuario->>FrontEnd: Preenche e-mail e senha
+    Usuario->>FrontEnd: Clica no botão "Entrar"
+    FrontEnd->>BackEnd: Envia requisição de login
+    BackEnd->>BancoDeDados: Verifica as credenciais
+    alt Credenciais válidas
+        BancoDeDados->>BackEnd: Retorna informações do usuário
+        BackEnd->>FrontEnd: Autentica o usuário
+        FrontEnd->>Usuario: Redireciona para a página inicial
+    else Credenciais inválidas
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro
+        Usuario->>FrontEnd: Tenta novamente o login
+    end
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-03
 
 #### Saida do Sistema
-![Fluxo de Saida do Sistema](UC-03 FluxoSair.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+
+    Usuario->>FrontEnd: Clica no botão "Sair"
+    FrontEnd->>Usuario: Exibe confirmação de logout
+    Usuario->>FrontEnd: Confirma o logout    
+    BackEnd->>FrontEnd: Finaliza a sessão do usuário
+    FrontEnd->>Usuario: Redireciona para a página de login
+```
+
+
+<br/>
+<br/>
+
 
 ### Diagrama de Sequencia : UC-04
 
 #### Ativação do Pomodoro
-![Fluxo de Ativação do Pomodoro](UC-04 FluxoAtivar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+
+    Usuario->>FrontEnd: Clica no botão "Iniciar Pomodoro"
+    FrontEnd->>BackEnd: Envia requisição de iniciar Pomodoro
+    BackEnd->>FrontEnd: Inicia o temporizador de 25 minutos
+    FrontEnd->>Usuario: Exibe a contagem regressiva
+    Usuario->>FrontEnd: Aguarda o término do temporizador
+    FrontEnd->>Usuario: Toca um sinal sonoro
+    FrontEnd->>Usuario: Exibe mensagem de intervalo de 5 minutos
+    Usuario->>FrontEnd: Aguarda o término do intervalo
+    FrontEnd->>Usuario: Toca um sinal sonoro
+    FrontEnd->>BackEnd: Envia requisição de retornar ao Pomodoro
+    BackEnd->>FrontEnd: Retorna ao modo de Pomodoro
+```
+
+<br/>
 
 #### Desativação do Pomodoro
-![Fluxo de Desativação do Pomodoro](UC-04 FluxoDesativar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+
+    Usuario->>FrontEnd: Clica no botão "Parar Pomodoro"
+    FrontEnd->>Usuario: Exibe confirmação de interrupção
+    Usuario->>FrontEnd: Confirma a interrupção
+    FrontEnd->>BackEnd: Envia requisição de parar Pomodoro
+    BackEnd->>FrontEnd: Interrompe o temporizador
+    FrontEnd->>Usuario: Exibe resumo da sessão de Pomodoro
+```
+
+<br/>
 
 #### Pausa do Pomodoro    
-![Fluxo de Pausa do Pomodoro](UC-04 FluxoPausar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+
+    Usuario->>FrontEnd: Clica no botão "Parar Pomodoro"
+    FrontEnd->>Usuario: Exibe confirmação de interrupção
+    Usuario->>FrontEnd: Confirma a interrupção
+    FrontEnd->>BackEnd: Envia requisição de parar Pomodoro
+    BackEnd->>FrontEnd: Interrompe o temporizador
+    FrontEnd->>Usuario: Exibe resumo da sessão de Pomodoro
+```
 
 ### Diagrama de Sequencia : UC-05
 
-###### Consulta do Relatórios 
-![Fluxo de Consulta dos Relatório dos Pomodoros](UC-05 FluxoConsultar.png)
+#### Consulta do Relatórios 
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Relatórios"
+    FrontEnd->>BackEnd: Envia requisição de obter relatórios
+    BackEnd->>BancoDeDados: Consulta os dados para os relatórios
+    BancoDeDados->>BackEnd: Retorna os dados dos relatórios
+    alt Dados encontrados
+        BackEnd->>FrontEnd: Envia os dados dos relatórios
+        FrontEnd->>Usuario: Exibe os relatórios
+    else Dados não encontrados
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro
+    end
+```
+
+<br/>
 
 #### Criação dos Relatórios
-![Fluxo de Criação do Relatório dos Pomodoros](UC-05 FluxoCriar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Clica em "Criar Relatório"
+    FrontEnd->>Usuario: Exibe o formulário de criação de relatório
+    Usuario->>FrontEnd: Preenche as informações do relatório
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de criar relatório
+    BackEnd->>BancoDeDados: Armazena as informações do relatório
+    alt Armazenamento bem-sucedido
+        BancoDeDados->>BackEnd: Confirma o armazenamento
+        BackEnd->>FrontEnd: Envia a confirmação de criação
+        FrontEnd->>Usuario: Exibe a confirmação de criação do relatório
+    else Armazenamento falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-06
 
 #### Criação dos Flashcards
-![Fluxo de Criação de Flashcards](UC-06 FluxoCriar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
 
-#### Edição dos Flashcards
+    Usuario->>FrontEnd: Clica em "Criar Flashcard"
+    FrontEnd->>Usuario: Exibe o formulário de criação de flashcard
+    Usuario->>FrontEnd: Preenche as informações do flashcard
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de criar flashcard
+    BackEnd->>BancoDeDados: Armazena as informações do flashcard
+    alt Armazenamento bem-sucedido
+        BancoDeDados->>BackEnd: Confirma o armazenamento
+        BackEnd->>FrontEnd: Envia a confirmação de criação
+        FrontEnd->>Usuario: Exibe a confirmação de criação do flashcard
+    else Armazenamento falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
 
-![Fluxo de Edição de Flashcards](UC-06 FluxoEditar.png)
+<br/>
+
+#### Consulta dos Flashcards
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Flashcards"
+    FrontEnd->>BackEnd: Envia requisição de obter flashcards
+    BackEnd->>BancoDeDados: Consulta os flashcards
+    alt Flashcards encontrados
+        BancoDeDados->>BackEnd: Retorna os flashcards
+        BackEnd->>FrontEnd: Envia os flashcards
+        FrontEnd->>Usuario: Exibe os flashcards
+    else Flashcards não encontrados
+        BancoDeDados->>BackEnd: Retorna mensagem de erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro
+    end
+```
+
+<br/>
 
 #### Exclusão dos Flashcards
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
 
-![Fluxo de Exclusão de Flashcards](UC-06 FluxoExcluir.png)
+    Usuario->>FrontEnd: Seleciona um flashcard para excluir
+    FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    Usuario->>FrontEnd: Confirma a exclusão
+    FrontEnd->>BackEnd: Envia a requisição de excluir o flashcard
+    BackEnd->>BancoDeDados: Deleta o flashcard
+    alt Exclusão bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a exclusão
+        BackEnd->>FrontEnd: Envia a confirmação de exclusão
+        FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    else Exclusão falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
+
+#### Edição dos Flashcards
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um flashcard para editar
+    FrontEnd->>Usuario: Exibe o formulário de edição do flashcard
+    Usuario->>FrontEnd: Modifica as informações do flashcard
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de atualizar o flashcard
+    BackEnd->>BancoDeDados: Atualiza as informações do flashcard
+    alt Atualização bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a atualização
+        BackEnd->>FrontEnd: Envia a confirmação de atualização
+        FrontEnd->>Usuario: Exibe a confirmação de atualização
+    else Atualização falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
+<br/>
 
 
 ### Diagrama de Sequencia : UC-07
 
-###### Remoção do Histórico dos Flashcards
-![Fluxo de Remoção de um Log do Histórico](UC-07 FluxoRemover.png)
+#### Remoção do Histórico dos Flashcards
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Histórico de Flashcards"
+    FrontEnd->>BackEnd: Envia requisição de obter o histórico de flashcards
+    BackEnd->>BancoDeDados: Consulta o histórico de flashcards
+    BancoDeDados->>BackEnd: Retorna o histórico de flashcards
+    BackEnd->>FrontEnd: Envia o histórico de flashcards
+    FrontEnd->>Usuario: Exibe o histórico de flashcards
+
+    Usuario->>FrontEnd: Seleciona a opção de "Limpar Histórico"
+    FrontEnd->>BackEnd: Envia requisição de remover o histórico de flashcards
+    BackEnd->>BancoDeDados: Deleta o histórico de flashcards
+    alt Remoção bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a remoção
+        BackEnd->>FrontEnd: Envia confirmação de remoção do histórico
+        FrontEnd->>Usuario: Exibe confirmação de remoção do histórico
+    else Remoção falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe mensagem de erro
+    end
+```
+
+<br/>
 
 #### Seleção de um Flashcard do Histórico 
-![Fluxo de Seleção de um Log do Histórico](UC-07 FluxoSelecionar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Histórico de Flashcards"
+    FrontEnd->>BackEnd: Envia requisição de obter o histórico de flashcards
+    BackEnd->>BancoDeDados: Consulta o histórico de flashcards
+    BancoDeDados->>BackEnd: Retorna o histórico de flashcards
+    BackEnd->>FrontEnd: Envia o histórico de flashcards
+    FrontEnd->>Usuario: Exibe o histórico de flashcards
+
+    Usuario->>FrontEnd: Seleciona um flashcard do histórico
+    FrontEnd->>BackEnd: Envia requisição de obter detalhes do flashcard
+    BackEnd->>BancoDeDados: Consulta os detalhes do flashcard
+    BancoDeDados->>BackEnd: Retorna os detalhes do flashcard
+    BackEnd->>FrontEnd: Envia os detalhes do flashcard
+    FrontEnd->>Usuario: Exibe os detalhes do flashcard selecionado
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-08
 
 #### Desfavoritar Flashcard dos Favoritos
-![Fluxo de Desfavoritar Flashcards](UC-08 FluxoDesfavoritar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um flashcard dos Favoritos
+    FrontEnd->>Usuario: Exibe a opção de "Desfavoritar"
+    Usuario->>FrontEnd: Seleciona a opção de "Desfavoritar"
+    FrontEnd->>BackEnd: Envia a requisição de desfavoritar o flashcard
+    BackEnd->>BancoDeDados: Atualiza o status do flashcard como não favorito
+    alt Desfavoritação bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a atualização
+        BackEnd->>FrontEnd: Envia a confirmação de desfavoritação
+        FrontEnd->>Usuario: Exibe a confirmação de desfavoritação
+    else Desfavoritação falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
 
 #### Favoritar Flashcard dos Favoritos
-![Fluxo de Favoritar Flashcards](UC-08 FluxoFavoritar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um flashcard que não está nos Favoritos
+    FrontEnd->>Usuario: Exibe a opção de "Favoritar"
+    Usuario->>FrontEnd: Seleciona a opção de "Favoritar"
+    FrontEnd->>BackEnd: Envia a requisição de favoritar o flashcard
+    BackEnd->>BancoDeDados: Atualiza o status do flashcard como favorito
+    alt Favoritação bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a atualização
+        BackEnd->>FrontEnd: Envia a confirmação de favoritação
+        FrontEnd->>Usuario: Exibe a confirmação de favoritação
+    else Favoritação falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-09
 
 #### 1 Tipo de Consulta dos Conjuntos
-![Fluxo de Consulta 1 de Conjuntos](UC-09 FluxoConsultar1.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Conjuntos"
+    FrontEnd->>BackEnd: Envia requisição de obter todos os conjuntos
+    BackEnd->>BancoDeDados: Consulta todos os conjuntos
+    BancoDeDados->>BackEnd: Retorna a lista de todos os conjuntos
+    BackEnd->>FrontEnd: Envia a lista de conjuntos
+    FrontEnd->>Usuario: Exibe a lista de conjuntos
+```
+
+<br/>
 
 #### 2 Tipo de Consulta dos Conjuntos
-![Fluxo de Consulta 2 de Conjuntos](UC-09 FluxoConsultar2.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um filtro para consultar conjuntos
+    FrontEnd->>BackEnd: Envia requisição de obter conjuntos filtrados
+    BackEnd->>BancoDeDados: Consulta os conjuntos com o filtro aplicado
+    BancoDeDados->>BackEnd: Retorna a lista de conjuntos filtrados
+    BackEnd->>FrontEnd: Envia a lista de conjuntos filtrados
+    FrontEnd->>Usuario: Exibe a lista de conjuntos filtrados
+```
+
+<br/>
 
 #### Criação dos Conjuntos
-![Fluxo de Criação de Conjuntos](UC-09 FluxoCriar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Clica em "Criar Conjunto"
+    FrontEnd->>Usuario: Exibe o formulário de criação de conjunto
+    Usuario->>FrontEnd: Preenche as informações do conjunto
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de criar conjunto
+    BackEnd->>BancoDeDados: Armazena as informações do conjunto
+    alt Criação bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a criação
+        BackEnd->>FrontEnd: Envia a confirmação de criação
+        FrontEnd->>Usuario: Exibe a confirmação de criação do conjunto
+    else Criação falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
 
 #### Edição dos Conjuntos
-![Fluxo de Edição de Conjuntos](UC-09 FluxoEditar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um conjunto para editar
+    FrontEnd->>BackEnd: Envia requisição de obter detalhes do conjunto
+    BackEnd->>BancoDeDados: Consulta os detalhes do conjunto
+    BancoDeDados->>BackEnd: Retorna os detalhes do conjunto
+    BackEnd->>FrontEnd: Envia os detalhes do conjunto
+    FrontEnd->>Usuario: Exibe o formulário de edição do conjunto
+
+    Usuario->>FrontEnd: Modifica as informações do conjunto
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de atualizar o conjunto
+    BackEnd->>BancoDeDados: Atualiza as informações do conjunto
+    alt Atualização bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a atualização
+        BackEnd->>FrontEnd: Envia a confirmação de atualização
+        FrontEnd->>Usuario: Exibe a confirmação de atualização
+    else Atualização falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
 
 #### Exclusão dos Conjuntos
-![Fluxo de Exclusão de Conjuntos](UC-09 FluxoExcluir.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona um conjunto para excluir
+    FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    Usuario->>FrontEnd: Confirma a exclusão
+    FrontEnd->>BackEnd: Envia a requisição de excluir o conjunto
+    BackEnd->>BancoDeDados: Deleta o conjunto
+    alt Exclusão bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a exclusão
+        BackEnd->>FrontEnd: Envia a confirmação de exclusão
+        FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    else Exclusão falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-10
-![Fluxo de Compra dos Flashcards](UC-10 FluxoComprar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Novo Flashcard"
+    FrontEnd->>Usuario: Exibe o formulário de criação de flashcard
+
+    Usuario->>FrontEnd: Preenche as informações do flashcard
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de criar novo flashcard
+    BackEnd->>BancoDeDados: Armazena as informações do novo flashcard
+    alt Criação bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a criação
+        BackEnd->>FrontEnd: Envia a confirmação de criação
+        FrontEnd->>Usuario: Exibe a confirmação de criação do flashcard
+    else Criação falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+
+    Usuario->>FrontEnd: Seleciona a opção de "Voltar"
+    FrontEnd->>Usuario: Retorna à tela anterior
+```
+
+<br/>
+<br/>
 
 ### Diagrama de Sequencia : UC-11
 
 #### Criação das Box Sells
-![Fluxo de Criação das Box Sells](UC-11 FluxoCriar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Nova Box Sell"
+    FrontEnd->>Usuario: Exibe o formulário de criação de Box Sell
+
+    Usuario->>FrontEnd: Preenche as informações da Box Sell
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de criar nova Box Sell
+    BackEnd->>BancoDeDados: Armazena as informações da nova Box Sell
+    alt Criação bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a criação
+        BackEnd->>FrontEnd: Envia a confirmação de criação
+        FrontEnd->>Usuario: Exibe a confirmação de criação da Box Sell
+    else Criação falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+
+    Usuario->>FrontEnd: Seleciona a opção de "Voltar"
+    FrontEnd->>Usuario: Retorna à tela anterior
+```
+
+<br/>
 
 #### Edição das Box Sells
-![Fluxo de Edição das Box Sells](UC-11 FluxoEditar.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona uma Box Sell para editar
+    FrontEnd->>BackEnd: Envia requisição de obter detalhes da Box Sell
+    BackEnd->>BancoDeDados: Consulta os detalhes da Box Sell
+    BancoDeDados->>BackEnd: Retorna os detalhes da Box Sell
+    BackEnd->>FrontEnd: Envia os detalhes da Box Sell
+    FrontEnd->>Usuario: Exibe o formulário de edição da Box Sell
+
+    Usuario->>FrontEnd: Modifica as informações da Box Sell
+    Usuario->>FrontEnd: Clica em "Salvar"
+    FrontEnd->>BackEnd: Envia a requisição de atualizar a Box Sell
+    BackEnd->>BancoDeDados: Atualiza as informações da Box Sell
+    alt Atualização bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a atualização
+        BackEnd->>FrontEnd: Envia a confirmação de atualização
+        FrontEnd->>Usuario: Exibe a confirmação de atualização
+    else Atualização falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+<br/>
 
 #### Exclusão das Box Sells
-![Fluxo de Exclusão das Box Sells](UC-11 FluxoExcluir.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona uma Box Sell para excluir
+    FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    Usuario->>FrontEnd: Confirma a exclusão
+    FrontEnd->>BackEnd: Envia a requisição de excluir a Box Sell
+    BackEnd->>BancoDeDados: Deleta a Box Sell
+    alt Exclusão bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a exclusão
+        BackEnd->>FrontEnd: Envia a confirmação de exclusão
+        FrontEnd->>Usuario: Exibe a confirmação de exclusão
+    else Exclusão falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
+
+
+<br/>
 
 ### Diagrama de Sequencia : UC-12
 
 #### Venda das Box Sells
-![Fluxo de Venda dos Flashcards](UC-12 FluxoVender.png)
+```mermaid
+sequenceDiagram
+    actor Usuario
+    participant FrontEnd
+    participant BackEnd
+    participant BancoDeDados
+
+    Usuario->>FrontEnd: Seleciona a opção de "Vender Box Sells"
+    FrontEnd->>BackEnd: Envia requisição de obter as Box Sells disponíveis
+    BackEnd->>BancoDeDados: Consulta as Box Sells disponíveis
+    BancoDeDados->>BackEnd: Retorna a lista de Box Sells disponíveis
+    BackEnd->>FrontEnd: Envia a lista de Box Sells disponíveis
+    FrontEnd->>Usuario: Exibe a lista de Box Sells disponíveis
+
+    Usuario->>FrontEnd: Seleciona as Box Sells a serem vendidas
+    Usuario->>FrontEnd: Clica em "Finalizar Venda"
+    FrontEnd->>BackEnd: Envia a requisição de registrar a venda
+    BackEnd->>BancoDeDados: Atualiza o status das Box Sells como vendidas
+    alt Venda bem-sucedida
+        BancoDeDados->>BackEnd: Confirma a venda
+        BackEnd->>FrontEnd: Envia a confirmação da venda
+        FrontEnd->>Usuario: Exibe a confirmação da venda
+    else Venda falhou
+        BancoDeDados->>BackEnd: Retorna erro
+        BackEnd->>FrontEnd: Envia mensagem de erro
+        FrontEnd->>Usuario: Exibe a mensagem de erro
+    end
+```
