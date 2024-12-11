@@ -44,145 +44,167 @@ Como afirma Pressman (2010), "a documentação técnica é a espinha dorsal da e
 ## Arquitetura de Informação
 A arquitetura de informação (AI) para a documentação de software do nosso projeto deve ser orientada a fornecer uma estrutura clara e intuitiva para organizar e disseminar o conhecimento técnico. Segundo Rosenfeld e Morville (2015), a AI "envolve a concepção da estrutura e da navegação de um espaço de informação para facilitar a execução de tarefas e o acesso ao conteúdo".
 
-Nesse contexto, a documentação técnica do nosso projeto pode ser estruturada da seguinte forma:
-
-1. Visão Geral do Sistema:
-   - Descrição de alto nível do sistema, suas funcionalidades e objetivos.
-   - Diagrama de Casos de Uso para representar as interações entre atores e o sistema.
-   - Citação: "A documentação de visão geral fornece uma compreensão comum do sistema, estabelecendo uma base para discussões e decisões posteriores" (IEEE, 2011).
-
-2. Documentação Arquitetural:
-   - Diagrama de Componentes para ilustrar a estrutura modular do sistema.
-   - Diagrama de Implantação para descrever a infraestrutura e a distribuição dos componentes.
-   - Citação: "A documentação arquitetural é essencial para entender o design e as decisões de alto nível que regem o sistema" (Rozanski e Woods, 2011).
-
-3. Documentação de Subsistemas e Módulos:
-   - Diagramas de Classe para detalhar as estruturas de dados e os relacionamentos.
-   - Diagramas de Sequência para explicar os principais fluxos de interação.
-   - Citação: "A documentação de subsistemas e módulos ajuda os desenvolvedores a compreender a implementação e as responsabilidades de cada componente" (Kruchten, 2004).
-
-4. Guias de Desenvolvimento e Implantação:
-   - Instruções passo a passo para configurar o ambiente de desenvolvimento.
-   - Procedimentos de construção, empacotamento e implantação do sistema.
-   - Citação: "A documentação de desenvolvimento e implantação é crucial para permitir que novos membros da equipe comecem a contribuir rapidamente" (McConnell, 1996).
-
-5. Referência de API e Bibliotecas:
-   - Documentação detalhada das interfaces de programação (APIs) e bibliotecas utilizadas.
-   - Exemplos de uso e padrões de interação.
-   - Citação: "A documentação de referência de API e bibliotecas facilita a integração e a reutilização de componentes em todo o sistema" (Krug, 2014).
-
 Essa estrutura de arquitetura de informação ajudará a garantir que a documentação do nosso projeto de software seja compreensível, acessível e eficaz para os desenvolvedores e outras partes interessadas.
 
 <br/>
 
 ### Wireframe
 
-![CADASTRO - 1 - USERNAME.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20USERNAME.svg)
+> Link para o Figma do projeto: [Wireframe](https://www.figma.com/design/keAudUZHHInEkyf2bfl5ef/Flash-Pomo?node-id=0-1&t=EVf3oq7Mg9h7qvvg-1)
+
+
+<!-- Wireframes para a interface de cadastro -->
+#### Wireframe de cadastro - Campo Username
+Este wireframe apresenta o campo para o usuário inserir seu nome de usuário no formulário de cadastro.
+
+![CADASTRO - 1 - USERNAME](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20USERNAME.svg)
 
 <br />
 
+#### Wireframe de cadastro - Campo Email
+Este wireframe mostra o campo onde o usuário insere seu email no formulário de cadastro.
 
-![CADASTRO - 1 - EMAIL.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20EMAIL.svg)
-
-<br />
-
-
-![CADASTRO - 1 - PASSWORD.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20PASSWORD.svg)
-<br />
-
-![CADASTRO - 1 - SIGN UP.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20SIGN%20UP.svg)
-
+![CADASTRO - 1 - EMAIL](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20EMAIL.svg)
 
 <br />
 
----
+#### Wireframe de cadastro - Campo Senha
+Este wireframe detalha o campo para o usuário criar sua senha no formulário de cadastro.
 
-![CADASTRO - 1 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20MOBILE.svg)
-
-
-<br />
-
-![CADASTRO - 2 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%202%20-%20MOBILE.svg)
-
+![CADASTRO - 1 - PASSWORD](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20PASSWORD.svg)
 
 <br />
 
-![CADASTRO - 3 - MOBILE.svg](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%203%20-%20MOBILE.svg)
+#### Wireframe de cadastro - Botão "Sign Up"
+Este wireframe apresenta o botão de confirmação para finalizar o cadastro do usuário.
 
+![CADASTRO - 1 - SIGN UP](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20SIGN%20UP.svg)
 
 <br />
 
 ---
 
-![LOGIN - 1 - DESKTOP.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20DESKTOP.svg)
+#### Wireframe de cadastro - Versão Mobile (Etapa 1)
+Este wireframe exibe o design para a primeira etapa do cadastro em dispositivos móveis.
 
-
-<br />
-![LOGIN - 1 - SECURITY.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20SECURITY.svg)
-
+![CADASTRO - 1 - MOBILE](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%201%20-%20MOBILE.svg)
 
 <br />
 
----
+#### Wireframe de cadastro - Versão Mobile (Etapa 2)
+Este wireframe exibe a segunda etapa do cadastro em dispositivos móveis.
 
-![LOGIN - 2 - MOBILE.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%202%20-%20MOBILE.svg)
-
-
-<br />
-
-![LOGIN - 3 - MOBILE.svg](../images/WIREFRAMES/LOGIN/LOGIN%20-%203%20-%20MOBILE.svg)
-
+![CADASTRO - 2 - MOBILE](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%202%20-%20MOBILE.svg)
 
 <br />
 
----
+#### Wireframe de cadastro - Versão Mobile (Etapa 3)
+Este wireframe mostra a terceira etapa do cadastro em dispositivos móveis.
 
-![INTERFACE - USER - DASHBOARD.svg](../images/WIREFRAMES/INTERFACE%20-%20USER%20-%20DASHBOARD.svg)
-
-
-
-<br />
-
-
-![DESKTOP - USER - BOX SHELL.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20BOX%20SHELL.svg)
-
-
-<br />
-
-![DESKTOP - USER - CONTACT US.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CONTACT%20US.svg)
-
-
-<br />
-
-![DESKTOP - USER - CREATING BOX SHELL.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CREATING%20BOX%20SHELL.svg)
-
-
-<br />
-
-![DESKTOP - USER - HELP.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20HELP.svg)
-
-
-<br />
-
-![DESKTOP - USER - USER PROFILE.svg](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20USER%20PROFILE.svg)
-
+![CADASTRO - 3 - MOBILE](../images/WIREFRAMES/CADASTRO/CADASTRO%20-%203%20-%20MOBILE.svg)
 
 <br />
 
 ---
 
-![INTERFACE BOX BUY.svg](../images/WIREFRAMES/INTERFACE%20BOX%20BUY.svg)
+<!-- Wireframes para a interface de login -->
+#### Wireframe de login - Versão Desktop (Página Inicial)
+Este wireframe apresenta a interface de login para usuários em dispositivos desktop.
 
-
-
-<br />
-
-![INTERFACE FAVORITE  ENSEMBLES.svg](../images/WIREFRAMES/INTERFACE%20FAVORITE%20%20ENSEMBLES.svg)
-
+![LOGIN - 1 - DESKTOP](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20DESKTOP.svg)
 
 <br />
 
-![INTERFACE STORY.svg](../images/WIREFRAMES/INTERFACE%20STORY.svg)
+#### Wireframe de login - Segurança
+Este wireframe destaca a funcionalidade de segurança na interface de login.
+
+![LOGIN - 1 - SECURITY](../images/WIREFRAMES/LOGIN/LOGIN%20-%201%20-%20SECURITY.svg)
+
+<br />
+
+---
+
+#### Wireframe de login - Versão Mobile (Etapa 1)
+Este wireframe ilustra a primeira etapa do login em dispositivos móveis.
+
+![LOGIN - 2 - MOBILE](../images/WIREFRAMES/LOGIN/LOGIN%20-%202%20-%20MOBILE.svg)
+
+<br />
+
+#### Wireframe de login - Versão Mobile (Etapa 2)
+Este wireframe apresenta a segunda etapa do login em dispositivos móveis.
+
+![LOGIN - 3 - MOBILE](../images/WIREFRAMES/LOGIN/LOGIN%20-%203%20-%20MOBILE.svg)
+
+<br />
+
+---
+
+<!-- Wireframes para a interface do usuário -->
+#### Wireframe da interface - Painel do Usuário
+Este wireframe apresenta o painel principal da interface do usuário.
+
+![INTERFACE - USER - DASHBOARD](../images/WIREFRAMES/INTERFACE%20-%20USER%20-%20DASHBOARD.svg)
+
+<br />
+
+#### Wireframe da interface - Caixa principal no desktop
+Este wireframe exibe o layout da caixa principal da interface para desktop.
+
+![DESKTOP - USER - BOX SHELL](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20BOX%20SHELL.svg)
+
+<br />
+
+#### Wireframe da interface - Página "Contato"
+Este wireframe ilustra a página de contato para suporte ao usuário.
+
+![DESKTOP - USER - CONTACT US](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CONTACT%20US.svg)
+
+<br />
+
+#### Wireframe da interface - Criando nova caixa
+Este wireframe apresenta a interface para criar uma nova caixa na plataforma.
+
+![DESKTOP - USER - CREATING BOX SHELL](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20CREATING%20BOX%20SHELL.svg)
+
+<br />
+
+#### Wireframe da interface - Página de Ajuda
+Este wireframe mostra a interface da página de ajuda ao usuário.
+
+![DESKTOP - USER - HELP](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20HELP.svg)
+
+<br />
+
+#### Wireframe da interface - Perfil do Usuário
+Este wireframe apresenta o layout da página de perfil do usuário.
+
+![DESKTOP - USER - USER PROFILE](../images/WIREFRAMES/DESKTOP%20-%20USER%20-%20USER%20PROFILE.svg)
+
+<br />
+
+---
+
+<!-- Outros wireframes -->
+#### Wireframe da interface - Compra de Caixa
+Este wireframe ilustra a interface de compra de caixas.
+
+![INTERFACE BOX BUY](../images/WIREFRAMES/INTERFACE%20BOX%20BUY.svg)
+
+<br />
+
+#### Wireframe da interface - Favoritos
+Este wireframe apresenta a seção de conjuntos favoritos do usuário.
+
+![INTERFACE FAVORITE  ENSEMBLES](../images/WIREFRAMES/INTERFACE%20FAVORITE%20%20ENSEMBLES.svg)
+
+<br />
+
+#### Wireframe da interface - Histórias
+Este wireframe detalha a seção de histórias na interface do usuário.
+
+![INTERFACE STORY](../images/WIREFRAMES/INTERFACE%20STORY.svg)
+
 
 <br />
 <br />
@@ -364,18 +386,6 @@ CREATE TABLE LOGIN_SESSION (
 ## UML
 
 A Unified Modeling Language (UML) é uma linguagem de modelagem visual padronizada amplamente utilizada na indústria de desenvolvimento de software. Conforme definido pela Object Management Group (OMG), "a UML fornece uma maneira padronizada de visualizar a estrutura e o comportamento de um sistema de software" (OMG, 2017).
-
-Os principais diagramas UML incluem:
-
-1. Diagrama de Casos de Uso (Use Case Diagram): Representa as principais funcionalidades do sistema e as interações entre os atores (usuários, sistemas externos, etc.) e o sistema.
-
-2. Diagrama de Classes (Class Diagram): Descreve a estrutura estática do sistema, mostrando as classes, seus atributos, métodos e os relacionamentos (herança, associação, composição, etc.) entre elas.
-
-3. Diagrama de Sequência (Sequence Diagram): Ilustra a sequência de interações entre objetos ao longo do tempo, capturando a dinâmica do sistema e a troca de mensagens entre eles.
-
-4. Diagrama de Atividades (Activity Diagram): Modela o fluxo de trabalho e as atividades envolvidas em um processo ou em um caso de uso, destacando a ordem e as condições de execução.
-
-Outros diagramas UML, como Diagrama de Pacotes, Diagrama de Componentes e Diagrama de Implantação, são utilizados para modelar diferentes aspectos do sistema, como sua organização modular, elementos de implementação e implantação.
 
 De acordo com a especificação da OMG, "a UML é uma linguagem de modelagem visual unificada que permite aos desenvolvedores especificar, visualizar, construir e documentar os artefatos de um sistema de software" (OMG, 2017).
 
@@ -591,6 +601,115 @@ Imagem Caso de Uso UC11
 ![](UC12.png)
 Imagem Caso de Uso UC12
 
+<br/>
+
+---
+### Diagrama de Classes
+O diagrama de classes representa a estrutura do sistema, detalhando as principais entidades e seus relacionamentos. Cada classe é projetada para capturar um conjunto de informações sobre um conceito específico, e os métodos listados permitem a manipulação e o acesso a esses dados.
+
+O diagrama de classes representa a estrutura do sistema, detalhando as principais entidades e seus relacionamentos. Cada classe é projetada para capturar um conjunto de informações sobre um conceito específico, e os métodos listados permitem a manipulação e o acesso a esses dados.
+
+- **Box**: Representa uma "caixa" no sistema, com atributos como preço, título, descrição e imagem de capa. Um usuário pode possuir várias caixas, e os métodos fornecem acesso e modificação dos atributos da classe, como `getPrice()`, `setPrice()`, `getTitle()`, entre outros.
+
+- **Ensemble**: Representa um "conjunto" com atributos como nome, descrição e imagem de capa. A classe tem métodos para acessar e modificar esses atributos e está associada a um único usuário, que pode possuir vários ensembles.
+
+- **PomodoroStory**: Reflete uma história de sessão Pomodoro, contendo os timestamps de início e fim. Um usuário pode realizar várias sessões Pomodoro, e os métodos `getStartDateTimestamp()` e `setStartDateTimestamp()` permitem acessar e definir esses valores.
+
+- **Purchase**: Relacionada às compras feitas pelos usuários, com informações sobre o valor, data e status da compra. A classe também permite acessar e modificar esses atributos, como `getAmount()`, `setAmount()`, `getStatus()`, e está associada a um único usuário.
+
+- **User**: Representa o usuário do sistema, com atributos como `userId`, `username` e `email`. Ele pode estar relacionado a várias instâncias das outras classes (Box, Ensemble, PomodoroStory e Purchase).
+
+**Relacionamentos**:
+
+- **Box** e **Ensemble** possuem um relacionamento de **muitos para um** com **User**, ou seja, um usuário pode ter várias caixas e ensembles.
+- **PomodoroStory** e **Purchase** também possuem um relacionamento de **muitos para um** com **User**, representando as sessões Pomodoro e as compras feitas por um usuário.
+
+```mermaid
+classDiagram
+    class Box {
+        +Integer boxId
+        +Integer price
+        +String title
+        +byte[] cover
+        +String description
+        +Boolean status
+        +getBoxId() Integer
+        +setBoxId(Integer)
+        +getPrice() Integer
+        +setPrice(Integer)
+        +getTitle() String
+        +setTitle(String)
+        +getCover() byte[]
+        +setCover(byte[])
+        +getDescription() String
+        +setDescription(String)
+        +getStatus() Boolean
+        +setStatus(Boolean)
+    }
+
+    class Ensemble {
+        +Integer id
+        +String name
+        +String description
+        +byte[] cover
+        +boolean status
+        +getId() Integer
+        +setId(Integer)
+        +getName() String
+        +setName(String)
+        +getDescription() String
+        +setDescription(String)
+        +getCover() byte[]
+        +setCover(byte[])
+        +getStatus() boolean
+        +setStatus(boolean)
+    }
+
+    class PomodoroStory {
+        +Integer pomodoroStoryId
+        +LocalDateTime startDateTimestamp
+        +LocalDateTime endDateTimestamp
+        +getPomodoroStoryId() Integer
+        +setPomodoroStoryId(Integer)
+        +getStartDateTimestamp() LocalDateTime
+        +setStartDateTimestamp(LocalDateTime)
+        +getEndDateTimestamp() LocalDateTime
+        +setEndDateTimestamp(LocalDateTime)
+    }
+
+    class Purchase {
+        +Integer purchaseId
+        +LocalDateTime purchaseDate
+        +String status
+        +Integer amount
+        +getPurchaseId() Integer
+        +setPurchaseId(Integer)
+        +getPurchaseDate() LocalDateTime
+        +setPurchaseDate(LocalDateTime)
+        +getStatus() String
+        +setStatus(String)
+        +getAmount() Integer
+        +setAmount(Integer)
+    }
+
+    class User {
+        +Integer userId
+        +String username
+        +String email
+        +getUserId() Integer
+        +setUserId(Integer)
+        +getUsername() String
+        +setUsername(String)
+        +getEmail() String
+        +setEmail(String)
+    }
+
+    Box --> "1" User : possui
+    Ensemble --> "1" User : possui
+    PomodoroStory --> "1" User : executa
+    Purchase --> "1" User : feito por
+```
+
 ---
 
 <br/>
@@ -598,7 +717,7 @@ Imagem Caso de Uso UC12
 
 ### Diagramas de Sequência
 
-#### Diagrama de Sequencia
+#### Diagrama de Sequencia UC-01
 
 #### Criação da conta
 

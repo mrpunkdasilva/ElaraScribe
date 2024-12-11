@@ -11,81 +11,33 @@
     <toc-element topic="BDR.md"/>
     <toc-element topic="Desenvolvimento.md">
         <toc-element topic="Processo-de-Desenvolvimento.md">
-            <toc-element topic="Daily-Meeting-Report.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Engenharia-de-Software.md">
     </toc-element>
-    <toc-element topic="Tecnologias-Utilizadas.md"/>
     <toc-element topic="Manual-do-Usuário.md"/>
     <toc-element topic="Mapa-do-Site.md"/>
     <toc-element topic="API_Reference3.md">
         <toc-element topic="Schemas3.md">
-            <toc-element topic="PurchaseRequestDTO2.md"/>
-            <toc-element topic="PomodoroStoryRequestDTO2.md"/>
-            <toc-element topic="FavoriteRequestDTO2.md"/>
-            <toc-element topic="BoxRequestDTO2.md"/>
-            <toc-element topic="GetByIdResponse2.md"/>
-            <toc-element topic="ResponseCommonDTO2.md"/>
-            <toc-element topic="Flashcard2.md"/>
-            <toc-element topic="Ensemble3.md"/>
-            <toc-element topic="User3.md"/>
-            <toc-element topic="RegisterRequestDTO2.md"/>
-            <toc-element topic="ResponseEntity2.md"/>
         </toc-element>
         <toc-element topic="Auth-Endpoints.md">
-            <toc-element topic="POST_auth_login.md"/>
-            <toc-element topic="POST_auth_register.md"/>
         </toc-element>
         <toc-element topic="User-Endpoints.md">
-            <toc-element topic="GET_user.md"/>
-            <toc-element topic="GET_user_userId_.md"/>
-            <toc-element topic="PUT_user_userId_.md"/>
-            <toc-element topic="DELETE_user_userId_.md"/>
         </toc-element>
         <toc-element topic="Ensemble-Endpoints.md">
-            <toc-element topic="GET_ensemble_ensembleId_.md"/>
-            <toc-element topic="PUT_ensemble_ensembleId_.md"/>
-            <toc-element topic="DELETE_ensemble_ensembleId_.md"/>
-            <toc-element topic="GET_ensemble2.md"/>
-            <toc-element topic="POST_ensemble.md"/>
         </toc-element>
         <toc-element topic="Flashcard-Enpoints.md">
-            <toc-element topic="GET_flashcard_flashcardId_.md"/>
-            <toc-element topic="PUT_flashcard_flashcardId_.md"/>
-            <toc-element topic="DELETE_flashcard_flashcardId_.md"/>
-            <toc-element topic="GET_flashcard.md"/>
-            <toc-element topic="POST_flashcard.md"/>
-            <toc-element topic="GET_flashcard_ensemble_ensemble_.md"/>
         </toc-element>
         <toc-element topic="PomodoroStory-Endpoints.md">
-            <toc-element topic="GET_pomodoro_story_pomodoroStoryId_.md"/>
-            <toc-element topic="PUT_pomodoro_story_pomodoroStoryId_.md"/>
-            <toc-element topic="POST_pomodoro_story_pomodoroStoryId_.md"/>
-            <toc-element topic="GET_pomodoro_story.md"/>
         </toc-element>
         <toc-element topic="Favorite-Endpoints.md">
-            <toc-element topic="GET_favorite_favoriteId_.md"/>
-            <toc-element topic="PUT_favorite_favoriteId_.md"/>
-            <toc-element topic="DELETE_favorite_favoriteId_.md"/>
-            <toc-element topic="GET_favorite.md"/>
-            <toc-element topic="POST_favorite.md"/>
         </toc-element>
         <toc-element topic="Box-Enpoints.md">
-            <toc-element topic="PUT_box_favoriteId_.md"/>
-            <toc-element topic="DELETE_box_favoriteId_.md"/>
-            <toc-element topic="GET_box.md"/>
-            <toc-element topic="POST_box.md"/>
-            <toc-element topic="GET_box_boxId_.md"/>
         </toc-element>
         <toc-element topic="Purchase-Endpoints.md">
-            <toc-element topic="GET_purchase_purchaseId_.md"/>
-            <toc-element topic="PUT_purchase_purchaseId_.md"/>
-            <toc-element topic="POST_purchase_purchaseId_.md"/>
-            <toc-element topic="DELETE_purchase_purchaseId_.md"/>
-            <toc-element topic="GET_purchase.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="Tecnologias-Utilizadas.md"/>
     <toc-element topic="Conclusão.md"/>
     <toc-element topic="Referencias-Bibliográficas.md"/>
 </instance-profile>
