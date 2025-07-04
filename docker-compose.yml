@@ -7,7 +7,7 @@ services:
       - .:/opt/sources
     environment:
       - SOURCE_DIR=/opt/sources
-      - MODULE_INSTANCE=ds/hi # Assuming 'ds' is your instance ID and 'hi' is the module ID
+      - MODULE_INSTANCE=ds/ds # Assuming 'ds' is your instance ID and 'ds' is the product ID
       - OUTPUT_DIR=/opt/sources/output
       - RUNNER=other
     # The command is handled by the entrypoint of the image
