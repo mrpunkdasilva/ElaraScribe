@@ -11,6 +11,8 @@
 
 This project provides a **Documentation Starter** as a foundation for creating clear, organized, and efficient documentation. The goal is to offer a solid structure for any project's documentation, making it easier to maintain, update, and collaborate across teams.
 
+Writerside Docs: https://www.jetbrains.com/help/writerside/getting-started.html
+
 ## 🌟 Overview
 
 The **Documentation Starter** is a pre-configured template that offers a consistent structure for creating technical documentation. It includes basic pages, topics, and structures that speed up the documentation process, ensuring that all documents follow a cohesive and professional format.
