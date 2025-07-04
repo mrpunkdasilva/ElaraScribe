@@ -1,6 +1,6 @@
-# The 4 Ps of Software Engineering
+# The 4P's of Software Engineering
 
-The "4 Ps" framework in software engineering provides a holistic view of the key elements involved in successful software development. These Ps are:
+The "4P's" framework in software engineering provides a holistic view of the key elements involved in successful software development. These Ps are:
 
 ```plantuml
 @startmindmap
