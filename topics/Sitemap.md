@@ -1,25 +1,27 @@
-# Mapa do Site
-A seção **Mapa do Site** apresenta uma visão estruturada das principais áreas e funcionalidades do site, organizada em formato de mapa mental. Este diagrama facilita a compreensão das seções e fluxos disponíveis, desde o cadastro e login até as funcionalidades específicas oferecidas ao usuário.
+# Sitemap
+
+The **Sitemap** section provides a structured overview of the main areas and functionalities of the application, organized in a mindmap format. This diagram facilitates understanding the available sections and flows, from user registration and login to the specific functionalities offered.
 
 ```mermaid
 mindmap
-  root((Site))
-    Cadastro
-      Username
-      Email
-      Password
-      Sign Up
-    Login
-      Username
-      Password
+  root((Application))
+    User Authentication
+      Registration
+        Username
+        Email
+        Password
+        Sign Up
       Login
-    Painel do Usuário
-    Funcionalidades
-      Contato
-      Ajuda
-      Perfil do Usuário
-    Funcionalidades Específicas
-      Compra de Caixas
-      Favoritos
-      Histórias
+        Username
+        Password
+        Login
+    User Dashboard
+    Core Features
+      Contact
+      Help
+      User Profile
+    Specific Functionalities
+      Feature A (e.g., Content Creation)
+      Feature B (e.g., Favorites Management)
+      Feature C (e.g., History/Activity Log)
 ```
