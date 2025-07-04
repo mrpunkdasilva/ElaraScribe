@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  writerside-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: writerside.sh build --input-dir=/app --output-dir=/app/output
