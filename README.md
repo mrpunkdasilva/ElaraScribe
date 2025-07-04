@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/logo.svg" alt="Documentation Starter Logo" width="150">
+</p>
+
 # 📚 Documentation Starter 🛠️
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -18,14 +22,31 @@ The project structure is organized as follows:
 ```
 /your-documentation-project
 │
-├── /cfg                 # Configuration files (e.g., build profiles, glossary, snippets)
-├── /images              # Images used in the documentation
+├── /api                 # OpenAPI/Swagger specification files
+├── /cfg                 # Configuration files (e.g., build profiles, glossary, snippets, custom CSS)
+│   └── custom.css
+├── /images              # Images used in the documentation (including logo.svg)
 ├── /topics              # Documentation topics and pages (Markdown or Semantic Markup)
+│   ├── API-Documentation.md
+│   ├── IA-Database-Design.md
+│   ├── IA-Wireframes-Prototypes.md
+│   ├── Software-Engineering-4Ps.md
+│   ├── Software-Engineering-Information-Architecture.md
+│   ├── Software-Engineering-Requirements.md
+│   ├── Software-Engineering-UML-Diagrams.md
+│   ├── UML-Activity-Diagrams.md
+│   ├── UML-Class-Diagrams.md
+│   ├── UML-Component-Diagrams.md
+│   ├── UML-Deployment-Diagrams.md
+│   ├── UML-Sequence-Diagrams.md
+│   └── UML-Use-Case-Diagrams.md
 ├── /output              # Generated documentation output (e.g., HTML, PDF)
 │
 ├── c.list               # Categories list
-├── [project-name].tree  # Tree structure for navigation (e.g., ds.tree)
+├── ds.tree              # Tree structure for navigation
+├── llms.txt             # LLM configuration file
 ├── README.md            # This file
+├── README.pt-br.md      # Portuguese README file
 ├── redirection-rules.xml # Redirection rules for old URLs
 ├── v.list               # Variables list
 └── writerside.cfg       # Writerside main configuration
