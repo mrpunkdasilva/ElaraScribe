@@ -16,7 +16,10 @@
     </toc-element>
     <toc-element topic="Software-Engineering.md">
         <toc-element topic="Software-Engineering-Requirements.md"/>
-        <toc-element topic="Software-Engineering-Information-Architecture.md"/>
+        <toc-element topic="Software-Engineering-Information-Architecture.md">
+            <toc-element topic="IA-Wireframes-Prototypes.md"/>
+            <toc-element topic="IA-Database-Design.md"/>
+        </toc-element>
         <toc-element topic="Software-Engineering-UML-Diagrams.md">
             <toc-element topic="UML-Use-Case-Diagrams.md"/>
             <toc-element topic="UML-Class-Diagrams.md"/>
