@@ -1,14 +1,14 @@
 openapi: "3.1.0"
 info:
-  title: "Flash Pomo API"
-  description: "Flash Pomo API"
+  title: "Generic API Documentation"
+  description: "A generic OpenAPI specification for a RESTful API."
   version: "1.0.0"
 servers:
-  - url: "https://backend_flashpomo"
+  - url: "https://api.example.com"
 paths:
   /auth/login:
     post:
-      summary: "POST auth/login"
+      summary: "Authenticate user"
       operationId: "login"
       requestBody:
         content:
@@ -25,7 +25,7 @@ paths:
                 $ref: "#/components/schemas/ResponseEntity"
   /auth/register:
     post:
-      summary: "POST auth/register"
+      summary: "Register new user"
       operationId: "register"
       requestBody:
         content:
@@ -40,12 +40,12 @@ paths:
             '*/*':
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
-  /ensemble/{ensembleId}:
+  /resourceA/{id}:
     put:
-      summary: "PUT ensemble/{ensembleId}"
-      operationId: "updateEnsemble"
+      summary: "Update Resource A by ID"
+      operationId: "updateResourceA"
       parameters:
-        - name: "ensembleId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -55,7 +55,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/EnsembleRequestDTO"
+              $ref: "#/components/schemas/ResourceARequestDTO"
         required: true
       responses:
         "200":
@@ -65,10 +65,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     delete:
-      summary: "DELETE ensemble/{ensembleId}"
-      operationId: "deleteEnsemble"
+      summary: "Delete Resource A by ID"
+      operationId: "deleteResourceA"
       parameters:
-        - name: "ensembleId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -82,10 +82,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET ensemble/{ensembleId}"
-      operationId: "getEnsembleById"
+      summary: "Get Resource A by ID"
+      operationId: "getResourceAById"
       parameters:
-        - name: "ensembleId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -97,16 +97,16 @@ paths:
           content:
             '*/*':
               schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /ensemble/:
+                $ref: "#/components/schemas/ResourceA"
+  /resourceA:
     post:
-      summary: "POST ensemble/"
-      operationId: "createEnsemble"
+      summary: "Create Resource A"
+      operationId: "createResourceA"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/EnsembleRequestDTO"
+              $ref: "#/components/schemas/ResourceARequestDTO"
         required: true
       responses:
         "200":
@@ -116,8 +116,8 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET ensemble/"
-      operationId: "getAllEnsembles"
+      summary: "Get all Resource A"
+      operationId: "getAllResourceA"
       responses:
         "200":
           description: "OK"
@@ -126,13 +126,13 @@ paths:
               schema:
                 type: "array"
                 items:
-                  $ref: "#/components/schemas/Ensemble"
-  /flashcard/{flashcardId}:
+                  $ref: "#/components/schemas/ResourceA"
+  /resourceB/{id}:
     put:
-      summary: "PUT flashcard/{flashcardId}"
-      operationId: "updateFlashcard"
+      summary: "Update Resource B by ID"
+      operationId: "updateResourceB"
       parameters:
-        - name: "flashcardId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -142,7 +142,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/FlashcardRequestEditDTO"
+              $ref: "#/components/schemas/ResourceBRequestDTO"
         required: true
       responses:
         "200":
@@ -152,10 +152,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     delete:
-      summary: "DELETE flashcard/{flashcardId}"
-      operationId: "deleteFlashcard"
+      summary: "Delete Resource B by ID"
+      operationId: "deleteResourceB"
       parameters:
-        - name: "flashcardId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -169,10 +169,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET flashcard/{flashcardId}"
-      operationId: "getFlashcardById"
+      summary: "Get Resource B by ID"
+      operationId: "getResourceBById"
       parameters:
-        - name: "flashcardId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -184,16 +184,16 @@ paths:
           content:
             '*/*':
               schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /flashcard/:
+                $ref: "#/components/schemas/ResourceB"
+  /resourceB:
     post:
-      summary: "POST flashcard/"
-      operationId: "createFlashcard"
+      summary: "Create Resource B"
+      operationId: "createResourceB"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/FlashcardRequestDTO"
+              $ref: "#/components/schemas/ResourceBRequestDTO"
         required: true
       responses:
         "200":
@@ -203,8 +203,8 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET flashcard/"
-      operationId: "getAllFlashcards"
+      summary: "Get all Resource B"
+      operationId: "getAllResourceB"
       responses:
         "200":
           description: "OK"
@@ -213,33 +213,13 @@ paths:
               schema:
                 type: "array"
                 items:
-                  $ref: "#/components/schemas/Flashcard"
-  /flashcard/ensemble/{ensemble}:
-    get:
-      summary: "GET flashcard/ensemble/{ensemble}"
-      operationId: "getEnsembleById"
-      parameters:
-        - name: "ensemble"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int32"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/Flashcard"
-  /user/{userId}:
+                  $ref: "#/components/schemas/ResourceB"
+  /resourceC/{id}:
     put:
-      summary: "PUT user/{userId}"
-      operationId: "editUser"
+      summary: "Update Resource C by ID"
+      operationId: "updateResourceC"
       parameters:
-        - name: "userId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -249,7 +229,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/UserEditRequestDTO"
+              $ref: "#/components/schemas/ResourceCRequestDTO"
         required: true
       responses:
         "200":
@@ -257,12 +237,12 @@ paths:
           content:
             '*/*':
               schema:
-                $ref: "#/components/schemas/ResponseUserEditDTO"
+                $ref: "#/components/schemas/ResponseResourceCUpdateDTO"
     delete:
-      summary: "DELETE user/{userId}"
-      operationId: "deleteUser"
+      summary: "Delete Resource C by ID"
+      operationId: "deleteResourceC"
       parameters:
-        - name: "userId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -276,10 +256,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseCommonDTO"
     get:
-      summary: "GET user/{userId}"
-      operationId: "getById"
+      summary: "Get Resource C by ID"
+      operationId: "getResourceCById"
       parameters:
-        - name: "userId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -291,11 +271,11 @@ paths:
           content:
             '*/*':
               schema:
-                $ref: "#/components/schemas/GetByIdResponse"
-  /user:
+                $ref: "#/components/schemas/GetResourceCByIdResponse"
+  /resourceC:
     get:
-      summary: "GET user"
-      operationId: "getUser"
+      summary: "Get all Resource C"
+      operationId: "getAllResourceC"
       responses:
         "200":
           description: "OK"
@@ -304,20 +284,23 @@ paths:
               schema:
                 type: "array"
                 items:
-                  $ref: "#/components/schemas/User"
-  /box/{favoriteId}:
+                  $ref: "#/components/schemas/ResourceC"
+  /resourceD/{id}:
     put:
-      summary: "PUT box/{favoriteId}"
-      operationId: "updateBox"
+      summary: "Update Resource D by ID"
+      operationId: "updateResourceD"
       parameters:
-        - name: "favoriteId"
+        - name: "id"
           in: "path"
-          required: false
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/BoxRequestDTO"
+              $ref: "#/components/schemas/ResourceDRequestDTO"
         required: true
       responses:
         "200":
@@ -327,12 +310,15 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     delete:
-      summary: "DELETE box/{favoriteId}"
-      operationId: "deleteBox"
+      summary: "Delete Resource D by ID"
+      operationId: "deleteResourceD"
       parameters:
-        - name: "favoriteId"
+        - name: "id"
           in: "path"
-          required: false
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
       responses:
         "200":
           description: "OK"
@@ -340,15 +326,32 @@ paths:
             '*/*':
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
-  /box/:
+    get:
+      summary: "Get Resource D by ID"
+      operationId: "getResourceDById"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /resourceD:
     post:
-      summary: "POST box/"
-      operationId: "createBox"
+      summary: "Create Resource D"
+      operationId: "createResourceD"
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/BoxRequestDTO"
+              $ref: "#/components/schemas/ResourceDRequestDTO"
         required: true
       responses:
         "200":
@@ -358,8 +361,8 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET box/"
-      operationId: "getAllBoxes"
+      summary: "Get all Resource D"
+      operationId: "getAllResourceD"
       responses:
         "200":
           description: "OK"
@@ -367,30 +370,12 @@ paths:
             '*/*':
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
-  /box/{boxId}:
-    get:
-      summary: "GET box/{boxId}"
-      operationId: "getBoxById"
-      parameters:
-        - name: "boxId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /favorite/{favoriteId}:
+  /resourceE/{id}:
     put:
-      summary: "PUT favorite/{favoriteId}"
-      operationId: "updateFavorite"
+      summary: "Update Resource E by ID"
+      operationId: "updateResourceE"
       parameters:
-        - name: "favoriteId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -400,7 +385,105 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/FavoriteRequestDTO"
+              $ref: "#/components/schemas/ResourceERequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    post:
+      summary: "Create Resource E by ID"
+      operationId: "createResourceE"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ResourceERequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    get:
+      summary: "Get Resource E by ID"
+      operationId: "getResourceEById"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /resourceE:
+    get:
+      summary: "Get all Resource E"
+      operationId: "getAllResourceE"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+  /resourceF/{id}:
+    put:
+      summary: "Update Resource F by ID"
+      operationId: "updateResourceF"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ResourceFRequestDTO"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/ResponseEntity"
+    post:
+      summary: "Create Resource F by ID"
+      operationId: "createResourceF"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "integer"
+            format: "int64"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ResourceFRequestDTO"
         required: true
       responses:
         "200":
@@ -410,10 +493,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     delete:
-      summary: "DELETE favorite/{favoriteId}"
-      operationId: "deleteFavorite"
+      summary: "Delete Resource F by ID"
+      operationId: "deleteResourceF"
       parameters:
-        - name: "favoriteId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -427,10 +510,10 @@ paths:
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
     get:
-      summary: "GET favorite/{favoriteId}"
-      operationId: "getFavoriteById"
+      summary: "Get Resource F by ID"
+      operationId: "getResourceFById"
       parameters:
-        - name: "favoriteId"
+        - name: "id"
           in: "path"
           required: true
           schema:
@@ -443,193 +526,10 @@ paths:
             '*/*':
               schema:
                 $ref: "#/components/schemas/ResponseEntity"
-  /favorite/:
-    post:
-      summary: "POST favorite/"
-      operationId: "createFavorite"
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/FavoriteRequestDTO"
-        required: true
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
+  /resourceF:
     get:
-      summary: "GET favorite/"
-      operationId: "getAllFavorites"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /pomodoro-story/{pomodoroStoryId}:
-    put:
-      summary: "PUT pomodoro-story/{pomodoroStoryId}"
-      operationId: "updatePomodoroStory"
-      parameters:
-        - name: "pomodoroStoryId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/PomodoroStoryRequestDTO"
-        required: true
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-    post:
-      summary: "POST pomodoro-story/{pomodoroStoryId}"
-      operationId: "createPomodoroStory"
-      parameters:
-        - name: "pomodoroStoryId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/PomodoroStoryRequestDTO"
-        required: true
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-    get:
-      summary: "GET pomodoro-story/{pomodoroStoryId}"
-      operationId: "getPomodoroStoryById"
-      parameters:
-        - name: "pomodoroStoryId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /pomodoro-story/:
-    get:
-      summary: "GET pomodoro-story/"
-      operationId: "getAllPomodoroStories"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /purchase/{purchaseId}:
-    put:
-      summary: "PUT purchase/{purchaseId}"
-      operationId: "updatePurchase"
-      parameters:
-        - name: "purchaseId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/PurchaseRequestDTO"
-        required: true
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-    post:
-      summary: "POST purchase/{purchaseId}"
-      operationId: "createPurchase"
-      parameters:
-        - name: "purchaseId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/PurchaseRequestDTO"
-        required: true
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-    delete:
-      summary: "DELETE purchase/{purchaseId}"
-      operationId: "deletePurchase"
-      parameters:
-        - name: "purchaseId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-    get:
-      summary: "GET purchase/{purchaseId}"
-      operationId: "getPurchaseById"
-      parameters:
-        - name: "purchaseId"
-          in: "path"
-          required: true
-          schema:
-            type: "integer"
-            format: "int64"
-      responses:
-        "200":
-          description: "OK"
-          content:
-            '*/*':
-              schema:
-                $ref: "#/components/schemas/ResponseEntity"
-  /purchase/:
-    get:
-      summary: "GET purchase/"
-      operationId: "getAllPurchases"
+      summary: "Get all Resource F"
+      operationId: "getAllResourceF"
       responses:
         "200":
           description: "OK"
@@ -642,7 +542,7 @@ components:
     LoginRequestDTO:
       type: "object"
       properties:
-        email:
+        username:
           type: "string"
         password:
           type: "string"
@@ -659,13 +559,13 @@ components:
     RegisterRequestDTO:
       type: "object"
       properties:
-        name:
+        username:
           type: "string"
         email:
           type: "string"
         password:
           type: "string"
-        avatar:
+        profileImage:
           type: "array"
           items:
             type: "string"
@@ -676,7 +576,7 @@ components:
           type: "boolean"
         role:
           type: "string"
-    EnsembleRequestDTO:
+    ResourceARequestDTO:
       type: "object"
       properties:
         name:
@@ -686,32 +586,7 @@ components:
         userId:
           type: "integer"
           format: "int32"
-    User:
-      type: "object"
-      properties:
-        userId:
-          type: "integer"
-          format: "int32"
-        name:
-          type: "string"
-        password:
-          type: "string"
-        email:
-          type: "string"
-        role:
-          type: "string"
-        avatar:
-          type: "array"
-          items:
-            type: "string"
-            format: "byte"
-        createdAt:
-          type: "string"
-        updatedAt:
-          type: "string"
-        status:
-          type: "boolean"
-    Ensemble:
+    ResourceA:
       type: "object"
       properties:
         id:
@@ -721,7 +596,7 @@ components:
           type: "string"
         description:
           type: "string"
-        cover:
+        coverImage:
           type: "array"
           items:
             type: "string"
@@ -730,7 +605,7 @@ components:
           $ref: "#/components/schemas/User"
         status:
           type: "boolean"
-    FlashcardRequestEditDTO:
+    ResourceBRequestDTO:
       type: "object"
       properties:
         title:
@@ -741,29 +616,15 @@ components:
           type: "string"
         updatedAt:
           type: "string"
-        ensembleId:
+        resourceAId:
           type: "integer"
           format: "int32"
         status:
           type: "boolean"
-    FlashcardRequestDTO:
+    ResourceB:
       type: "object"
       properties:
-        title:
-          type: "string"
-        content:
-          type: "string"
-        createdAt:
-          type: "string"
-        updatedAt:
-          type: "string"
-        ensembleId:
-          type: "integer"
-          format: "int32"
-    Flashcard:
-      type: "object"
-      properties:
-        flashcardId:
+        id:
           type: "integer"
           format: "int32"
         title:
@@ -774,18 +635,18 @@ components:
           type: "string"
         updatedAt:
           type: "string"
-        ensemble:
-          $ref: "#/components/schemas/Ensemble"
+        resourceA:
+          $ref: "#/components/schemas/ResourceA"
         status:
           type: "boolean"
-    UserEditRequestDTO:
+    ResourceCRequestDTO:
       type: "object"
       properties:
         name:
           type: "string"
         email:
           type: "string"
-        avatar:
+        profileImage:
           type: "array"
           items:
             type: "string"
@@ -796,7 +657,7 @@ components:
           type: "string"
         updatedAt:
           type: "string"
-    ResponseUserEditDTO:
+    ResponseResourceCUpdateDTO:
       type: "object"
       properties:
         name:
@@ -805,7 +666,7 @@ components:
           type: "string"
         password:
           type: "string"
-        avatar:
+        profileImage:
           type: "array"
           items:
             type: "string"
@@ -817,17 +678,17 @@ components:
       properties:
         message:
           type: "string"
-    GetByIdResponse:
+    GetResourceCByIdResponse:
       type: "object"
       properties:
         name:
           type: "string"
         email:
           type: "string"
-    BoxRequestDTO:
+    ResourceDRequestDTO:
       type: "object"
       properties:
-        boxId:
+        id:
           type: "integer"
           format: "int64"
         price:
@@ -835,7 +696,7 @@ components:
           format: "int32"
         title:
           type: "string"
-        cover:
+        coverImage:
           type: "array"
           items:
             type: "string"
@@ -847,54 +708,27 @@ components:
         userId:
           type: "integer"
           format: "int32"
-    FavoriteRequestDTO:
+    ResourceERequestDTO:
       type: "object"
       properties:
-        farvoriteId:
+        id:
           type: "integer"
           format: "int64"
-        favoritationDateTimestamp:
+        timestamp:
           type: "string"
         status:
           type: "boolean"
         userId:
           type: "integer"
           format: "int32"
-    PomodoroStoryRequestDTO:
+    ResourceFRequestDTO:
       type: "object"
       properties:
-        pomodoroStoryId:
+        id:
           type: "integer"
           format: "int64"
-        startDateTimestamp:
+        timestamp:
           type: "string"
-        EndDateTimestamp:
-          type: "string"
-        userId:
-          type: "integer"
-          format: "int32"
-    PurchaseRequestDTO:
-      type: "object"
-      properties:
-        purchaseId:
-          type: "integer"
-          format: "int64"
-        email:
-          type: "string"
-        rule:
-          type: "string"
-        avatar:
-          type: "array"
-          items:
-            type: "string"
-            format: "byte"
-        purschaseDate:
-          type: "string"
-        status:
-          type: "string"
-        amount:
-          type: "integer"
-          format: "int32"
         userId:
           type: "integer"
           format: "int32"
