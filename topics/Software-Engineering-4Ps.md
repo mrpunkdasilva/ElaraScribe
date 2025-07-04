@@ -4,7 +4,7 @@ The "4P's" framework in software engineering provides a holistic view of the key
 
 ```plantuml
 @startmindmap
-* The 4 Ps of Software Engineering
+* The 4P's of Software Engineering
 ** People
 *** Stakeholders
 *** Team Organization
