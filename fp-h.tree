@@ -9,35 +9,15 @@
     <toc-element topic="starter.md">
     </toc-element>
     <toc-element topic="BDR.md"/>
-    <toc-element topic="Desenvolvimento.md">
-        <toc-element topic="Processo-de-Desenvolvimento.md">
+    <toc-element topic="Development.md">
+        <toc-element topic="Development-Process.md">
         </toc-element>
     </toc-element>
-    <toc-element topic="Engenharia-de-Software.md">
+    <toc-element topic="Software-Engineering.md">
     </toc-element>
-    <toc-element topic="Manual-do-Usuário.md"/>
-    <toc-element topic="Mapa-do-Site.md"/>
-    <toc-element topic="API_Reference3.md">
-        <toc-element topic="Schemas3.md">
-        </toc-element>
-        <toc-element topic="Auth-Endpoints.md">
-        </toc-element>
-        <toc-element topic="User-Endpoints.md">
-        </toc-element>
-        <toc-element topic="Ensemble-Endpoints.md">
-        </toc-element>
-        <toc-element topic="Flashcard-Enpoints.md">
-        </toc-element>
-        <toc-element topic="PomodoroStory-Endpoints.md">
-        </toc-element>
-        <toc-element topic="Favorite-Endpoints.md">
-        </toc-element>
-        <toc-element topic="Box-Enpoints.md">
-        </toc-element>
-        <toc-element topic="Purchase-Endpoints.md">
-        </toc-element>
-    </toc-element>
-    <toc-element topic="Tecnologias-Utilizadas.md"/>
-    <toc-element topic="Conclusão.md"/>
-    <toc-element topic="Referencias-Bibliográficas.md"/>
+    <toc-element topic="User-Manual.md"/>
+    <toc-element topic="Sitemap.md"/>
+    <toc-element topic="Used-Technologies.md"/>
+    <toc-element topic="Conclusion.md"/>
+    <toc-element topic="Bibliographic-References.md"/>
 </instance-profile>

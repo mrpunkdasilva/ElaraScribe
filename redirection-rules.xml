@@ -383,28 +383,35 @@
         <accepts>ResponseCommonDTO2.html</accepts>
     </rule>
     <rule id="3e0b6b9c">
-        <description><![CDATA[Created after removal of "<Flashcard2.md>" from Flash Pomo - Home]]></description>
-        <accepts>Flashcard2.html</accepts>
+        <description><![CDATA[Created after removal of "<Flashcard2.md>" from Flash Pomo -.        <accepts>Conclusão.html</accepts>
+        <redirects-to>Conclusion.html</redirects-to>
     </rule>
-    <rule id="1a782161">
-        <description><![CDATA[Created after removal of "<Ensemble3.md>" from Flash Pomo - Home]]></description>
-        <accepts>Ensemble3.html</accepts>
+    <rule id="dsv-redirect">
+        <accepts>Desenvolvimento.html</accepts>
+        <redirects-to>Development.html</redirects-to>
     </rule>
-    <rule id="4486fadf">
-        <description><![CDATA[Created after removal of "<User3.md>" from Flash Pomo - Home]]></description>
-        <accepts>User3.html</accepts>
+    <rule id="es-redirect">
+        <accepts>Engenharia-de-Software.html</accepts>
+        <redirects-to>Software-Engineering.html</redirects-to>
     </rule>
-    <rule id="2109f1d6">
-        <description>
-            <![CDATA[Created after removal of "<RegisterRequestDTO2.md>" from Flash Pomo - Home]]></description>
-        <accepts>RegisterRequestDTO2.html</accepts>
+    <rule id="mu-redirect">
+        <accepts>Manual-do-Usuário.html</accepts>
+        <redirects-to>User-Manual.html</redirects-to>
     </rule>
-    <rule id="717af8e2">
-        <description><![CDATA[Created after removal of "<ResponseEntity2.md>" from Flash Pomo - Home]]></description>
-        <accepts>ResponseEntity2.html</accepts>
+    <rule id="ms-redirect">
+        <accepts>Mapa-do-Site.html</accepts>
+        <redirects-to>Sitemap.html</redirects-to>
     </rule>
-    <rule id="745b0996">
-        <description>Created after removal of "Daily Meeting Report" from Flash Pomo - Home</description>
-        <accepts>Daily-Meeting-Report.html</accepts>
+    <rule id="pd-redirect">
+        <accepts>Processo-de-Desenvolvimento.html</accepts>
+        <redirects-to>Development-Process.html</redirects-to>
+    </rule>
+    <rule id="rb-redirect">
+        <accepts>Referencias-Bibliográficas.html</accepts>
+        <redirects-to>Bibliographic-References.html</redirects-to>
+    </rule>
+    <rule id="tu-redirect">
+        <accepts>Tecnologias-Utilizadas.html</accepts>
+        <redirects-to>Used-Technologies.html</redirects-to>
     </rule>
 </rules>

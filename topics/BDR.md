@@ -1,55 +1,59 @@
-# BRD
-A business requirements document (BRD) é um relatório detalhado que descreve tudo o que um novo projeto requer para obter sucesso. Este documento delineia os objetivos do projeto, o que é esperado ao longo do ciclo de vida do projeto e o que é necessário para alcançar o projeto.
+# Business Requirements Document (BRD)
 
-## Resumo Executivo
-Este relatório descreve o desenvolvimento de um software acadêmico criado como parte do curso de Desenvolvimento de Software 1 da Jala University. O sistema desenvolvido combina a técnica Pomodoro de gerenciamento de tempo com o uso de flashcards, criando um ambiente de aprendizado dinâmico.
+A Business Requirements Document (BRD) is a comprehensive report that details everything a new project needs to succeed. This document outlines the project's goals, what to expect throughout the project lifecycle, and what is required to achieve them.
 
-## Objetivo do projeto
-O aplicativo permite aos usuários gerenciar suas atividades de estudo com as seguintes funcionalidades:
-- Gerenciamento de Usuários: Cadastro, edição e exclusão de usuários.
-- Pomodoro: Ativação, pausa e desativação do timer de estudo.
-- Relatórios do Pomodoro: Geração e consulta de relatórios baseados na técnica Pomodoro.
-- Flashcards: Criação, edição, consulta e exclusão de flashcards.
-- Histórico de Flashcards: Adição e remoção de flashcards do histórico.
-- Favoritos: Gerenciamento de flashcards favoritos.
-- Categorias de Flashcards: Criação e organização de flashcards por categorias.
-- Marketplace de Flashcards: Compra e venda de flashcards utilizando uma moeda interna.
+## Executive Summary
 
-##  Escopo do projeto
-A equipe será composta por um Product Owner, dois desenvolvedores e um Scrum Master, trabalhando sob a metodologia ágil Scrum.
+This report describes the development of a new software product. The system is designed to solve a specific business problem by providing a robust, scalable, and user-friendly solution that meets the needs of key stakeholders.
 
-## Requerimento de negócios
+## Project Objective
 
-| Requisito de Negócio | Prioridade | Nível Crítico |
-|----------------------|------------|---------------|
-| Integração de Funcionalidades Pomodoro e Flashcards | 1 | Crítico |
-| Facilidade de Uso | 2 | Médio |
-| Escalabilidade | 3 | Médio |
-| Acessibilidade e Segurança | 4 | Médio |
-| Mercado de Flashcards | 5 | Baixo |
+The application will enable users to manage their activities with the following features:
+
+- **User Management**: Secure registration, authentication, and profile management.
+- **Core Feature A**: Creation, editing, and deletion of primary data elements.
+- **Core Feature B**: Advanced tools for data processing and visualization.
+- **Collaboration**: Features that allow users to share and collaborate on content.
+- **Admin Panel**: A dashboard for administrators to manage users and system settings.
+- **Reporting**: Generation of reports to track key metrics and user activity.
+
+## Project Scope
+
+The project will be executed by a team composed of a Product Owner, developers, and a QA Engineer, following the Scrum agile methodology to ensure iterative progress and continuous feedback.
+
+## Business Requirements
+
+| Business Requirement | Priority | Criticality Level |
+|---|---|---|
+| Core Functionality | 1 | Critical |
+| User Experience (UX) | 2 | High |
+| System Performance | 3 | Medium |
+| Security and Accessibility | 4 | High |
+| Scalability | 5 | Medium |
 
 ## Key Stakeholders
 
-| Nome | Ocupação |
-|------|----------|
-| Rhuan Miguel Esteves | Product Owner |
-| David Alex Souza Santos | Desenvolvedor Front |
-| Gustavo Henrique de Jesus da Silva | Desenvolvedor Back |
-| Rinaldo Gabriel Lira de Albuquerque Lima | Scrum Master |
+| Name | Role |
+|---|---|
+| [Stakeholder Name] | Product Owner |
+| [Stakeholder Name] | Lead Developer |
+| [Stakeholder Name] | QA Engineer |
+| [Stakeholder Name] | Project Manager |
 
-## Restrições de Projeto
+## Project Constraints
 
-| Restrição | Descrição |
-|-----------|-----------|
-| Prazo | Completo em 8 semanas, devido ao tempo de conclusão do curso |
-| Recursos Humanos | A equipe tem apenas 4 membros para o desenvolvimento do projeto |
-| Orçamento | O projeto deve ser desenvolvido com ferramentas gratuitas ou de baixo custo, sem despesas adicionais |
-| Tecnologia | A aplicação deve ser desenvolvida com tecnologias já conhecidas pelos integrantes da equipe |
-| Escopo | As funcionalidades, como sign up, log in, flashcards e pomodoro devem ser entregues como mínimo viável |
+| Constraint | Description |
+|---|---|
+| Deadline | The project must be completed within the established timeframe to meet market demands. |
+| Human Resources | The team consists of a limited number of members for project development. |
+| Budget | The project must be developed using approved tools and technologies, without additional costs. |
+| Technology | The application must be developed with technologies aligned with the company's strategy. |
+| Scope | Core features must be delivered as a Minimum Viable Product (MVP) in the first phase. |
 
-## Custo Benefício
+## Cost-Benefit Analysis
 
-| Benefício | Descrição |
-|-----------|-----------|
-| Desenvolvimento | Experiência prática em desenvolvimento de software e metodologias ágeis, alinhando-se ao mercado de trabalho. |
-| Treinamento e Aprendizado | Facilita a organização, produtividade e retenção de conhecimento, beneficiando usuários finais. |
+| Benefit | Description |
+|---|---|
+| Increased Efficiency | The system will automate manual processes, improving operational efficiency. |
+| Improved Decision-Making | Access to real-time data and reports will facilitate more informed strategic decisions. |
+| Enhanced User Satisfaction | A modern and intuitive interface will improve the end-user experience. |
