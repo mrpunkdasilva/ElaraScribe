@@ -1,47 +1,44 @@
-# Manual do Usuário
-O manual do usuário tem como objetivo orientar o usuário final do sistema a utilizá-lo de forma adequada e eficiente, contendo informações sobre as funcionalidades, recursos, instruções de uso, solução de problemas e demais informações relevantes ao usuário.
+# User Manual
 
-## Cadastro de Usuários e Login
-Para realizar o cadastro, o usuário deve informar os dados corretamente, preenchendo os campos necessários, cada campo devidamente preenchido deve ser confirmado pressionando o botão de continuar.
+The user manual aims to guide the end-user of the system to use it properly and efficiently, containing information about functionalities, features, usage instructions, troubleshooting, and other relevant information for the user.
 
-1. Primeiro o usuário criará o nome de usuário.
-![Cadastro nome de usuário](../images/Sistema/signup1.png)
-2. Em seguida o usuário informará o email.
-![Cadastro email](../images/Sistema/signup2.png)
-3. O usuário criará sua senha.
-![Cadastro senha de usuário](../images/Sistema/signup3.png)
-4. Após informar os devidos dados, o usuário confirma a criação de conta.
-![](../images/Sistema/signup4.png)
+## User Registration and Login
 
-### Pronto, a conta do usuário foi criada! Agora o usuário pode fazer log in.
+To register, the user must correctly provide the required information, filling in the necessary fields. Each field, once properly filled, should be confirmed by pressing the continue button.
 
-5. O usuário na página de log in, informa o email.
-   ![](../images/Sistema/login1.png)
-6. O usuário digita sua senha e confirma o log in
-   ![](../images/Sistema/login2.png)
+1.  First, the user will create a username.
+2.  Next, the user will provide their email.
+3.  The user will create their password.
+4.  After providing the necessary data, the user confirms account creation.
 
-## Criar FlashCard
-Na página de Dashboard o usuário precisará criar primeiramente o ensemble que será o conjunto presente dos flashcards, para tal selecionará o botão add ensemble, o sistema pedirá o título e a descrição do ensemble.
-1. Na seção Ensemble List.
-   ![](../images/Sistema/dashboard1.png)
-2. Crie o ensemble, adicione o título e descrição, e salve.
-   ![](../images/Sistema/addEnsemble.png)
-3. Pressione no ensemble e crie os flashcards, o título e descrição, depois é só salvar
-   ![](../images/Sistema/addFlashcard.png)
+### Congratulations, the user's account has been created! Now the user can log in.
 
-## Criar Box e Vender
-Para vender uma box, primeiro o usuário precisa, criá-la.
-1. No menu, o usuário entrará na página Box Sell.
-![](../images/prototipo/DESKTOP - USER - BOX SHELL.png)
-2. Nela precisará selecionar o botão de adicionar um "+" ao lado do botão de pesquisa. Em seguida deverá criar a box com os flashcards já existentes e, os quais podem pertencer a vários ensembles, e logo após selecionar o preço.
-![](../images/prototipo/DESKTOP - USER - CREATING BOX SHELL.png)
+5.  On the login page, the user enters their email.
+6.  The user types their password and confirms login.
 
-## Comprar Box
-Para comprar uma box, o usuário deverá entrar na página Box Buy, e pesquisar pela box que ele deseja. 
-1. O usuário selecionará o botão presente do valor da box, e em seguida confirmará a compra.
-![](../images/prototipo/INTERFACE BOX BUY.png)
+## Creating [Feature A] (e.g., Digital Content)
 
-## Usar Pomodoro
-Para o usuário usar o pomodoro, ele deverá primeiro estar no Dashboard.
-1. O usuário poderá escolher no pomodoro as funções Pomodoro, de 25min, short break de 5min, e long break de 15min. também poderá usar as funções de start para começar, pause para pausar e restart para recomeçar. 
-![](../images/Sistema/dashboard1.png)
+On the Dashboard page, the user will first need to create a [Collection] which will be the container for their [Feature A] items. To do this, they will select the "Add Collection" button. The system will then prompt for the title and description of the collection.
+
+1.  In the [Collection List] section.
+2.  Create the collection, add the title and description, and save.
+3.  Click on the collection and create the [Feature A] items, adding a title and description, then save.
+
+## Creating and Selling [Product Package] (e.g., Bundles of Content)
+
+To sell a [Product Package], the user first needs to create it.
+
+1.  In the menu, the user will navigate to the [Product Package Management] page.
+2.  On this page, they will need to select the "Add" button (e.g., a "+" icon next to the search button). Then, they should create the [Product Package] with existing [Feature A] items, which can belong to various collections, and then set the price.
+
+## Purchasing [Product Package]
+
+To purchase a [Product Package], the user should go to the [Product Marketplace] page and search for the desired package.
+
+1.  The user will select the button displaying the price of the package and then confirm the purchase.
+
+## Using [Feature B] (e.g., a Productivity Timer)
+
+For the user to use [Feature B], they must first be on the Dashboard.
+
+1.  The user can choose from [Feature B] functions such as [e.g., 25-minute work sessions, 5-minute short breaks, and 15-minute long breaks]. They can also use functions like start, pause, and restart.
