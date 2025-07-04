@@ -28,6 +28,7 @@
             <toc-element topic="UML-Component-Diagrams.md"/>
             <toc-element topic="UML-Deployment-Diagrams.md"/>
         </toc-element>
+        <toc-element topic="Software-Engineering-4Ps.md"/>
     </toc-element>
     <toc-element topic="User-Manual.md"/>
     <toc-element topic="Sitemap.md"/>
