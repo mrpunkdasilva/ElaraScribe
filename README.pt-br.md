@@ -1,75 +1,70 @@
-# 📚 Documentação com WriterSide Boilerplate 🛠️
+# 📚 Documentação Inicial 🛠️
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
-Este projeto utiliza o **WriterSide Boilerplate** como base para criar uma documentação clara, organizada e eficiente. O objetivo é fornecer uma estrutura sólida para a documentação de projetos, facilitando a manutenção, atualização e colaboração entre equipes.
+Este projeto oferece um **Ponto de Partida para Documentação** como base para criar uma documentação clara, organizada e eficiente. O objetivo é fornecer uma estrutura sólida para a documentação de qualquer projeto, facilitando a manutenção, atualização e colaboração entre equipes.
 
 ## 🌟 Visão Geral
 
-O **WriterSide Boilerplate** é um template pré-configurado que oferece uma estrutura consistente para a criação de documentação técnica. Ele inclui páginas, tópicos e estruturas básicas que aceleram o processo de documentação, garantindo que todos os documentos sigam um formato coeso e profissional.
+O **Ponto de Partida para Documentação** é um template pré-configurado que oferece uma estrutura consistente para a criação de documentação técnica. Ele inclui páginas, tópicos e estruturas básicas que aceleram o processo de documentação, garantindo que todos os documentos sigam um formato coeso e profissional.
 
 ## 🗂️ Estrutura do Projeto
 
 A estrutura do projeto é organizada da seguinte forma:
 
 ```
-/WritersideProjects/documentation-starter-with-writerside
+/seu-projeto-de-documentacao
 │
-├── /idea                # Arquivos de configuração do IntelliJ IDEA
-├── /api                 # Documentação da API
-├── /cfg                 # Arquivos de configuração
+├── /cfg                 # Arquivos de configuração (ex: perfis de build, glossário, snippets)
 ├── /images              # Imagens utilizadas na documentação
-├── /topics              # Tópicos e páginas de documentação
-├── /webHelpFP-H2-all    # Conteúdo gerado para ajuda web
+├── /topics              # Tópicos e páginas de documentação (Markdown ou Semantic Markup)
+├── /output              # Conteúdo de documentação gerado (ex: HTML, PDF)
 │
-├── c.list               # Lista de configurações
-├── fp-h.tree            # Estrutura de árvore para navegação
-├── pdfSourceFP-H.html   # Fonte HTML para geração de PDF
-├── pdfSourceFP-H.pdf    # Documentação em formato PDF
+├── c.list               # Lista de categorias
+├── [nome-do-projeto].tree  # Estrutura de árvore para navegação (ex: ds.tree)
 ├── README.md            # Este arquivo
-├── redirection-rules.xml # Regras de redirecionamento
-├── v.list               # Lista de versões
-├── webHelpFP-H2-all.zip # Arquivo compactado com ajuda web
-└── writerside.cfg       # Configuração do WriterSide
+├── redirection-rules.xml # Regras de redirecionamento para URLs antigas
+├── v.list               # Lista de variáveis
+└── writerside.cfg       # Configuração principal do Writerside
 ```
 
 ## 🚀 Principais Características
 
-- **📂 Estrutura Predefinida**: O boilerplate fornece uma estrutura pronta para uso, permitindo que você comece a documentar imediatamente, sem a necessidade de configurar tudo do zero.
-  
-- **🎯 Facilidade de Uso**: A interface intuitiva do WriterSide torna a criação e edição de documentação acessível para todos os membros da equipe, independentemente do nível de experiência.
+-   **📂 Estrutura Predefinida**: O ponto de partida fornece uma estrutura pronta para uso, permitindo que você comece a documentar imediatamente, sem a necessidade de configurar tudo do zero.
 
-- **🤝 Colaboração Eficiente**: O projeto é projetado para promover a colaboração entre equipes, permitindo que múltiplos colaboradores trabalhem simultaneamente na documentação.
+-   **🎯 Facilidade de Uso**: A interface intuitiva da ferramenta de documentação escolhida (ex: Writerside) torna a criação e edição de documentação acessível para todos os membros da equipe, independentemente do nível de experiência.
 
-- **🔄 Controle de Versão**: Suporte integrado para controle de versão, garantindo que todas as alterações sejam rastreadas e que seja fácil reverter para versões anteriores, se necessário.
+-   **🤝 Colaboração Eficiente**: O projeto é projetado para promover a colaboração entre equipes, permitindo que múltiplos colaboradores trabalhem simultaneamente na documentação.
 
-- **🔗 Integração com Ferramentas de Gestão**: O WriterSide pode ser integrado com ferramentas de gestão de projetos, como Jira, Trello e outras, para melhorar a fluidez do fluxo de trabalho.
+-   **🔄 Controle de Versão**: Suporte integrado para controle de versão, garantindo que todas as alterações sejam rastreadas e que seja fácil reverter para versões anteriores, se necessário.
 
-- **🎨 Personalização**: A estrutura do boilerplate é altamente personalizável, permitindo que você adapte a documentação às necessidades específicas do seu projeto.
+-   **🔗 Integração com Ferramentas de Gestão**: Ferramentas de documentação podem ser integradas com ferramentas de gestão de projetos (ex: Jira, Trello) para melhorar a fluidez do fluxo de trabalho.
+
+-   **🎨 Personalização**: A estrutura do ponto de partida é altamente personalizável, permitindo que você adapte a documentação às necessidades específicas do seu projeto.
 
 ## 🛠️ Como Usar
 
-1. **📥 Instalação**: Clone o repositório do WriterSide Boilerplate ou baixe o template diretamente da plataforma WriterSide.
+1.  **📥 Instalação**: Clone este repositório ou baixe o template.
 
-2. **⚙️ Configuração**: Siga as instruções de configuração fornecidas no repositório para configurar o ambiente de documentação.
+2.  **⚙️ Configuração**: Siga as instruções de configuração específicas da sua ferramenta de documentação escolhida para configurar o ambiente.
 
-3. **📝 Criação de Conteúdo**: Utilize a estrutura pré-definida para criar novas páginas, tópicos e seções de documentação. Adicione texto, imagens, código e outros elementos conforme necessário.
+3.  **📝 Criação de Conteúdo**: Utilize a estrutura pré-definida para criar novas páginas, tópicos e seções de documentação. Adicione texto, imagens, código e outros elementos conforme necessário.
 
-4. **👥 Colaboração**: Convide membros da equipe para colaborar na documentação. Utilize as ferramentas de controle de versão e comentários para garantir uma colaboração eficiente.
+4.  **👥 Colaboração**: Convide membros da equipe para colaborar na documentação. Utilize as ferramentas de controle de versão e comentários para uma colaboração eficiente.
 
-5. **📤 Publicação**: Após finalizar a documentação, publique-a no formato desejado (HTML, PDF, etc.) e compartilhe com as partes interessadas.
+5.  **📤 Publicação**: Após finalizar a documentação, publique-a no formato desejado (ex: HTML, PDF) e compartilhe com as partes interessadas.
 
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
 
-1. **🍴 Fork** o repositório.
-2. Crie uma nova **🌿 branch** para sua feature ou correção de bug.
-3. Faça as alterações necessárias e **💾 commit**.
-4. Envie um **🔀 Pull Request** para revisão.
+1.  **🍴 Fork** o repositório.
+2.  Crie uma nova **🌿 branch** para sua feature ou correção de bug.
+3.  Faça as alterações necessárias e **💾 commit**.
+4.  Envie um **🔀 Pull Request** para revisão.
 
 ## 📜 Licença
 
