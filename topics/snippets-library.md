@@ -11,9 +11,11 @@ title: Snippets Library
 <snippet id="daily_standup_agenda">
 ### Agenda
 
-- What did you accomplish yesterday?
-- What are you working on today?
-- What impediments are blocking your progress?
+| Question | Description |
+|---|---|
+| What did you accomplish yesterday? | Briefly describe your progress on tasks from the previous day. |
+| What are you working on today? | Outline your planned tasks and objectives for the current day. |
+| What impediments are blocking your progress? | Highlight any obstacles or issues that are preventing you from completing your work. |
 </snippet>
 
 <snippet id="daily_standup_reporting">

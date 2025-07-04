@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="documentation-starter-with-writerside_libraries"
-                  name="documentation-starter-with-writerside_libraries" is-library="true" start-page="snippets.topic">
+                  name="documentation-starter-with-writerside_libraries" is-library="true">
 
-    <toc-element topic="snippets.topic"/>
+    <toc-element topic="snippets-library.md"/>
 </instance-profile>
