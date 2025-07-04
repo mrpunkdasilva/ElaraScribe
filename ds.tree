@@ -2,8 +2,8 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="fp-h"
-                 name="Flash Pomo - Home"
+<instance-profile id="ds"
+                 name="Documentation Start"
                  start-page="starter.md">
 
     <toc-element topic="starter.md">
