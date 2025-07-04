@@ -3,7 +3,17 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <algolia-api-key></algolia-api-key>
+        <algolia-app-id></algolia-app-id>
+        <algolia-index></algolia-index>
+        <search-endpoint></search-endpoint>
+        <search-scope>project</search-scope>
+        <search-scopes-provider></search-scopes-provider>
+        <primary-color>purple</primary-color>
+        <custom-css>custom.css</custom-css>
+        <header-logo>logo.svg</header-logo>
+    </variables>
     <build-profile instance="ds">
         <variables>
             <noindex-content>true</noindex-content>
