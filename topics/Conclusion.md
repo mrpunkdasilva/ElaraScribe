@@ -1,9 +1,9 @@
-# Conclusão
+# Conclusion
 
-O projeto atingiu uma parte significativa dos objetivos definidos inicialmente, com a implementação completa de 5 requisitos funcionais (RF01, RF02, RF03, RF05 e RF08) e 7 requisitos não funcionais (RNF01, RNF02, RNF03, RNF04, RNF05, RNF07 e RNF09). Além disso, conseguimos desenvolver a interface front-end e integrar a funcionalidade de criação de conjuntos (ensembles) com o back-end, o que representa um importante avanço na entrega do produto.
+This project successfully achieved a significant portion of its initial objectives, with the complete implementation of key functional and non-functional requirements. We managed to develop core functionalities and integrate various components, representing a significant step forward in product delivery.
 
-Apesar das limitações de tempo e das dificuldades técnicas enfrentadas, como a curva de aprendizado em ferramentas e tecnologias, a equipe demonstrou resiliência e colaboração ao superar esses desafios. O uso do modelo ágil Scrum foi fundamental para o sucesso do projeto, permitindo uma boa divisão de tarefas, revisões constantes, e melhorias contínuas ao longo de cada sprint. A metodologia também nos ajudou a lidar com prazos e promover um ambiente de trabalho estruturado e produtivo.
+Despite time constraints and technical challenges, such as the learning curve associated with new tools and technologies, the team demonstrated resilience and collaboration in overcoming these obstacles. The adoption of an agile methodology, such as Scrum, was crucial for the project's success, enabling effective task distribution, continuous reviews, and ongoing improvements throughout each sprint. This methodology also helped us manage deadlines and foster a structured and productive work environment.
 
-Durante a execução do projeto, adquirimos habilidades valiosas, como o trabalho em equipe, o hábito de realizar reuniões diárias (dailys) e a capacidade de lidar com prazos e adversidades. Esses aprendizados serão essenciais para futuros projetos e carreiras profissionais.
+Throughout the project's execution, we acquired valuable skills, including teamwork, the practice of conducting regular meetings, and the ability to handle deadlines and adversities. These learnings will be essential for future projects and professional careers.
 
-Em resumo, embora algumas funcionalidades ainda estejam pendentes, o projeto demonstrou um grande progresso, entregando um produto funcional e alinhado aos requisitos priorizados. Este trabalho serviu não apenas como um exercício técnico, mas também como uma experiência de crescimento e aprendizado para todos os envolvidos.
+In summary, although some functionalities may still be pending, the project showed great progress, delivering a functional product aligned with prioritized requirements. This work served not only as a technical exercise but also as an experience of growth and learning for everyone involved.
