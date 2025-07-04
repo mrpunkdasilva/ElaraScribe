@@ -1,3 +1,0 @@
-# Schemas
-
-Start typing here...

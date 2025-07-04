@@ -1,16 +1,37 @@
-# Introdução
+# Introduction
 
-O aplicativo desenvolvido é voltado para o meio acadêmico, combinando as estratégias de
-estudo Pomodoro e Flashcards em um único hub. Ele oferece funcionalidades que permitem a
-criação e edição de flashcards, além de gerenciar o tempo de estudo de forma eficiente através da
-técnica Pomodoro.
+Welcome to your new documentation project!
 
-Além disso, o aplicativo conta com funcionalidades de mercado, onde os usuários podem
-negociar seus flashcards usando uma moeda própria da aplicação. Essa integração de ferramentas
-proporciona um ambiente de aprendizado dinâmico e interativo, favorecendo o desenvolvimento
-acadêmico e a troca de conhecimento entre os usuários.
+This page serves as the main entry point for your readers. It should provide a high-level overview of the project, its purpose, and what the reader can expect to find in the documentation.
 
-## Objetivo do Relatório
-O objetivo deste relatório é documentar a criação, o desenvolvimento e o funcionamento de
-um software voltado para o contexto acadêmico, abrangendo suas etapas de concepção,
-implementação, modelagem e sua aplicabilidade no ambiente de estudos.
+## Project Goal
+
+Clearly state the primary objective of the project this documentation covers. What problem does it solve? Who is it for?
+
+## Documentation Scope
+
+Briefly describe what is covered in this documentation. For example:
+-   In-depth tutorials and user guides.
+-   Comprehensive API references.
+-   Architectural diagrams and development guidelines.
+-   Contribution guides for new developers.
+
+## Target Audience
+
+Identify the intended audience for this documentation. Are they end-users, developers, system administrators, or a mix? This helps set the right tone and level of detail.
+
+## Key Features
+
+If documenting a product, list its main features or functionalities here. This gives readers a quick summary of what the product can do.
+-   **Feature A**: Brief description.
+-   **Feature B**: Brief description.
+-   **Feature C**: Brief description.
+
+## Documentation Structure
+
+Explain how the rest of the documentation is organized. This helps readers navigate the content efficiently. For example:
+
+-   **Getting Started**: Step-by-step instructions for installation and initial setup.
+-   **User Guide**: Detailed guides on how to use the product's features.
+-   **API Reference**: Complete documentation for all public APIs.
+-   **Development**: Information for developers who want to contribute to or build upon the project.

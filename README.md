@@ -1,84 +1,85 @@
-# 📚 Documentação com WriterSide Boilerplate 🛠️
+# 📚 Documentation with WriterSide Boilerplate 🛠️
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
-Este projeto utiliza o **WriterSide Boilerplate** como base para criar uma documentação clara, organizada e eficiente. O objetivo é fornecer uma estrutura sólida para a documentação de projetos, facilitando a manutenção, atualização e colaboração entre equipes.
+This project uses the **WriterSide Boilerplate** as a foundation for creating clear, organized, and efficient documentation. The goal is to provide a solid structure for project documentation, making it easier to maintain, update, and collaborate across teams.
 
-## 🌟 Visão Geral
+## 🌟 Overview
 
-O **WriterSide Boilerplate** é um template pré-configurado que oferece uma estrutura consistente para a criação de documentação técnica. Ele inclui páginas, tópicos e estruturas básicas que aceleram o processo de documentação, garantindo que todos os documentos sigam um formato coeso e profissional.
+The **WriterSide Boilerplate** is a pre-configured template that offers a consistent structure for creating technical documentation. It includes basic pages, topics, and structures that speed up the documentation process, ensuring that all documents follow a cohesive and professional format.
 
-## 🗂️ Estrutura do Projeto
+## 🗂️ Project Structure
 
-A estrutura do projeto é organizada da seguinte forma:
+The project structure is organized as follows:
 
 ```
 /WritersideProjects/documentation-starter-with-writerside
 │
-├── /idea                # Arquivos de configuração do IntelliJ IDEA
-├── /api                 # Documentação da API
-├── /cfg                 # Arquivos de configuração
-├── /images              # Imagens utilizadas na documentação
-├── /topics              # Tópicos e páginas de documentação
-├── /webHelpFP-H2-all    # Conteúdo gerado para ajuda web
+├── /idea                # IntelliJ IDEA configuration files
+├── /api                 # API documentation
+├── /cfg                 # Configuration files
+├── /images              # Images used in the documentation
+├── /topics              # Documentation topics and pages
+├── /webHelpFP-H2-all    # Generated web help content
 │
-├── c.list               # Lista de configurações
-├── fp-h.tree            # Estrutura de árvore para navegação
-├── pdfSourceFP-H.html   # Fonte HTML para geração de PDF
-├── pdfSourceFP-H.pdf    # Documentação em formato PDF
-├── README.md            # Este arquivo
-├── redirection-rules.xml # Regras de redirecionamento
-├── v.list               # Lista de versões
-├── webHelpFP-H2-all.zip # Arquivo compactado com ajuda web
-└── writerside.cfg       # Configuração do WriterSide
+├── c.list               # List of configurations
+├── fp-h.tree            # Tree structure for navigation
+├── pdfSourceFP-H.html   # HTML source for PDF generation
+├── pdfSourceFP-H.pdf    # Documentation in PDF format
+├── README.md            # This file
+├── README.pt-br.md      # Brazilian Portuguese version of this file
+├── redirection-rules.xml # Redirection rules
+├── v.list               # List of versions
+├── webHelpFP-H2-all.zip # Compressed file with web help
+└── writerside.cfg       # WriterSide configuration
 ```
 
-## 🚀 Principais Características
+## 🚀 Key Features
 
-- **📂 Estrutura Predefinida**: O boilerplate fornece uma estrutura pronta para uso, permitindo que você comece a documentar imediatamente, sem a necessidade de configurar tudo do zero.
-  
-- **🎯 Facilidade de Uso**: A interface intuitiva do WriterSide torna a criação e edição de documentação acessível para todos os membros da equipe, independentemente do nível de experiência.
+- **📂 Predefined Structure**: The boilerplate provides a ready-to-use structure, allowing you to start documenting immediately without needing to set everything up from scratch.
 
-- **🤝 Colaboração Eficiente**: O projeto é projetado para promover a colaboração entre equipes, permitindo que múltiplos colaboradores trabalhem simultaneamente na documentação.
+- **🎯 Ease of Use**: The intuitive WriterSide interface makes creating and editing documentation accessible to all team members, regardless of their experience level.
 
-- **🔄 Controle de Versão**: Suporte integrado para controle de versão, garantindo que todas as alterações sejam rastreadas e que seja fácil reverter para versões anteriores, se necessário.
+- **🤝 Efficient Collaboration**: The project is designed to promote team collaboration, allowing multiple contributors to work on the documentation simultaneously.
 
-- **🔗 Integração com Ferramentas de Gestão**: O WriterSide pode ser integrado com ferramentas de gestão de projetos, como Jira, Trello e outras, para melhorar a fluidez do fluxo de trabalho.
+- **🔄 Version Control**: Integrated support for version control ensures that all changes are tracked and that it's easy to revert to previous versions if necessary.
 
-- **🎨 Personalização**: A estrutura do boilerplate é altamente personalizável, permitindo que você adapte a documentação às necessidades específicas do seu projeto.
+- **🔗 Integration with Management Tools**: WriterSide can be integrated with project management tools like Jira, Trello, and others to improve workflow fluidity.
 
-## 🛠️ Como Usar
+- **🎨 Customization**: The boilerplate structure is highly customizable, allowing you to adapt the documentation to your project's specific needs.
 
-1. **📥 Instalação**: Clone o repositório do WriterSide Boilerplate ou baixe o template diretamente da plataforma WriterSide.
+## 🛠️ How to Use
 
-2. **⚙️ Configuração**: Siga as instruções de configuração fornecidas no repositório para configurar o ambiente de documentação.
+1. **📥 Installation**: Clone the WriterSide Boilerplate repository or download the template directly from the WriterSide platform.
 
-3. **📝 Criação de Conteúdo**: Utilize a estrutura pré-definida para criar novas páginas, tópicos e seções de documentação. Adicione texto, imagens, código e outros elementos conforme necessário.
+2. **⚙️ Configuration**: Follow the configuration instructions provided in the repository to set up the documentation environment.
 
-4. **👥 Colaboração**: Convide membros da equipe para colaborar na documentação. Utilize as ferramentas de controle de versão e comentários para garantir uma colaboração eficiente.
+3. **📝 Content Creation**: Use the predefined structure to create new pages, topics, and documentation sections. Add text, images, code, and other elements as needed.
 
-5. **📤 Publicação**: Após finalizar a documentação, publique-a no formato desejado (HTML, PDF, etc.) e compartilhe com as partes interessadas.
+4. **👥 Collaboration**: Invite team members to collaborate on the documentation. Use version control and commenting tools to ensure efficient collaboration.
 
-## 🤝 Contribuição
+5. **📤 Publication**: After finalizing the documentation, publish it in the desired format (HTML, PDF, etc.) and share it with stakeholders.
 
-Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
+## 🤝 Contribution
 
-1. **🍴 Fork** o repositório.
-2. Crie uma nova **🌿 branch** para sua feature ou correção de bug.
-3. Faça as alterações necessárias e **💾 commit**.
-4. Envie um **🔀 Pull Request** para revisão.
+Contributions are welcome! If you want to contribute to this project, follow these steps:
 
-## 📜 Licença
+1. **🍴 Fork** the repository.
+2. Create a new **🌿 branch** for your feature or bug fix.
+3. Make the necessary changes and **💾 commit**.
+4. Submit a **🔀 Pull Request** for review.
 
-Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar, modificar e distribuir o código conforme necessário.
+## 📜 License
 
-## 📞 Contato
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as needed.
 
-Se você tiver alguma dúvida ou sugestão, abra uma **❗ issue** no repositório.
+## 📞 Contact
+
+If you have any questions or suggestions, open an **❗ issue** in the repository.
 
 ---
 
-Esperamos que este projeto facilite a criação e manutenção da documentação do seu projeto. Se precisar de mais alguma coisa, não hesite em nos contatar! 🚀
+We hope this project makes it easier to create and maintain your project's documentation. If you need anything else, don't hesitate to contact us! 🚀
