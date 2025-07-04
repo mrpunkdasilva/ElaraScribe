@@ -1,0 +1,27 @@
+name: Build Writerside Documentation
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: docker build -t writerside-docs .
+
+    - name: Run Writerside build
+      run: docker run --rm -v ${{ github.workspace }}:/app writerside-docs writerside.sh build --input-dir=/app --output-dir=/app/output
+
+    - name: Upload documentation artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: writerside-documentation
+        path: output
