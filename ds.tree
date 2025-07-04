@@ -15,6 +15,16 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Software-Engineering.md">
+        <toc-element topic="Software-Engineering-Requirements.md"/>
+        <toc-element topic="Software-Engineering-Information-Architecture.md"/>
+        <toc-element topic="Software-Engineering-UML-Diagrams.md">
+            <toc-element topic="UML-Use-Case-Diagrams.md"/>
+            <toc-element topic="UML-Class-Diagrams.md"/>
+            <toc-element topic="UML-Sequence-Diagrams.md"/>
+            <toc-element topic="UML-Activity-Diagrams.md"/>
+            <toc-element topic="UML-Component-Diagrams.md"/>
+            <toc-element topic="UML-Deployment-Diagrams.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="User-Manual.md"/>
     <toc-element topic="Sitemap.md"/>
