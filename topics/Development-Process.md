@@ -15,9 +15,9 @@ If applicable, explain how requirements are gathered and managed. You can use a 
 
 | ID      | Description                                      | Priority |
 |---------|--------------------------------------------------|----------|
-| US-001  | As a [User Type], I want to [Goal], so that [Benefit]. | High     |
-| US-002  | As a [User Type], I want to [Goal], so that [Benefit]. | Medium   |
-| US-003  | As a [User Type], I want to [Goal], so that [Benefit]. | Low      |
+| US-XXX  | As a [user role], I want to [action], so that [benefit]. | High     |
+| US-YYY  | As a [user role], I want to [action], so that [benefit]. | Medium   |
+| US-ZZZ  | As a [user role], I want to [action], so that [benefit]. | Low      |
 
 ## Team Organization
 
@@ -33,18 +33,9 @@ Describe the structure and roles of the development team. This helps new contrib
 
 ### Team Members
 
-You can optionally list the current team members.
-
-| Name          | Role                |
-|---------------|---------------------|
-| [Member Name] | [Member Role]       |
-| [Member Name] | [Member Role]       |
-
-
+You can optionally list the current team members and their roles here.
 
 Explain how the team stays synchronized. Do you have daily stand-up meetings? Do you use a project management tool for reporting?
 
 **Example:**
-*Our team holds a daily stand-up meeting at 10 AM to discuss progress, plans, and any blockers. We also use a [Project Management Tool, e.g., Jira, Trello] to track tasks and progress.*
-
-> You can link to your project board or other relevant resources here.
+*Our team holds a daily stand-up meeting at 10 AM to discuss progress, plans, and any blockers. We also use a [Project Management Tool] to track tasks and progress.*
