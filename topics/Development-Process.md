@@ -40,7 +40,7 @@ You can optionally list the current team members.
 | [Member Name] | [Member Role]       |
 | [Member Name] | [Member Role]       |
 
-## Daily Stand-ups / Reporting
+
 
 Explain how the team stays synchronized. Do you have daily stand-up meetings? Do you use a project management tool for reporting?
 
