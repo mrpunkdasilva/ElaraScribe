@@ -18,7 +18,14 @@ jobs:
       run: docker build -t writerside-docs .
 
     - name: Run Writerside build
-      run: docker run --rm -v ${{ github.workspace }}:/app writerside-docs writerside.sh build --input-dir=/app --output-dir=/app/output
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/opt/sources \
+          -e SOURCE_DIR=/opt/sources \
+          -e MODULE_INSTANCE=ds/hi \
+          -e OUTPUT_DIR=/opt/sources/output \
+          -e RUNNER=github \
+          jetbrains/writerside-builder:2025.04.8412
 
     - name: Upload documentation artifact
       uses: actions/upload-artifact@v4

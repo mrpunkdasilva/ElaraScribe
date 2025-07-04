@@ -1,5 +1,5 @@
 # Use the official Writerside builder image
-FROM jetbrains/writerside-builder:latest
+FROM jetbrains/writerside-builder:2025.04.8412
 
 # Set working directory
 WORKDIR /app
@@ -7,5 +7,5 @@ WORKDIR /app
 # Copy your project files into the container
 COPY . /app
 
-# The build command is already available in the base image
-# CMD writerside.sh build --input-dir=/app --output-dir=/app/output
+# The build command is executed by the entrypoint of the base image
+# No CMD needed here
