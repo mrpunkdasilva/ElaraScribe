@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app
-    command: /opt/builder/bin/idea.sh build --input-dir=/app --output-dir=/app/output
+    command: /opt/builder/bin/idea.sh -Djava.awt.headless=true build --input-dir=/app --output-dir=/app/output
