@@ -1,109 +1,92 @@
-# Desenvolvimento
+# Development
 
-## Projeto
+## Project Overview
 
-Este projeto visa desenvolver um aplicativo voltado para o meio acadêmico, combinando as estratégias de estudo Pomodoro e Flashcards em uma única plataforma. O objetivo é criar uma solução completa que permita aos usuários gerenciar seu tempo de estudo de forma eficiente e organizar seus materiais de aprendizado de maneira efetiva.
+This project aims to develop an application for the [Target Audience], combining [Strategy A] and [Strategy B] into a single platform. The goal is to create a comprehensive solution that enables users to manage their study time efficiently and organize their learning materials effectively.
 
-Uma das principais funcionalidades do aplicativo será a integração da técnica Pomodoro. Essa técnica de gerenciamento de tempo ajudará os usuários a manterem sua concentração e produtividade durante os momentos de estudo. Além disso, o aplicativo contará com ferramentas de criação e edição de flashcards, uma estratégia amplamente utilizada por estudantes para memorização e revisão de conteúdo.
+One of the core features of the application will be the integration of the [Technique A]. This time management technique helps users maintain focus and productivity during study sessions. Additionally, the application will include tools for creating and editing [Content Type B], a widely used strategy for memorization and content review.
 
-Outra funcionalidade chave será o mercado interno, onde os usuários poderão negociar seus flashcards usando uma moeda própria da plataforma. Essa integração de um ambiente de compra e venda de material de estudo criará um ecossistema dinâmico de aprendizado, incentivando a troca de conhecimento e a colaboração entre os usuários.
+Another key feature will be an internal marketplace where users can trade their [Content Type B] using a platform-specific currency. This integration of a marketplace for study materials will foster a dynamic learning ecosystem, encouraging knowledge exchange and collaboration among users.
 
-Ao combinar estratégias de estudo comprovadas, gerenciamento de tempo e um mercado interno, o aplicativo se posicionará como uma solução inovadora e completa para as necessidades do meio acadêmico. Espera-se que essa integração de ferramentas melhore o desempenho e o engajamento dos estudantes, além de fomentar a colaboração e o compartilhamento de conhecimento entre os usuários.
+By combining proven study strategies, time management, and an internal marketplace, the application will establish itself as an innovative and complete solution for the academic community. This integration of tools is expected to improve student performance and engagement, as well as promote collaboration and knowledge sharing.
 
-O desenvolvimento deste aplicativo visa atender às demandas do público acadêmico, oferecendo uma plataforma que integre eficientemente as principais estratégias de estudo e aprendizado.
+The development of this application aims to meet the demands of the academic audience by offering a platform that efficiently integrates key study and learning strategies.
 
-### Objetivo Geral
+### General Objective
 
-O objetivo geral deste projeto é desenvolver um aplicativo que combine as estratégias de estudo Pomodoro e Flashcards, oferecendo aos usuários do meio acadêmico uma plataforma integrada e eficiente para gerenciar seu tempo de estudo e organizar seus materiais de aprendizado.
+The main goal of this project is to develop an application that combines the [Strategy A] and [Strategy B], providing users in the academic community with an integrated and efficient platform to manage their study time and organize their learning materials.
 
-### Objetivos Específicos
+### Specific Objectives
 
-1. **Implementar a funcionalidade de Pomodoro**: integrar a técnica Pomodoro no aplicativo, permitindo que os usuários gerenciem seu tempo de estudo de forma eficiente, alternando períodos de trabalho intenso e breves intervalos.
+1.  **Implement [Technique A] Functionality**: Integrate the [Technique A] into the application, allowing users to manage their study time efficiently by alternating between intense work periods and short breaks.
 
-2. **Desenvolver ferramentas de criação e edição de Flashcards**: criar uma interface intuitiva para que os usuários possam criar, armazenar, editar e organizar seus flashcards de forma eficaz.
+2.  **Develop Tools for Creating and Editing [Content Type B]**: Create an intuitive interface for users to create, store, edit, and organize their [Content Type B] effectively.
 
-3. **Estabelecer um Mercado Interno de Flashcards**: implementar um sistema de compra e venda de flashcards entre os usuários, utilizando uma moeda própria da aplicação, a fim de fomentar a troca de conhecimento e a colaboração na comunidade acadêmica.
+3.  **Establish an Internal Marketplace for [Content Type B]**: Implement a system for buying and selling [Content Type B] among users, using a platform-specific currency to foster knowledge exchange and collaboration within the academic community.
 
-4. **Integrar as funcionalidades de Pomodoro e Flashcards**: garantir uma experiência fluida e integrada entre as estratégias de estudo Pomodoro e o uso de Flashcards, otimizando o fluxo de aprendizado dos usuários.
+4.  **Integrate [Technique A] and [Content Type B] Functionality**: Ensure a seamless and integrated experience between the [Technique A] study strategies and the use of [Content Type B], optimizing the user's learning workflow.
 
-5. **Desenvolver uma Interface Intuitiva e Acessível**: criar uma interface de usuário intuitiva, responsiva e acessível, de modo a facilitar a adoção e a usabilidade do aplicativo por parte do público-alvo.
+5.  **Develop an Intuitive and Accessible Interface**: Create an intuitive, responsive, and accessible user interface to facilitate the adoption and usability of the application by the target audience.
 
-6. **Promover a Colaboração e Compartilhamento de Conhecimento**: Através do Mercado Interno de Flashcards, incentivar a colaboração e o compartilhamento de conhecimento entre os usuários do aplicativo, fomentando o aprendizado mútuo.
+6.  **Promote Collaboration and Knowledge Sharing**: Through the Internal Marketplace, encourage collaboration and knowledge sharing among users, fostering mutual learning.
 
 ---
 
-## Mercado
+## Market
 
-### Análise de Mercado
+### Market Analysis
 
-#### Público Alvo
-O aplicativo tem como público-alvo estudantes de ensino médio ao nível universitário, abrangendo:
+#### Target Audience
+The application targets students from high school to the university level, including:
 
-| Perfil | Descrição |
+| Profile | Description |
 | --- | --- |
-| Estudantes do Ensino Médio | Alunos que buscam ferramentas para melhorar sua organização e produtividade nos estudos, preparando-se para o ambiente universitário. |
-| Estudantes Universitários | Alunos de graduação e pós-graduação que precisam gerenciar seu tempo de estudo e organizar seu material de aprendizado de forma eficiente. |
-| Estudantes Autônomos | Indivíduos que estudam de forma independente, como preparatórios para concursos ou cursos livres, e necessitam de estratégias de estudo eficazes. |
+| [User Profile A] | Students seeking tools to improve their organization and productivity in their studies, preparing for a more advanced academic environment. |
+| [User Profile B] | Undergraduate and graduate students who need to manage their study time and organize their learning materials efficiently. |
+| [User Profile C] | Independent learners, such as those preparing for competitive exams or taking online courses, who require effective study strategies. |
 
-Esse público-alvo foi selecionado com base na necessidade de ferramentas que combinem eficientemente a gestão do tempo de estudo (técnica Pomodoro) e a organização de conteúdo (flashcards), além da oportunidade de compartilhar e trocar conhecimento por meio do mercado interno de flashcards, atendendo às demandas dos estudantes desde o ensino médio até o nível universitário.
-
----
-
-#### Análise da Concorrência
-
-Ao analisar o mercado, foram identificados alguns aplicativos e plataformas que oferecem funcionalidades semelhantes ao aplicativo proposto, embora de forma fragmentada. Alguns dos principais concorrentes são:
-
-| **Concorrente** | **Funcionalidades**                                                               | **Pontos** **Fortes** | **Pontos** **Fracos**                                                                                                                 |
-| --- |-------------------------------------------------------------------------------| --- |-------------------------------------------------------------------------------------------------------------------------------|
-| **Anki** | - Criação e revisão de flashcards <br/> - Gerenciamento de deck de flashcards | - Ampla base de usuários <br/> - Algoritmo de repetição espaçada eficiente | - Não possui integração com a técnica Pomodoro <br/> - Interface pouco intuitiva                                              |
-| **Forest** | - Técnica Pomodoro <br/> - Gerenciamento de tempo de estudo                    | - Interface amigável <br/> - Gamificação da técnica Pomodoro | - Não possui funcionalidades de flashcards <br/> - Apenas gerenciamento de tempo, sem organização de conteúdo                  |
-| **Quizlet** | - Criação e revisão de flashcards <br/> - Compartilhamento de flashcards       | - Ampla biblioteca de flashcards compartilhados <br/> - Ferramentas de aprendizado interativas | - Não possui integração com a técnica Pomodoro <br/> - Foco apenas na funcionalidade de flashcards, sem gerenciamento de tempo |
-
-Essa análise da concorrência permite identificar as principais lacunas no mercado, as quais o aplicativo proposto pode preencher ao combinar as funcionalidades de gerenciamento de tempo (Pomodoro) e organização de conteúdo (flashcards), além de oferecer um mercado interno de flashcards para a troca de conhecimento entre os usuários.
+This target audience was selected based on the need for tools that efficiently combine time management (like [Technique A]) and content organization (like [Content Type B]), as well as the opportunity to share and exchange knowledge through an internal marketplace.
 
 ---
 
-#### Tendências:
-- **Crescente demanda por ferramentas de gerenciamento de tempo e organização de estudo**: Estudantes e profissionais do meio acadêmico buscam cada vez mais soluções integradas que os ajudem a gerenciar seu tempo de estudo e aprendizado de forma eficiente.
-- **Adoção da técnica Pomodoro no ambiente acadêmico**: A técnica Pomodoro vem ganhando popularidade entre estudantes e pesquisadores, que a utilizam para aumentar sua produtividade durante os momentos de estudo e trabalho.
-- **Necessidade de compartilhamento e colaboração no aprendizado**: Existe uma demanda crescente por plataformas que permitam a troca de conhecimento e a colaboração entre estudantes e profissionais do meio acadêmico.
+#### Competitive Analysis
 
-Usando alguns termos para pesquisa no Google Trends vemos que há uma busca ativa sobre os termos chaves como: pomodoro, flashcards, etc
+In analyzing the market, several applications and platforms were identified that offer similar functionalities, although in a fragmented manner. Some of the main competitors are:
 
-![grafico_trends.png](../images/grafico_trends.png)
+| **Competitor** | **Features** | **Strengths** | **Weaknesses** |
+| --- | --- | --- | --- |
+| **Competitor A** | - Creation and review of [Content Type B] <br/> - Management of [Content Type B] decks | - Large user base <br/> - Efficient spaced repetition algorithm | - No integration with [Technique A] <br/> - Unintuitive interface |
+| **Competitor B** | - [Technique A] <br/> - Study time management | - User-friendly interface <br/> - Gamification of the [Technique A] | - Lacks [Content Type B] features <br/> - Only time management, no content organization |
+| **Competitor C** | - Creation and review of [Content Type B] <br/> - Sharing of [Content Type B] | - Large library of shared [Content Type B] <br/> - Interactive learning tools | - No integration with [Technique A] <br/> - Focuses only on [Content Type B], no time management |
 
-**Gráficos por termos:**
-- Pomodoro
-![pomodoro.png](../images/pomodoro.png)
-
-- Técnica Estudo
-![tecnica_estudo.png](../images/tecnica_estudo.png)
-
-- Técnica Pomodoro
-![tecnica_pomodoro.png](../images/tecnica_pomodoro.png)
-
-- Flashcards
-![flashcards.png](../images/flashcards.png)
+This competitive analysis helps identify key market gaps that the proposed application can fill by combining time management ([Technique A]) and content organization ([Content Type B]) features, in addition to offering an internal marketplace for knowledge exchange.
 
 ---
 
-### Oportunidades:
-- **Integração de ferramentas de gerenciamento de tempo e organização de conteúdo**: O mercado carece de soluções que combinem de forma eficiente e fluida a técnica Pomodoro e a utilização de flashcards, atendendo às necessidades dos estudantes.
-- **Criação de um ecossistema de compartilhamento de conhecimento**: O desenvolvimento de um mercado interno de flashcards, onde os usuários possam comprar, vender e trocar materiais de estudo, representa uma oportunidade significativa para fomentar a colaboração e a troca de conhecimento no meio acadêmico.
-- **Diferenciação por meio da integração de funcionalidades**: A maioria das soluções atuais se concentra em apenas uma das necessidades (gerenciamento de tempo ou organização de flashcards), deixando uma lacuna a ser preenchida por um aplicativo que integre essas funcionalidades de forma completa.
+#### Trends:
+- **Growing demand for time management and study organization tools**: Students and academic professionals are increasingly seeking integrated solutions to help them manage their study and learning time efficiently.
+- **Adoption of [Technique A] in academic settings**: The [Technique A] is gaining popularity among students and researchers, who use it to increase their productivity during study and work sessions.
+- **Need for sharing and collaboration in learning**: There is a growing demand for platforms that allow the exchange of knowledge and collaboration among students and academic professionals.
 
-Essas tendências e oportunidades de mercado indicam que o aplicativo proposto pode preencher uma demanda relevante do público-alvo, oferecendo uma solução integrada e inovadora para o gerenciamento do tempo de estudo e a organização do conteúdo de aprendizado, além de promover a colaboração e a troca de conhecimento entre os usuários.
+---
 
-### Posicionamento e Diferencial Competitivo
+### Opportunities:
+- **Integration of time management and content organization tools**: The market lacks solutions that efficiently and seamlessly combine the [Technique A] and the use of [Content Type B], meeting students' needs.
+- **Creation of a knowledge-sharing ecosystem**: The development of an internal marketplace for [Content Type B], where users can buy, sell, and trade study materials, represents a significant opportunity to foster collaboration and knowledge exchange in the academic community.
+- **Differentiation through feature integration**: Most current solutions focus on only one need (time management or [Content Type B] organization), leaving a gap to be filled by an application that integrates these features comprehensively.
 
-Com base na análise do mercado e das necessidades do público-alvo, o aplicativo proposto se posicionará como uma solução integrada e inovadora, com os seguintes diferenciais competitivos:
+These market trends and opportunities indicate that the proposed application can meet a relevant demand from the target audience, offering an integrated and innovative solution for managing study time and organizing learning content, while also promoting collaboration and knowledge exchange among users.
 
-1. **Combinação de Pomodoro e Flashcards**: O aplicativo será a única solução do mercado que combina de forma fluida e eficiente a técnica Pomodoro para gerenciamento do tempo de estudo e as funcionalidades de criação, organização e revisão de flashcards. Essa integração permitirá que os usuários otimizem seu processo de aprendizado.
+### Positioning and Competitive Advantage
 
-2. **Mercado Interno de Flashcards**: A implementação de um mercado interno, onde os usuários poderão comprar, vender e trocar flashcards usando uma moeda própria da plataforma, será um diferencial competitivo. Essa funcionalidade fomentará a colaboração e a troca de conhecimento entre os estudantes e profissionais do meio acadêmico.
+Based on the market analysis and the needs of the target audience, the proposed application will be positioned as an integrated and innovative solution with the following competitive advantages:
 
-3. **Foco no Público Acadêmico**: Ao concentrar-se especificamente nas necessidades dos estudantes do ensino médio, universitários e profissionais do meio acadêmico, o aplicativo se diferenciará de soluções genéricas de gerenciamento de tempo e flashcards, oferecendo uma experiência personalizada e adaptada às demandas desse público-alvo.
+1.  **Combination of [Technique A] and [Content Type B]**: The application will be the only solution on the market that seamlessly and efficiently combines the [Technique A] for study time management with features for creating, organizing, and reviewing [Content Type B]. This integration will allow users to optimize their learning process.
 
-4. **Interface Intuitiva e Acessível**: O aplicativo priorizará o desenvolvimento de uma interface de usuário intuitiva, responsiva e acessível, facilitando a adoção e a usabilidade por parte dos estudantes e profissionais do meio acadêmico, independentemente de seu nível de familiaridade com esse tipo de ferramenta.
+2.  **Internal Marketplace for [Content Type B]**: The implementation of an internal marketplace, where users can buy, sell, and trade [Content Type B] using a platform-specific currency, will be a key competitive differentiator. This feature will foster collaboration and knowledge exchange among students and academic professionals.
 
-Esse posicionamento estratégico, aliado aos diferenciais competitivos do aplicativo, permitirá que o produto se destaque no mercado e se torne uma solução de referência para o gerenciamento eficiente do tempo de estudo e a organização do conteúdo de aprendizado no meio acadêmico.
+3.  **Focus on the Academic Audience**: By specifically targeting the needs of high school students, university students, and academic professionals, the application will differentiate itself from generic time management and [Content Type B] solutions, offering a personalized experience tailored to the demands of this audience.
+
+4.  **Intuitive and Accessible Interface**: The application will prioritize the development of an intuitive, responsive, and accessible user interface, making it easy for students and academic professionals to adopt and use, regardless of their familiarity with this type of tool.
+
+This strategic positioning, combined with the application's competitive advantages, will allow the product to stand out in the market and become a leading solution for efficient study time management and learning content organization in the academic world.
