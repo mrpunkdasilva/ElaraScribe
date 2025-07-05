@@ -32,7 +32,7 @@ else
     echo "${BLUE}Changes detected. Staging and committing...${RESET}"
 
     # Add all changes to the staging area
-    git add ../ || { echo "${RED}Error: Failed to add files to staging area.${RESET}"; exit 1; }
+    git add ../. || { echo "${RED}Error: Failed to add files to staging area.${RESET}"; exit 1; }
 
     # Create a commit with the dynamic message
     git commit -m "$COMMIT_MESSAGE" || { echo "${RED}Error: Failed to create commit.${RESET}"; exit 1; }
