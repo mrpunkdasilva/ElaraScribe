@@ -1,0 +1,1005 @@
+# Introduction
+
+Welcome to your new documentation project!
+
+This page serves as the main entry point for your readers. It should provide a high-level overview of the project, its purpose, and what the reader can expect to find in the documentation.
+
+## Project Goal
+
+Clearly state the primary objective of the project this documentation covers. What problem does it solve? Who is it for?
+
+## Documentation Scope
+
+Briefly describe what is covered in this documentation. For example:
+
+* In-depth tutorials and user guides.
+
+* Comprehensive API references.
+
+* Architectural diagrams and development guidelines.
+
+* Contribution guides for new developers.
+
+## Target Audience
+
+Identify the intended audience for this documentation. Are they end-users, developers, system administrators, or a mix? This helps set the right tone and level of detail.
+
+## Key Features
+
+If documenting a product, list its main features or functionalities here. This gives readers a quick summary of what the product can do.
+
+* Feature A: Brief description.
+
+* Feature B: Brief description.
+
+* Feature C: Brief description.
+
+## Documentation Structure
+
+Explain how the rest of the documentation is organized. This helps readers navigate the content efficiently. For example:
+
+* Getting Started: Step-by-step instructions for installation and initial setup.
+
+* User Guide: Detailed guides on how to use the product's features.
+
+* API Reference: Complete documentation for all public APIs.
+
+* Development: Information for developers who want to contribute to or build upon the project.
+
+
+
+# Business Requirements Document (BRD)
+
+A Business Requirements Document (BRD) is a comprehensive report that details everything a new project needs to succeed. This document outlines the project's goals, what to expect throughout the project lifecycle, and what is required to achieve them.
+
+## Executive Summary
+
+This report describes the development of a new software product. The system is designed to solve a specific business problem by providing a robust, scalable, and user-friendly solution that meets the needs of key stakeholders.
+
+## Project Objective
+
+The application will enable users to manage their activities with the following features:
+
+* User Management: Secure registration, authentication, and profile management.
+
+* Core Feature A: Creation, editing, and deletion of primary data elements.
+
+* Core Feature B: Advanced tools for data processing and visualization.
+
+* Collaboration: Features that allow users to share and collaborate on content.
+
+* Admin Panel: A dashboard for administrators to manage users and system settings.
+
+* Reporting: Generation of reports to track key metrics and user activity.
+
+## Project Scope
+
+The project will be executed by a team composed of a Product Owner, developers, and a QA Engineer, following the Scrum agile methodology to ensure iterative progress and continuous feedback.
+
+## Business Requirements
+
+| Business Requirement |Priority |Criticality Level |
+-----------------------------------------------------
+| Core Functionality |1 |Critical |
+| User Experience (UX) |2 |High |
+| System Performance |3 |Medium |
+| Security and Accessibility |4 |High |
+| Scalability |5 |Medium |
+
+## Key Stakeholders
+
+| Name |Role |
+--------------
+| [Stakeholder Name] |Product Owner |
+| [Stakeholder Name] |Lead Developer |
+| [Stakeholder Name] |QA Engineer |
+| [Stakeholder Name] |Project Manager |
+
+## Project Constraints
+
+| Constraint |Description |
+---------------------------
+| Deadline |The project must be completed within the established timeframe to meet market demands. |
+| Human Resources |The team consists of a limited number of members for project development. |
+| Budget |The project must be developed using approved tools and technologies, without additional costs. |
+| Technology |The application must be developed with technologies aligned with the company's strategy. |
+| Scope |Core features must be delivered as a Minimum Viable Product (MVP) in the first phase. |
+
+## Cost-Benefit Analysis
+
+| Benefit |Description |
+------------------------
+| Increased Efficiency |The system will automate manual processes, improving operational efficiency. |
+| Improved Decision-Making |Access to real-time data and reports will facilitate more informed strategic decisions. |
+| Enhanced User Satisfaction |A modern and intuitive interface will improve the end-user experience. |
+
+
+
+# Development
+
+## Project Overview
+
+This project aims to develop an application for the [Target Audience], combining [Strategy A] and [Strategy B] into a single platform. The goal is to create a comprehensive solution that enables users to manage their study time efficiently and organize their learning materials effectively.
+
+One of the core features of the application will be the integration of the [Technique A]. This time management technique helps users maintain focus and productivity during study sessions. Additionally, the application will include tools for creating and editing [Content Type B], a widely used strategy for memorization and content review.
+
+Another key feature will be an internal marketplace where users can trade their [Content Type B] using a platform-specific currency. This integration of a marketplace for study materials will foster a dynamic learning ecosystem, encouraging knowledge exchange and collaboration among users.
+
+By combining proven study strategies, time management, and an internal marketplace, the application will establish itself as an innovative and complete solution for the academic community. This integration of tools is expected to improve student performance and engagement, as well as promote collaboration and knowledge sharing.
+
+The development of this application aims to meet the demands of the academic audience by offering a platform that efficiently integrates key study and learning strategies.
+
+### General Objective
+
+The main goal of this project is to develop an application that combines the [Strategy A] and [Strategy B], providing users in the academic community with an integrated and efficient platform to manage their study time and organize their learning materials.
+
+### Specific Objectives
+
+1. Implement [Technique A] Functionality: Integrate the [Technique A] into the application, allowing users to manage their study time efficiently by alternating between intense work periods and short breaks.
+
+2. Develop Tools for Creating and Editing [Content Type B]: Create an intuitive interface for users to create, store, edit, and organize their [Content Type B] effectively.
+
+3. Establish an Internal Marketplace for [Content Type B]: Implement a system for buying and selling [Content Type B] among users, using a platform-specific currency to foster knowledge exchange and collaboration within the academic community.
+
+4. Integrate [Technique A] and [Content Type B] Functionality: Ensure a seamless and integrated experience between the [Technique A] study strategies and the use of [Content Type B], optimizing the user's learning workflow.
+
+5. Develop an Intuitive and Accessible Interface: Create an intuitive, responsive, and accessible user interface to facilitate the adoption and usability of the application by the target audience.
+
+6. Promote Collaboration and Knowledge Sharing: Through the Internal Marketplace, encourage collaboration and knowledge sharing among users, fostering mutual learning.
+
+## Market
+
+### Market Analysis
+
+#### Target Audience
+
+The application targets students from high school to the university level, including:
+
+| Profile |Description |
+------------------------
+| [User Profile A] |Students seeking tools to improve their organization and productivity in their studies, preparing for a more advanced academic environment. |
+| [User Profile B] |Undergraduate and graduate students who need to manage their study time and organize their learning materials efficiently. |
+| [User Profile C] |Independent learners, such as those preparing for competitive exams or taking online courses, who require effective study strategies. |
+
+This target audience was selected based on the need for tools that efficiently combine time management (like [Technique A]) and content organization (like [Content Type B]), as well as the opportunity to share and exchange knowledge through an internal marketplace.
+
+#### Competitive Analysis
+
+In analyzing the market, several applications and platforms were identified that offer similar functionalities, although in a fragmented manner. Some of the main competitors are:
+
+| Competitor |Features |Strengths |Weaknesses |
+-----------------------------------------------
+| Competitor A |- Creation and review of [Content Type B]   - Management of [Content Type B] decks |- Large user base   - Efficient spaced repetition algorithm |- No integration with [Technique A]   - Unintuitive interface |
+| Competitor B |- [Technique A]   - Study time management |- User-friendly interface   - Gamification of the [Technique A] |- Lacks [Content Type B] features   - Only time management, no content organization |
+| Competitor C |- Creation and review of [Content Type B]   - Sharing of [Content Type B] |- Large library of shared [Content Type B]   - Interactive learning tools |- No integration with [Technique A]   - Focuses only on [Content Type B], no time management |
+
+This competitive analysis helps identify key market gaps that the proposed application can fill by combining time management ([Technique A]) and content organization ([Content Type B]) features, in addition to offering an internal marketplace for knowledge exchange.
+
+#### Trends:
+
+* Growing demand for time management and study organization tools: Students and academic professionals are increasingly seeking integrated solutions to help them manage their study and learning time efficiently.
+
+* Adoption of [Technique A] in academic settings: The [Technique A] is gaining popularity among students and researchers, who use it to increase their productivity during study and work sessions.
+
+* Need for sharing and collaboration in learning: There is a growing demand for platforms that allow the exchange of knowledge and collaboration among students and academic professionals.
+
+### Opportunities:
+
+* Integration of time management and content organization tools: The market lacks solutions that efficiently and seamlessly combine the [Technique A] and the use of [Content Type B], meeting students' needs.
+
+* Creation of a knowledge-sharing ecosystem: The development of an internal marketplace for [Content Type B], where users can buy, sell, and trade study materials, represents a significant opportunity to foster collaboration and knowledge exchange in the academic community.
+
+* Differentiation through feature integration: Most current solutions focus on only one need (time management or [Content Type B] organization), leaving a gap to be filled by an application that integrates these features comprehensively.
+
+These market trends and opportunities indicate that the proposed application can meet a relevant demand from the target audience, offering an integrated and innovative solution for managing study time and organizing learning content, while also promoting collaboration and knowledge exchange among users.
+
+### Positioning and Competitive Advantage
+
+Based on the market analysis and the needs of the target audience, the proposed application will be positioned as an integrated and innovative solution with the following competitive advantages:
+
+1. Combination of [Technique A] and [Content Type B]: The application will be the only solution on the market that seamlessly and efficiently combines the [Technique A] for study time management with features for creating, organizing, and reviewing [Content Type B]. This integration will allow users to optimize their learning process.
+
+2. Internal Marketplace for [Content Type B]: The implementation of an internal marketplace, where users can buy, sell, and trade [Content Type B] using a platform-specific currency, will be a key competitive differentiator. This feature will foster collaboration and knowledge exchange among students and academic professionals.
+
+3. Focus on the Academic Audience: By specifically targeting the needs of high school students, university students, and academic professionals, the application will differentiate itself from generic time management and [Content Type B] solutions, offering a personalized experience tailored to the demands of this audience.
+
+4. Intuitive and Accessible Interface: The application will prioritize the development of an intuitive, responsive, and accessible user interface, making it easy for students and academic professionals to adopt and use, regardless of their familiarity with this type of tool.
+
+This strategic positioning, combined with the application's competitive advantages, will allow the product to stand out in the market and become a leading solution for efficient study time management and learning content organization in the academic world.
+
+
+
+# Development Process
+
+This section outlines the development process followed by our team. A clear process ensures that we work efficiently, maintain high quality, and deliver features iteratively.
+
+## Methodology
+
+Describe the development methodology used (e.g., Scrum, Kanban, Waterfall). Explain why it was chosen and how it is applied in the project.
+
+Example (for Scrum):
+We use Scrum with two-week sprints. Each sprint begins with a planning meeting to prioritize the backlog and ends with a review and retrospective to demonstrate progress and identify areas for improvement.
+
+## User Stories / Requirements
+
+If applicable, explain how requirements are gathered and managed. You can use a table to list high-level user stories or epics as examples.
+
+| ID |Description |Priority |
+-----------------------------
+| US-XXX |As a [user role], I want to [action], so that [benefit]. |High |
+| US-YYY |As a [user role], I want to [action], so that [benefit]. |Medium |
+| US-ZZZ |As a [user role], I want to [action], so that [benefit]. |Low |
+
+## Team Organization
+
+Describe the structure and roles of the development team. This helps new contributors understand who to contact for different issues.
+
+| Role |Responsibilities |
+--------------------------
+| Product Owner |Manages the product backlog and prioritizes features. |
+| Lead Developer |Oversees the technical aspects of the project. |
+| Frontend Developer |Implements the user interface. |
+| Backend Developer |Develops the server-side logic and APIs. |
+| QA Engineer |Ensures the quality of the product through testing. |
+
+### Team Members
+
+You can optionally list the current team members and their roles here.
+
+Explain how the team stays synchronized. Do you have daily stand-up meetings? Do you use a project management tool for reporting?
+
+Example:
+Our team holds a daily stand-up meeting at 10 AM to discuss progress, plans, and any blockers. We also use a [Project Management Tool] to track tasks and progress.
+
+
+
+# Daily Stand-ups / Reporting
+
+* Meeting Time and Location: [Specify Time and Link/Location]
+
+* Attendees: [List of expected attendees]
+
+## Agenda
+
+| Question |Description |
+-------------------------
+| What did you accomplish yesterday? |Briefly describe your progress on tasks from the previous day. |
+| What are you working on today? |Outline your planned tasks and objectives for the current day. |
+| What impediments are blocking your progress? |Highlight any obstacles or issues that are preventing you from completing your work. |
+
+## Reporting
+
+* Progress Report: [Link to project board or report]
+
+* Meeting Notes: [Add any notes or decisions made during the stand-up]
+
+
+
+# Software Engineering
+
+Software engineering is the systematic approach to the development, operation, and maintenance of software systems. In this context, the organization of our project's technical documentation is essential to ensure the quality, maintainability, and evolution of the system.
+
+As stated by Pressman (2010), "technical documentation is the backbone of software engineering, as it captures the requirements, architecture, implementation, and operational procedures of a system."
+
+
+
+# Requirements
+
+## Functional Requirements
+
+This section outlines the functional requirements of the system. These describe what the system should do.
+
+| Requirement ID |Description |Priority |Use Case/Feature |
+-----------------------------------------------------------
+| FR001 |The system shall allow users to [specific action]. |High |[Corresponding Use Case] |
+| FR002 |The system shall provide [specific functionality]. |Medium |[Corresponding Use Case] |
+| FR003 |The system shall enable [another specific action]. |Low |[Corresponding Use Case] |
+
+## Non-Functional Requirements
+
+This section defines the non-functional requirements, which specify how the system should perform.
+
+| Requirement ID |Description |Priority |
+-----------------------------------------
+| NFR001 |The system shall be responsive and adaptable to different screen sizes. |High |
+| NFR002 |The system shall have an intuitive and user-friendly design. |High |
+| NFR003 |The system shall have a fast response time, even with a large number of users. |Medium |
+| NFR004 |The system shall ensure the security and privacy of user data. |High |
+| NFR005 |The system shall be accessible, following web accessibility guidelines. |Medium |
+| NFR006 |The system shall be cross-platform, functioning on different operating systems and devices. |Medium |
+| NFR007 |The system shall provide clear and detailed documentation for developers. |Low |
+| NFR008 |The system shall perform daily automatic backups to prevent data loss. |Low |
+| NFR009 |The system shall allow integrations with external APIs for additional functionalities. |Medium |
+
+
+
+# Information Architecture
+
+The information architecture (IA) for our project's software documentation should be designed to provide a clear and intuitive structure for organizing and disseminating technical knowledge. According to Rosenfeld and Morville (2015), IA "involves the design of the structure and navigation of an information space to facilitate task completion and content access."
+
+This information architecture structure will help ensure that our software project documentation is understandable, accessible, and effective for developers and other stakeholders.
+
+
+
+# Wireframes / Prototypes
+
+This section should include visual representations of the user interface, such as wireframes or prototypes. You can link to external tools (e.g., Figma, Adobe XD) or embed images directly.
+
+Tip:
+
+[Link to project's design files or prototype]
+
+## 
+
+Example Wireframe: [Feature Name]
+
+[Description of the wireframe and its purpose]
+
+
+
+# Database Design
+
+This section should detail the database structure, including Entity-Relationship Diagrams (ERD), Logical Data Models (LDM), and Physical Data Models (PDM). You can include SQL schemas for tables.
+
+Tip:
+
+[Link to database documentation or design tool]
+
+## Entity-Relationship Diagram (ERD)
+
+[Description of your ERD]
+
+## Physical Data Model (PDM)
+
+[Description of your PDM and table schemas]
+
+### 
+
+Table: `[TABLE_NAME]`
+
+```SQL
+CREATE TABLE [TABLE_NAME] (
+   [COLUMN_NAME] [DATA_TYPE] PRIMARY KEY, -- Description of column
+   [ANOTHER_COLUMN] [DATA_TYPE],          -- Another column description
+   -- Add more columns as needed
+   [FOREIGN_KEY_COLUMN] INT,
+   FOREIGN KEY ([FOREIGN_KEY_COLUMN]) REFERENCES [REFERENCED_TABLE]([REFERENCED_COLUMN])
+);
+```
+
+
+
+# UML Diagrams
+
+Unified Modeling Language (UML) is a standardized visual modeling language widely used in the software development industry. As defined by the Object Management Group (OMG), "UML provides a standardized way to visualize the structure and behavior of a software system" (OMG, 2017).
+
+According to the OMG specification, "UML is a unified visual modeling language that allows developers to specify, visualize, construct, and document the artifacts of a software system" (OMG, 2017).
+
+
+
+# Use Case Diagrams
+
+This section should contain Use Case Diagrams that illustrate the functionality of the system from the user's perspective.
+
+## 
+
+Use Case: [Use Case Name]
+
+| Field |Description |
+----------------------
+| Name |[Name of the Use Case] |
+| Description |[Brief description of the Use Case] |
+| Flow |[Step-by-step description of the main flow] |
+| Actor |[Actors involved in the Use Case] |
+| Preconditions |[Conditions that must be met before the Use Case can start] |
+| Postconditions |[Conditions that are true after the Use Case is completed] |
+| Exception Flow |[Description of alternative or error flows] |
+
+```PLANTUML
+@startuml
+left to right direction
+actor User
+rectangle "System" {
+  usecase "Perform Action" as UC1
+  usecase "View Information" as UC2
+}
+User --> UC1
+User --> UC2
+@enduml
+```
+
+
+
+# Class Diagrams
+
+This section should include Class Diagrams that represent the static structure of the system, detailing the main entities and their relationships.
+
+[Description of your Class Diagram and key classes]
+
+```MERMAID
+classDiagram
+    class [ClassName] {
+        +[attributeType] [attributeName]
+        +[methodName]() [returnType]
+    }
+    class [AnotherClassName] {
+        +[attributeType] [attributeName]
+    }
+    [ClassName] -- [AnotherClassName] : Relationship Description
+```
+
+
+
+# Sequence Diagrams
+
+This section should contain Sequence Diagrams that illustrate the interactions between objects in a time-ordered sequence.
+
+## 
+
+Sequence Diagram: [Interaction Name]
+
+[Description of the interaction flow]
+
+```MERMAID
+sequenceDiagram
+    actor User
+    participant Frontend
+    participant Backend
+    participant Database
+
+    User->>Frontend: [Action]
+    Frontend->>Backend: [Request]
+    Backend->>Database: [Query]
+    Database-->>Backend: [Response]
+    Backend-->>Frontend: [Data]
+    Frontend-->>User: [Result]
+```
+
+
+
+# Activity Diagrams
+
+This section illustrates the flow of activities or processes within the system.
+
+[Description of your Activity Diagram]
+
+```PLANTUML
+@startuml
+start
+:User logs in;
+:System authenticates user;
+if (Authentication successful?) then (yes)
+  :Display dashboard;
+else (no)
+  :Show error message;
+  stop
+endif
+:User performs actions;
+stop
+@enduml
+```
+
+
+
+# Component Diagrams
+
+This section shows the structural relationships between components of the system.
+
+[Description of your Component Diagram]
+
+```PLANTUML
+@startuml
+component [ComponentA]
+component [ComponentB]
+component [ComponentC]
+
+[ComponentA] -- [ComponentB]
+[ComponentB] -- [ComponentC]
+@enduml
+```
+
+
+
+# Deployment Diagrams
+
+This section illustrates the physical deployment of software components on hardware nodes.
+
+[Description of your Deployment Diagram]
+
+```PLANTUML
+@startuml
+node "Server" {
+  component "Backend Application"
+  component "Database"
+}
+
+node "Client" {
+  component "Frontend Application"
+}
+
+"Frontend Application" --> "Backend Application"
+"Backend Application" --> "Database"
+@enduml
+```
+
+
+
+# The 4P's of Software Engineering
+
+The "4P's" framework in software engineering provides a holistic view of the key elements involved in successful software development. These Ps are:
+
+```PLANTUML
+@startmindmap
+* The 4P's of Software Engineering
+** People
+*** Stakeholders
+*** Team Organization
+*** Skills and Expertise
+*** Communication
+** Product
+*** Requirements
+*** Scope
+*** Quality
+*** Evolution
+** Process
+*** Methodologies
+*** Activities
+*** Tools and Techniques
+*** Standards and Procedures
+** Project
+*** Planning
+*** Scheduling
+*** Risk Management
+*** Tracking and Monitoring
+*** Communication
+@endmindmap
+```
+
+## 1. People
+
+This refers to the human element involved in the software development process. It includes:
+
+* Stakeholders: Anyone affected by the project (users, clients, managers, developers).
+
+* Team Organization: The structure and roles within the development team.
+
+* Skills and Expertise: The knowledge and abilities of the individuals involved.
+
+* Communication: Effective interaction among team members and stakeholders.
+
+## 2. Product
+
+This focuses on the software itself, its requirements, and its evolution. It includes:
+
+* Requirements: Defining what the software should do (functional and non-functional).
+
+* Scope: The boundaries and features of the software.
+
+* Quality: Ensuring the software meets defined standards and user expectations.
+
+* Evolution: How the product will be maintained, updated, and improved over time.
+
+## 3. Process
+
+This describes the framework of activities, tasks, and practices used to build the software. It includes:
+
+* Methodologies: Agile, Waterfall, Scrum, Kanban, etc.
+
+* Activities: Planning, analysis, design, coding, testing, deployment.
+
+* Tools and Techniques: Software development tools, version control, testing frameworks.
+
+* Standards and Procedures: Guidelines for consistent and high-quality work.
+
+## 4. Project
+
+This encompasses the management and execution of the software development effort. It includes:
+
+* Planning: Defining objectives, scope, resources, and timelines.
+
+* Scheduling: Allocating tasks and setting deadlines.
+
+* Risk Management: Identifying, assessing, and mitigating potential problems.
+
+* Tracking and Monitoring: Overseeing progress and making adjustments as needed.
+
+* Communication: Reporting project status to stakeholders.
+
+
+
+# API Documentation
+
+This section provides detailed documentation for the backend API, generated from the OpenAPI specification.
+
+## Authenticate user
+
+OpenAPI endpoint: POST /auth/login
+
+### Request parameters
+
+### Responses
+
+## Register new user
+
+OpenAPI endpoint: POST /auth/register
+
+### Request parameters
+
+### Responses
+
+## Get Resource A by ID
+
+OpenAPI endpoint: GET /resourceA/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource A by ID
+
+OpenAPI endpoint: PUT /resourceA/{id}
+
+### Request parameters
+
+### Responses
+
+## Delete Resource A by ID
+
+OpenAPI endpoint: DELETE /resourceA/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource A
+
+OpenAPI endpoint: GET /resourceA
+
+### Responses
+
+## Create Resource A
+
+OpenAPI endpoint: POST /resourceA
+
+### Request parameters
+
+### Responses
+
+## Get Resource B by ID
+
+OpenAPI endpoint: GET /resourceB/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource B by ID
+
+OpenAPI endpoint: PUT /resourceB/{id}
+
+### Request parameters
+
+### Responses
+
+## Delete Resource B by ID
+
+OpenAPI endpoint: DELETE /resourceB/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource B
+
+OpenAPI endpoint: GET /resourceB
+
+### Responses
+
+## Create Resource B
+
+OpenAPI endpoint: POST /resourceB
+
+### Request parameters
+
+### Responses
+
+## Get Resource C by ID
+
+OpenAPI endpoint: GET /resourceC/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource C by ID
+
+OpenAPI endpoint: PUT /resourceC/{id}
+
+### Request parameters
+
+### Responses
+
+## Delete Resource C by ID
+
+OpenAPI endpoint: DELETE /resourceC/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource C
+
+OpenAPI endpoint: GET /resourceC
+
+### Responses
+
+## Get Resource D by ID
+
+OpenAPI endpoint: GET /resourceD/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource D by ID
+
+OpenAPI endpoint: PUT /resourceD/{id}
+
+### Request parameters
+
+### Responses
+
+## Delete Resource D by ID
+
+OpenAPI endpoint: DELETE /resourceD/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource D
+
+OpenAPI endpoint: GET /resourceD
+
+### Responses
+
+## Create Resource D
+
+OpenAPI endpoint: POST /resourceD
+
+### Request parameters
+
+### Responses
+
+## Get Resource E by ID
+
+OpenAPI endpoint: GET /resourceE/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource E by ID
+
+OpenAPI endpoint: PUT /resourceE/{id}
+
+### Request parameters
+
+### Responses
+
+## Create Resource E by ID
+
+OpenAPI endpoint: POST /resourceE/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource E
+
+OpenAPI endpoint: GET /resourceE
+
+### Responses
+
+## Get Resource F by ID
+
+OpenAPI endpoint: GET /resourceF/{id}
+
+### Request parameters
+
+### Responses
+
+## Update Resource F by ID
+
+OpenAPI endpoint: PUT /resourceF/{id}
+
+### Request parameters
+
+### Responses
+
+## Create Resource F by ID
+
+OpenAPI endpoint: POST /resourceF/{id}
+
+### Request parameters
+
+### Responses
+
+## Delete Resource F by ID
+
+OpenAPI endpoint: DELETE /resourceF/{id}
+
+### Request parameters
+
+### Responses
+
+## Get all Resource F
+
+OpenAPI endpoint: GET /resourceF
+
+### Responses
+
+
+
+# User Manual
+
+The user manual aims to guide the end-user of the system to use it properly and efficiently, containing information about functionalities, features, usage instructions, troubleshooting, and other relevant information for the user.
+
+## User Registration and Login
+
+To register, the user must correctly provide the required information, filling in the necessary fields. Each field, once properly filled, should be confirmed by pressing the continue button.
+
+1. First, the user will create a username.
+
+2. Next, the user will provide their email.
+
+3. The user will create their password.
+
+4. After providing the necessary data, the user confirms account creation.
+
+### Congratulations, the user's account has been created! Now the user can log in.
+
+1. On the login page, the user enters their email.
+
+2. The user types their password and confirms login.
+
+## 
+
+Creating [Feature A] (e.g., Digital Content)
+
+On the Dashboard page, the user will first need to create a [Collection] which will be the container for their [Feature A] items. To do this, they will select the "Add Collection" button. The system will then prompt for the title and description of the collection.
+
+1. In the [Collection List] section.
+
+2. Create the collection, add the title and description, and save.
+
+3. Click on the collection and create the [Feature A] items, adding a title and description, then save.
+
+## 
+
+Creating and Selling [Product Package] (e.g., Bundles of Content)
+
+To sell a [Product Package], the user first needs to create it.
+
+1. In the menu, the user will navigate to the [Product Package Management] page.
+
+2. On this page, they will need to select the "Add" button (e.g., a "+" icon next to the search button). Then, they should create the [Product Package] with existing [Feature A] items, which can belong to various collections, and then set the price.
+
+## 
+
+Purchasing [Product Package]
+
+To purchase a [Product Package], the user should go to the [Product Marketplace] page and search for the desired package.
+
+1. The user will select the button displaying the price of the package and then confirm the purchase.
+
+## 
+
+Using [Feature B] (e.g., a Productivity Timer)
+
+For the user to use [Feature B], they must first be on the Dashboard.
+
+1. The user can choose from [Feature B] functions such as [e.g., 25-minute work sessions, 5-minute short breaks, and 15-minute long breaks]. They can also use functions like start, pause, and restart.
+
+
+
+# Sitemap
+
+The Sitemap section provides a structured overview of the main areas and functionalities of the application, organized in a mindmap format. This diagram facilitates understanding the available sections and flows, from user registration and login to the specific functionalities offered.
+
+```MERMAID
+mindmap
+  root((Application))
+    User Authentication
+      Registration
+        Username
+        Email
+        Password
+        Sign Up
+      Login
+        Username
+        Password
+        Login
+    User Dashboard
+    Core Features
+      Contact
+      Help
+      User Profile
+    Specific Functionalities
+      Feature A (e.g., Content Creation)
+      Feature B (e.g., Favorites Management)
+      Feature C (e.g., History/Activity Log)
+```
+
+
+
+# Used Technologies
+
+This section outlines the technologies and tools utilized in this project. The choices were made based on project requirements, team expertise, and industry best practices.
+
+## Programming Languages and Frameworks
+
+* [Programming Language 1]: Used for [e.g., backend development, client-side scripting].
+
+* [Programming Language 2/Framework]: Employed for [e.g., building interactive web interfaces, data processing].
+
+* [Styling Language]: Responsible for the visual styling and layout of the user interface.
+
+* [Markup Language]: Used for the semantic structuring of web pages or content.
+
+* [Framework/Library]: A framework or library used to streamline development in [Programming Language 1/2], providing features like [e.g., dependency injection, routing, component-based architecture].
+
+## Database
+
+* [Database Type/Name]: The chosen database system for storing and persisting application data in a structured manner.
+
+## Version Control
+
+* [Version Control System]: The version control system adopted for managing the project's source code.
+
+* [Code Hosting Platform]: The platform used for hosting and collaborating on the project's codebase.
+
+## Integrated Development Environments (IDEs)
+
+* [IDE 1]: The primary IDE used for [e.g., backend development, specific language].
+
+* [IDE 2]: An IDE or code editor utilized for [e.g., frontend development, scripting].
+
+## Prototyping and Design
+
+* [Prototyping Tool]: The design and prototyping tool used to create mockups and user interface designs.
+
+## Project Management
+
+* [Project Management Tool]: The platform used for organizing and tracking the development progress and tasks.
+
+## Documentation
+
+* [Documentation Tool]: The tool selected for creating and structuring the project's technical documentation, aiming to facilitate system understanding and maintenance.
+
+
+
+# Conclusion
+
+This project successfully achieved a significant portion of its initial objectives, with the complete implementation of key functional and non-functional requirements. We managed to develop core functionalities and integrate various components, representing a significant step forward in product delivery.
+
+Despite time constraints and technical challenges, such as the learning curve associated with new tools and technologies, the team demonstrated resilience and collaboration in overcoming these obstacles. The adoption of an agile methodology, such as Scrum, was crucial for the project's success, enabling effective task distribution, continuous reviews, and ongoing improvements throughout each sprint. This methodology also helped us manage deadlines and foster a structured and productive work environment.
+
+Throughout the project's execution, we acquired valuable skills, including teamwork, the practice of conducting regular meetings, and the ability to handle deadlines and adversities. These learnings will be essential for future projects and professional careers.
+
+In summary, although some functionalities may still be pending, the project showed great progress, delivering a functional product aligned with prioritized requirements. This work served not only as a technical exercise but also as an experience of growth and learning for everyone involved.
+
+
+
+# Bibliographic References
+
+This section is for listing all external resources, academic papers, books, and other materials that were referenced during the project's development. Please ensure all entries follow a consistent citation style.
+
+* [Author/Organization]. (Year). Title of Work. Publisher/Source. [Link (if applicable)]
+
+* [Another Example Reference]. (Year). Another Title. Source. [Link]
+
+* [Yet Another Reference]. (Year). Relevant Article/Book Chapter. Journal/Book Title, Volume(Issue), pages. [DOI/Link]
+
+
+
