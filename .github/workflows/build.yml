@@ -23,6 +23,7 @@ jobs:
           -v ${{ github.workspace }}:/opt/sources \
           -e SOURCE_DIR=/opt/sources \
           -e MODULE_INSTANCE=ds/ds \
+          -e PRODUCT=ds \
           -e OUTPUT_DIR=/opt/sources/output \
           -e RUNNER=github \
           jetbrains/writerside-builder:2025.04.8412
