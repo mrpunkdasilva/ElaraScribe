@@ -1,26 +1,6 @@
 #!/bin/bash
 
-# Define colors
-GREEN=$(tput setaf 2)
-RED=$(tput setaf 1)
-YELLOW=$(tput setaf 3)
-BLUE=$(tput setaf 4)
-RESET=$(tput sgr0)
-
-# Set -e to exit immediately if a command exits with a non-zero status.
-set -e
-
-# Punk Banner
-echo "${RED}"
-echo "  _  _ ____ _  _ ____ ____ ____ ____ ____"
-echo "  |\/| |___ |\ | |___ |__/ |___ |__/ |___"
-echo "  |  | |___ | \| |___ |  \ |___ |  \ |___"
-echo "${RESET}"
-echo "${BLUE}Writerside CLI Unzip Script${RESET}"
-echo "${BLUE}---------------------------${RESET}"
-echo ""
-
-# Diretório onde o .zip é gerado (assumindo que o .zip está no diretório pai)
+# Diretório onde o .zip é gerado
 ZIP_DIR=".."
 # Diretório de destino para descompactar
 DEST_DIR="../docs/"
@@ -44,21 +24,14 @@ if [[ -f "$LATEST_ZIP" ]]; then
 
     # Se o arquivo foi modificado desde a última verificação
     if [[ "$LAST_MODIFIED" -gt "$LAST_KNOWN_MODIFIED" ]]; then
-        echo "${BLUE}Unzipping latest Writerside CLI...${RESET}"
         # Descompacta o arquivo .zip mais recente para a pasta docs
-        unzip -o "$LATEST_ZIP" -d "$DEST_DIR" || { echo "${RED}Error: Failed to unzip Writerside CLI.${RESET}"; exit 1; }
+        unzip -o "$LATEST_ZIP" -d "$DEST_DIR"
         # Atualiza a última data de modificação
         echo "$LAST_MODIFIED" > "$LAST_MODIFIED_FILE"
-        echo "${GREEN}File unzipped successfully: $(basename "$LATEST_ZIP")${RESET}"
+        echo "Arquivo descompactado com sucesso: $(basename "$LATEST_ZIP")"
     else
-        echo "${YELLOW}No changes detected in .zip files. Skipping unzip.${RESET}"
+        echo "Nenhuma alteração detectada nos arquivos .zip."
     fi
 else
-    echo "${RED}Error: No .zip file found in the parent directory.${RESET}"
-    exit 1
+    echo "Nenhum arquivo .zip encontrado na pasta."
 fi
-
-echo ""
-echo "${GREEN}---------------------------${RESET}"
-echo "${GREEN}Writerside CLI Unzip process completed!${RESET}"
-echo "${GREEN}---------------------------${RESET}"
