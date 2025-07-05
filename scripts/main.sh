@@ -32,11 +32,6 @@ echo "${BLUE}Checking and unzipping Writerside CLI...${RESET}"
 ./unzip_writerside.sh || { echo "${RED}Error: Writerside CLI unzip failed.${RESET}"; exit 1; }
 echo "${GREEN}Writerside CLI ready.${RESET}"
 
-# --- Step 3: Build documentation ---
-echo "${BLUE}Building documentation...${RESET}"
-writerside.sh build --input-dir=. --output-dir=../docs || { echo "${RED}Error: Documentation build failed.${RESET}"; exit 1; }
-echo "${GREEN}Documentation built successfully.${RESET}"
-
 # --- Step 4: Push to remote repository ---
 echo "${BLUE}Pushing built documentation to remote repository...${RESET}"
 ./push_remote_repo.sh || { echo "${RED}Error: Failed to push to remote repository.${RESET}"; exit 1; }
