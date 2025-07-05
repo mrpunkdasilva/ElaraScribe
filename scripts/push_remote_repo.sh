@@ -1,22 +1,52 @@
 #!/bin/bash
 
-# Mensagem do commit com o tempo atual
-COMMIT_MESSAGE="Atualização automática do repositório - $(date '+%Y-%m-%d %H:%M:%S')"
+# Define colors
+GREEN=$(tput setaf 2)
+RED=$(tput setaf 1)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+RESET=$(tput sgr0)
 
-# Verifica se há alterações no repositório
-if [[ -n $(git status -s) ]]; then
-    echo "Há alterações no repositório. Preparando para subir para o GitHub..."
+# Set -e to exit immediately if a command exits with a non-zero status.
+set -e
 
-    # Adiciona todas as alterações ao staging area
-    git add ../.
+# Punk Banner for Push Script
+echo "${RED}"
+echo "  _  _ ____ _  _ ____ ____ ____ ____ ____"
+echo "  |\/| |___ |\ | |___ |__/ |___ |__/ |___"
+echo "  |  | |___ | \| |___ |  \ |___ |  \ |___"
+echo "${RESET}"
+echo "${BLUE}Git Push Script${RESET}"
+echo "${BLUE}-----------------${RESET}"
+echo ""
 
-    # Cria um commit com a mensagem dinâmica
-    git commit -m "$COMMIT_MESSAGE"
+# Commit message with current timestamp
+COMMIT_MESSAGE="docs: Auto-generated documentation update - $(date '+%Y-%m-%d %H:%M:%S')"
 
-    # Faz o push das alterações para o repositório remoto
-    git push origin main  # Altere "main" para o nome do branch, se necessário
+echo "${YELLOW}Checking for changes to commit...${RESET}"
 
-    echo "Alterações subidas para o GitHub com sucesso!"
+# Check if there are any changes (staged or unstaged)
+if [[ -z $(git status --porcelain) ]]; then
+    echo "${YELLOW}No changes detected in the repository. Nothing to commit.${RESET}"
 else
-    echo "Nenhuma alteração detectada no repositório."
+    echo "${BLUE}Changes detected. Staging and committing...${RESET}"
+
+    # Add all changes to the staging area
+    git add . || { echo "${RED}Error: Failed to add files to staging area.${RESET}"; exit 1; }
+
+    # Create a commit with the dynamic message
+    git commit -m "$COMMIT_MESSAGE" || { echo "${RED}Error: Failed to create commit.${RESET}"; exit 1; }
+
+    echo "${GREEN}Changes committed successfully!${RESET}"
+
+    # Push changes to the remote repository
+    echo "${BLUE}Pushing changes to remote repository (origin main)...${RESET}"
+    git push origin main || { echo "${RED}Error: Failed to push to remote repository.${RESET}"; exit 1; }
+
+    echo "${GREEN}Changes pushed to GitHub successfully!${RESET}"
 fi
+
+echo ""
+echo "${GREEN}-----------------${RESET}"
+echo "${GREEN}Git Push process completed!${RESET}"
+echo "${GREEN}-----------------${RESET}"
