@@ -23,7 +23,7 @@ echo ""
 echo "${YELLOW}Starting documentation build and deploy process...${RESET}"
 
 # --- Step 1: Clean previous build output (if any) ---
-# Note: The 'docs' directory removal is commented out as the Docker build
+# The 'docs' directory removal is commented out as the Docker build
 # now outputs to './output'. If you need to clean a specific 'docs' directory,
 # please uncomment and adjust the path.
 # echo "${BLUE}Cleaning previous 'docs' directory...${RESET}"
