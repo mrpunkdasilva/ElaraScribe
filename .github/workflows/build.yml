@@ -14,19 +14,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Build Docker image
-      run: docker build -t writerside-docs .
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
 
-    - name: Run Writerside build
+    - name: Download and Unzip Writerside CLI
       run: |
-        docker run --rm \
-          -v ${{ github.workspace }}:/opt/sources \
-          -e SOURCE_DIR=/opt/sources \
-          -e MODULE_INSTANCE=ds/ds \
-          -e PRODUCT=ds \
-          -e OUTPUT_DIR=/opt/sources/output \
-          -e RUNNER=github \
-          jetbrains/writerside-builder:2025.04.8412
+        WRITERSIDE_VERSION=241.15989 # Use a known working version or find the latest
+        wget https://download.jetbrains.com/writerside/writerside-cli-${WRITERSIDE_VERSION}.zip -O writerside-cli.zip
+        unzip writerside-cli.zip -d writerside-cli
+        echo "WRITERSIDE_CLI_HOME=$(pwd)/writerside-cli" >> $GITHUB_ENV
+        echo "$(pwd)/writerside-cli/bin" >> $GITHUB_PATH
+
+    - name: Build Writerside Documentation
+      run: writerside.sh build --input-dir=. --output-dir=output
 
     - name: Upload documentation artifact
       uses: actions/upload-artifact@v4
