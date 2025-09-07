@@ -3,16 +3,23 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="ds"
-                 name="ScribeStart"
+                 name="Elara Scribe"
                  start-page="Introduction.md">
-    <toc-element topic="Introduction.md">
-    </toc-element>
+    <toc-element topic="Introduction.md"/>
     <toc-element topic="BDR.md"/>
     <toc-element topic="Development.md">
-        <toc-element topic="Development-Process.md">
+        <toc-element topic="Project-Structure-Overview.md"/>
+        <toc-element topic="Local-Development-Setup.md"/>
+        <toc-element topic="Development-Process.md"/>
+        <toc-element topic="Daily-Standups.md"/>
+        <toc-element topic="Git-Branching-Strategy.md"/>
+        <toc-element topic="CI-CD-Pipeline-Explained.md"/>
+        <toc-element topic="Code-Style-Guide.md"/>
+        <toc-element topic="Testing-Strategy.md">
+            <toc-element topic="How-to-Write-a-Unit-Test.md"/>
         </toc-element>
-        <toc-element topic="Daily-Standups.md">
-        </toc-element>
+        <toc-element topic="PR-Code-Review-Guidelines.md"/>
+        <toc-element topic="Logging-Best-Practices.md"/>
     </toc-element>
     <toc-element topic="Software-Engineering.md">
         <toc-element topic="Software-Engineering-Requirements.md"/>
@@ -37,8 +44,13 @@
         </toc-element>
         <toc-element topic="Software-Engineering-4Ps.md"/>
     </toc-element>
-    <toc-element topic="API-Documentation.md"/>
-    <toc-element topic="User-Manual.md"/>
+    <toc-element topic="API-Documentation.md">
+        <toc-element topic="API-First-Methodology.md"/>
+        <toc-element topic="API-Design-Guidelines.md"/>
+    </toc-element>
+    <toc-element topic="User-Manual.md">
+        <toc-element topic="Common-Issues-And-How-to-Fix-Them.md"/>
+    </toc-element>
     <toc-element topic="Sitemap.md"/>
     <toc-element topic="Used-Technologies.md"/>
     <toc-element topic="Conclusion.md"/>
