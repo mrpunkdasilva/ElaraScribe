@@ -2,7 +2,7 @@
   <img src="Writerside/images/logo.svg" alt="Elara Scribe Logo" width="150">
 </p>
 
-# 📚 Elara Scribe 🛠️
+# 📚 Elara Scribe
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)

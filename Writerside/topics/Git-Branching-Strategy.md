@@ -10,6 +10,25 @@ To ensure our codebase remains stable and to facilitate collaboration, we follow
 4.  **Review and discuss**: A PR is a forum for code review and discussion. Changes are merged only after approval from team members.
 5.  **Merge and clean up**: Once the PR is approved and all automated checks have passed, it is merged into `main`, and the feature branch is deleted.
 
+The following diagram illustrates the flow of creating a branch and merging it back into `main`.
+
+```mermaid
+gitGraph
+    commit
+    commit
+    branch feature/new-feature
+    checkout feature/new-feature
+    commit
+    commit
+    checkout main
+    merge feature/new-feature
+    commit
+```
+
+
+**Note:** We use **Squash and Merge**. This means all commits from the feature branch are combined into a single commit on the `main` branch, maintaining a clean and linear project history.
+
+
 ## Step-by-Step Workflow
 
 Here is the typical workflow for a developer.
