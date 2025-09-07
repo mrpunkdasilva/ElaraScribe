@@ -1,7 +1,21 @@
-# O Modelo C4
+# The C4 Model for Software Architecture
 
-O Modelo C4 é uma abordagem "enxuta" para visualizar a arquitetura de software, criada pelo engenheiro de software Simon Brown. Ele consiste em um conjunto de diagramas hierárquicos que descrevem um sistema de software em diferentes níveis de abstração, cada um adequado para um público diferente.
+The C4 model is a lean, developer-friendly approach to visualizing software architecture. Created by Simon Brown, it consists of a set of hierarchical diagrams that describe a software system at different levels of abstraction, each tailored to a specific audience.
 
-O nome "C4" se refere aos 4 níveis de diagramas: **Contexto**, **Containers**, **Componentes** e **Código**.
+The name "C4" refers to the four core diagram types: **Context**, **Containers**, **Components**, and **Code**.
 
-A ideia é que você possa dar um "zoom in" e "zoom out" na arquitetura do seu sistema, contando uma história coesa para diferentes tipos de pessoas, desde stakeholders não-técnicos até desenvolvedores de software.
+The central idea is to create a map of your software. You can zoom in and out to get different levels of detail, telling a cohesive story about your system's architecture to various audiences, from non-technical stakeholders to software developers.
+
+## The Levels of Abstraction
+
+1.  **Level 1: System Context Diagram** - The highest level of abstraction. It shows your system as a black box in its environment, interacting with users and other systems.
+2.  **Level 2: Container Diagram** - Zooms into the system to show its high-level building blocks or "containers."
+3.  **Level 3: Component Diagram** - Zooms into an individual container to show its internal components.
+4.  **Level 4: Code Diagram** - Zooms into an individual component to show its implementation details.
+
+## Why Use the C4 Model?
+
+- **Improved Communication**: It creates a common language for describing architecture, bridging the gap between technical and non-technical teams.
+- **Clarity and Consistency**: It provides a simple, consistent, and easy-to-understand set of diagrams.
+- **Collaborative**: The notation is simple enough for collaborative sketching sessions on a whiteboard.
+- **Focus on Storytelling**: It helps you tell the story of your architecture at different levels of detail.
