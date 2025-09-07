@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.svg" alt="Documentation Starter Logo" width="150">
+  <img src="Writerside/images/logo.svg" alt="Documentation Starter Logo" width="150">
 </p>
 
 # 📚 Documentation Starter 🛠️

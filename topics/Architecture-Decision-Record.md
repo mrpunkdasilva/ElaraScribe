@@ -1,75 +1,122 @@
-
 # Architecture Decision Record (ADR)
 
-## O que é um ADR?
+## What is an ADR?
 
-Um Registro de Decisão de Arquitetura (ADR) é um documento que captura uma decisão arquitetural importante feita ao longo do desenvolvimento de um projeto de software, juntamente com seu contexto e consequências. O objetivo é registrar o raciocínio por trás da decisão para que futuros membros da equipe possam entendê-la.
+An Architecture Decision Record (ADR) is a document that captures an important architectural decision made during the development of a software project, along with its context and consequences. The goal is to record the reasoning behind the decision so that future team members can understand it.
 
 ---
 
-## Template para Novo ADR
+## New ADR Template
 
-### [NÚMERO DO ADR] - [TÍTULO DA DECISÃO]
+Use this template to create a new ADR. Copy the content below into a new file, for example, `docs/adr/001-example-decision.md`.
 
-**Data**: [AAAA-MM-DD]
+```markdown
+# [ADR NUMBER] - [DECISION TITLE]
 
-**Status**: [Proposto | Aceito | Rejeitado | Depreciado | Substituído]
+**Date**: [YYYY-MM-DD]
 
-### Contexto
+**Status**: [Proposed | Accepted | Rejected | Deprecated | Superseded]
 
-Esta seção descreve o problema que estamos tentando resolver ou a necessidade que estamos abordando. Inclui o contexto técnico, de negócios ou de produto. Detalhe as forças em jogo, as restrições e os requisitos que influenciam esta decisão.
+## Context
 
-### Decisão
+(Describe the problem, constraints, and forces at play.)
 
-Aqui, descrevemos a decisão que foi tomada. Seja claro e conciso sobre a mudança ou a escolha que está sendo feita. Por exemplo: "Adotaremos a biblioteca X para lidar com a comunicação em tempo real" ou "Usaremos o padrão Y para a estrutura de nossos microsserviços".
+## Decision
 
-### Opções Consideradas
+(State the chosen solution clearly and concisely.)
 
-Nesta seção, listamos as diferentes opções que foram avaliadas antes de chegar à decisão final. É importante detalhar cada alternativa para que futuros leitores entendam o processo de pensamento.
+## Options Considered
 
-#### Opção 1: [Nome da Opção]
+### Option 1: [Name of Option]
 
-- **Prós**:
-  - [Vantagem 1]
-  - [Vantagem 2]
-- **Contras**:
-  - [Desvantagem 1]
-  - [Desvantagem 2]
+- **Pros**:
+  - [Advantage 1]
+- **Cons**:
+  - [Disadvantage 1]
 
-#### Opção 2: [Nome da Opção]
+### Option 2: [Name of Option]
 
-- **Prós**:
-  - [Vantagem 1]
-  - [Vantagem 2]
-- **Contras**:
-  - [Desvantagem 1]
-  - [Desvantagem 2]
+- **Pros**:
+  - [Advantage 1]
+- **Cons**:
+  - [Disadvantage 1]
 
-#### Opção 3: [Nome da Opção (a escolhida)]
+## Consequences
 
-- **Prós**:
-  - [Vantagem 1]
-  - [Vantagem 2]
-- **Contras**:
-  - [Desvantagem 1]
-  - [Desvantagem 2]
+(Describe the results and implications of the decision.)
 
-### Consequências
+- **Positive**:
+  - [Positive impact 1]
+- **Negative**:
+  - [Negative impact 1]
 
-Descreva os resultados e as implicações da decisão tomada. Isso deve incluir tanto os aspectos positivos quanto os negativos.
+## Participants
 
-- **Positivas**:
-  - [Impacto positivo 1, por exemplo, melhoria de performance, redução de custos, etc.]
-  - [Impacto positivo 2]
+(List the people involved in the decision.)
+```
 
-- **Negativas**:
-  - [Impacto negativo 1, por exemplo, aumento da complexidade, necessidade de treinamento, etc.]
-  - [Impacto negativo 2]
+---
 
-### Participantes
+## Tutorial: Example ADR
 
-Liste as pessoas que participaram do processo de decisão.
+Here is a complete example of an ADR to illustrate how it can be used. The decision is about choosing a frontend web framework for a new project.
 
-- [Nome 1]
-- [Nome 2]
-- [Nome 3]
+### 001 - Choice of Frontend Web Framework for Flash Pomo
+
+**Date**: 2025-09-07
+
+**Status**: Accepted
+
+### Context
+
+We are starting a new project, "Flash Pomo," a Pomodoro timer web application. We need to choose a frontend framework to build the user interface. The team is small (2 developers) and has mixed experience with modern web frameworks. The project needs to be developed relatively quickly and be maintainable in the long run.
+
+### Decision
+
+We will use **React** as the frontend framework for the Flash Pomo project.
+
+### Options Considered
+
+#### Option 1: React
+
+- **Pros**:
+  - Large ecosystem and community, providing lots of learning resources and third-party libraries.
+  - Good performance due to the Virtual DOM.
+  - One of the developers has some prior experience with it.
+- **Cons**:
+  - Can become complex with state management, often requiring additional libraries like Redux or MobX.
+  - JSX can be a barrier for developers completely new to the framework.
+
+#### Option 2: Vue.js
+
+- **Pros**:
+  - Generally considered easier to learn, with excellent documentation.
+  - High performance and a gentle learning curve.
+- **Cons**:
+  - Smaller ecosystem compared to React.
+  - Less demand in the job market, which might affect future hiring.
+
+#### Option 3: Angular
+
+- **Pros**:
+  - A full-featured, opinionated framework with everything included (routing, state management).
+  - Backed by Google and uses TypeScript by default, which enforces good practices.
+- **Cons**:
+  - Steep learning curve and can be verbose.
+  - Might be overkill for a small-scale project like this one.
+
+### Consequences
+
+- **Positive**:
+  - We can leverage the vast number of existing React libraries and components to speed up development.
+  - The team member with React experience can help onboard the other developer.
+  - It will be easier to find new developers in the future if the team grows.
+
+- **Negative**:
+  - We will need to decide on and learn a state management library if the application's complexity grows.
+  - The developer new to React will face a learning curve.
+
+### Participants
+
+- mr punk da silva
+- Mave

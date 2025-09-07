@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.svg" alt="Logo do Ponto de Partida para Documentação" width="150">
+  <img src="Writerside/images/logo.svg" alt="Logo do Ponto de Partida para Documentação" width="150">
 </p>
 
 # 📚 Documentação Inicial 🛠️

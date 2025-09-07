@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <algolia-api-key></algolia-api-key>
+        <algolia-app-id></algolia-app-id>
+        <algolia-index></algolia-index>
+        <search-endpoint></search-endpoint>
+        <search-scope>project</search-scope>
+        <search-scopes-provider></search-scopes-provider>
+        <primary-color>purple</primary-color>
+        <custom-css>custom.css</custom-css>
+        <header-logo>logo.svg</header-logo>
+        <product-web-url>https://github.com/mrpunkdasilva</product-web-url>
+        <custom-favicons>logo.png</custom-favicons>
+        <download-title>Repo</download-title>
+        <download-page>https://jetbrains.com/writerside</download-page>
+        <showDownloadButton>true</showDownloadButton>
+    </variables>
+
+    <build-profile instance="ds">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+
+    <llms-txt single-file="true"/>
+    <sitemap change-frequency="daily" priority="0.5"/>
+
+    <footer>
+        <copyright>Copyright © 2025 Example Inc.</copyright>
+        <social type="github" href="https://example.com">Product page on Facebook</social>
+        <social type="rss" href="https://example.com">Product RSS feed</social>
+        <social type="twitter" href="https://example.com">Product X</social>
+        <social type="email" href="mail@example.com">Send us an email</social>
+    </footer>
+
+</buildprofiles>
