@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="Writerside/images/logo.svg" alt="Logo do Ponto de Partida para Documentação" width="150">
+  <img src="Writerside/images/logo.svg" alt="Logo ScribeStart" width="150">
 </p>
 
-# 📚 Documentação Inicial 🛠️
+# 📚 ScribeStart 🛠️
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
-Este projeto oferece um **Ponto de Partida para Documentação** como base para criar uma documentação clara, organizada e eficiente. O objetivo é fornecer uma estrutura sólida para a documentação de qualquer projeto, facilitando a manutenção, atualização e colaboração entre equipes.
+Este projeto oferece o **ScribeStart** como base para criar uma documentação clara, organizada e eficiente. O objetivo é fornecer uma estrutura sólida para a documentação de qualquer projeto, facilitando a manutenção, atualização e colaboração entre equipes.
 
 Writerside Docs: https://www.jetbrains.com/help/writerside/getting-started.html
 
 
 ## 🌟 Visão Geral
 
-O **Ponto de Partida para Documentação** é um template pré-configurado que oferece uma estrutura consistente para a criação de documentação técnica. Ele inclui páginas, tópicos e estruturas básicas que aceleram o processo de documentação, garantindo que todos os documentos sigam um formato coeso e profissional.
+O **ScribeStart** é um template pré-configurado que oferece uma estrutura consistente para a criação de documentação técnica. Ele inclui páginas, tópicos e estruturas básicas que aceleram o processo de documentação, garantindo que todos os documentos sigam um formato coeso e profissional.
 
 ## 🗂️ Estrutura do Projeto
 

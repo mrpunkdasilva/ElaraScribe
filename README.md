@@ -1,21 +1,21 @@
 <p align="center">
-  <img src="Writerside/images/logo.svg" alt="Documentation Starter Logo" width="150">
+  <img src="Writerside/images/logo.svg" alt="ScribeStart Logo" width="150">
 </p>
 
-# 📚 Documentation Starter 🛠️
+# 📚 ScribeStart 🛠️
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
 
-This project provides a **Documentation Starter** as a foundation for creating clear, organized, and efficient documentation. The goal is to offer a solid structure for any project's documentation, making it easier to maintain, update, and collaborate across teams.
+This project provides **ScribeStart** as a foundation for creating clear, organized, and efficient documentation. The goal is to offer a solid structure for any project's documentation, making it easier to maintain, update, and collaborate across teams.
 
 Writerside Docs: https://www.jetbrains.com/help/writerside/getting-started.html
 
 ## 🌟 Overview
 
-The **Documentation Starter** is a pre-configured template that offers a consistent structure for creating technical documentation. It includes basic pages, topics, and structures that speed up the documentation process, ensuring that all documents follow a cohesive and professional format.
+**ScribeStart** is a pre-configured template that offers a consistent structure for creating technical documentation. It includes basic pages, topics, and structures that speed up the documentation process, ensuring that all documents follow a cohesive and professional format.
 
 ## 🗂️ Project Structure
 
