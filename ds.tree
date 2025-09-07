@@ -16,6 +16,7 @@
     </toc-element>
     <toc-element topic="Software-Engineering.md">
         <toc-element topic="Software-Engineering-Requirements.md"/>
+        <toc-element topic="Architecture-Decision-Record.md"/>
         <toc-element topic="Software-Engineering-Information-Architecture.md">
             <toc-element topic="IA-Wireframes-Prototypes.md"/>
             <toc-element topic="IA-Database-Design.md"/>
