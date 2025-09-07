@@ -6,12 +6,12 @@ This section should include Class Diagrams that represent the static structure o
 
 ```mermaid
 classDiagram
-    class [ClassName] {
-        +[attributeType] [attributeName]
-        +[methodName]() [returnType]
+    class ClassName {
+        +attributeType attributeName
+        +methodName() returnType
     }
-    class [AnotherClassName] {
-        +[attributeType] [attributeName]
+    class AnotherClassName {
+        +attributeType attributeName]
     }
-    [ClassName] -- [AnotherClassName] : Relationship Description
+    ClassName -- AnotherClassName : Relationship Description
 ```
