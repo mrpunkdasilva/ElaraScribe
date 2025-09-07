@@ -12,7 +12,7 @@ Continuous Integration (CI) is the process of automating the build and testing o
 
 **Trigger**: This pipeline runs automatically whenever a Pull Request (PR) is opened or updated.
 
-### Stages and Jobs
+### Stages and Jobs {id="stages-and-jobs_1"}
 
 1.  **Linting and Formatting Check**:
     -   **Purpose**: To ensure all code adheres to our defined code style.

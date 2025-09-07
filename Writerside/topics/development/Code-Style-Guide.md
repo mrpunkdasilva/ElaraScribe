@@ -30,7 +30,7 @@ npm run lint
 npm run lint:fix
 ```
 
-### Naming Conventions
+### Naming Conventions {id="naming-conventions_1"}
 
 -   **Files**: Use `kebab-case` for files (e.g., `user-profile.tsx`), except for component files which should be `PascalCase`.
 -   **Components**: Use `PascalCase` for React components (e.g., `UserProfile`).
@@ -41,7 +41,7 @@ npm run lint:fix
 
 For our Java backend, we adhere to the **Google Java Style Guide**. We use the [Spotless](https://github.com/diffplug/spotless) Maven plugin to enforce these rules automatically.
 
-### How to Use
+### How to Use {id="how-to-use_1"}
 
 The formatter will run automatically during the Maven build process. You can also trigger it manually.
 

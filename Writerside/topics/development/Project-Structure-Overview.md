@@ -6,7 +6,7 @@ This document provides a high-level overview of the project's directory structur
 
 Our repository is structured as a monorepo containing distinct parts of the application, such as the frontend and backend.
 
-```plaintext
+```
 your-repository/
 ├── .github/              # Automation and CI/CD workflows
 ├── backend/                # Backend source code (e.g., Java/Spring Boot)

@@ -8,7 +8,7 @@ We follow the principles of the **Testing Pyramid**, which guides us on how to b
 
 The Testing Pyramid is a model that advocates for having many fast, low-level unit tests, a smaller number of integration tests, and very few slow, high-level end-to-end tests.
 
-```plaintext
+```
       /\      <-- End-to-End Tests (Few)
      /  \ 
     /----\    <-- Integration Tests (More)
